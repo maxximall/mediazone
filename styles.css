@@ -1,0 +1,349 @@
+header{
+    padding: 12px 80px;
+    background-color: white;
+}
+.secondary-button{
+    padding: 16px;
+    border: 1px solid var(--outline);
+    background-color: white;
+    width: fit-content;
+}
+.logo{
+    width: 115px;
+    height: 88px;
+}
+section{
+    padding: 80px 124px;
+}
+.grey-bg{
+    background-color: var(--surface-1);
+}
+/* Hero */
+.hero{ 
+    padding: 0px 80px; 
+}
+#hero-bg{
+    background-color: var(--primary);
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.hero h1{
+    padding: 80px 0;
+    color: white;
+}
+
+/* Filters + Shows grid */
+.filters{ flex-wrap: wrap; }
+.filter-btn{
+    padding: 8px 16px;
+    border: 1px solid var(--outline);
+    background: white;
+    cursor: pointer;
+}
+.filter-btn.is-active{
+    background: var(--primary);
+    color: var(--on-primary);
+    border-color: var(--primary);
+}
+.shows-grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+}
+.show-card{ width: 100%; }
+.show-card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+.show-card img:hover{
+   cursor: pointer;
+}
+.img-124{
+    width: 124px;
+    height: 124px;
+}
+@media (max-width: 1024px){
+    .shows-grid{ grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 700px){
+    .shows-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+/* Card */
+.card-image,
+.case-study-card-image{
+    height: 258px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+#support{
+    background-image: url('./assets/support.png');
+}
+.card-info{
+    padding: 24px 16px;
+}
+/* Case studies */
+.case-study-card-info{
+    padding: 16px;
+    background-color: white;
+}
+#traitors{
+    background-image: url('./assets/traitors.png');
+}
+
+/* Carousel */
+
+.carousel{
+    position: relative;
+    overflow: hidden;
+}
+.carousel-track-container{ overflow: hidden; }
+.carousel-track{
+    display: flex;
+    transition: transform 500ms ease;
+    will-change: transform;
+}
+.carousel .slide{
+    min-width: 100%;
+    max-width: 100%;
+    height: 600px;
+}
+.carousel .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.carousel-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.9);
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+}
+.carousel-btn.prev{ left: 16px; }
+.carousel-btn.next{ right: 16px; }
+.carousel-dots{
+    position: absolute;
+    left: 0; right: 0; bottom: 12px;
+    display: flex; gap: 8px;
+    justify-content: center;
+    z-index: 2;
+}
+.carousel-dots .dot{
+    width: 10px; height: 10px; border-radius: 50%;
+    background: rgba(255,255,255,0.7);
+    border: none; cursor: pointer;
+}
+.carousel-dots .dot.is-active{ background: white; }
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.modal.is-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.modal-header {
+    padding: 32px 32px 16px 32px;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.modal-body {
+    padding: 24px 32px 32px 32px;
+}
+
+.modal-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+/* Lightbox image */
+.image-modal-img{
+    width: 100%;
+    height: auto;
+    max-height: 75vh;
+    object-fit: contain;
+    border-radius: 8px;
+    display: block;
+}
+
+.modal-text {
+    margin-bottom: 24px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.modal-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.modal-features li {
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+    color: #555;
+}
+
+.modal-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Card hover effect */
+.card {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card background images */
+#training {
+    background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80&auto=format&fit=crop');
+}
+
+#consultation {
+    background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80&auto=format&fit=crop');
+}
+
+footer{
+    background-color: var(--primary);
+    padding: 80px 124px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#hcpc, #bps{
+    height: 80px;
+    border-radius: 4px;
+}
+footer .logo{
+    width: 164px;
+    height: 125px;
+}
+
+@media (max-width: 500px){
+    .hero{ padding: 24px; }
+    .carousel .slide{ height: 280px; }
+    
+    .modal-content {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    .modal-header {
+        padding: 24px 24px 16px 24px;
+    }
+    
+    .modal-title {
+        font-size: 20px;
+    }
+    
+    .modal-body {
+        padding: 20px 24px 24px 24px;
+    }
+    
+    .modal-image {
+        height: 150px;
+        margin-bottom: 20px;
+    }
+}

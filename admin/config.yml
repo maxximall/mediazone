@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets"
+public_folder: "/assets"
+
+site_url: "/"
+logo_url: "/assets/logo.png"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "shows"
+    label: "Shows"
+    label_singular: "Show"
+    description: "Cards shown under 'Shows we’ve recently worked on'"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - name: "shows-list"
+        label: "All Shows"
+        file: "content/shows.json"
+        fields:
+          - label: "Shows"
+            name: "shows"
+            widget: list
+            summary: "{{fields.title}} ({{fields.category}})"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Documentary", value: "documentary" }
+                  - { label: "Reality", value: "reality" }
+                  - { label: "Science", value: "science" }
+                  - { label: "True crime", value: "true-crime" }
+              - { label: "Image", name: "image", widget: "image", allow_multiple: false }
+              - { label: "Alt text", name: "alt", widget: "string" }
+              - { label: "Image credit (optional)", name: "credit", widget: "string", required: false }
+
