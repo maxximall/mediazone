@@ -23,7 +23,12 @@
       "category": "science",
       "image": "https://images.unsplash.com/photo-1529101091764-c3526daf38fe?w=600&q=80&auto=format&fit=crop",
       "alt": "Science cover 1"
+    },
+    {
+      "title": "Test added through CMS",
+      "category": "documentary",
+      "image": "/assets/house.png",
+      "alt": "test alt text"
     }
   ]
 }
-
