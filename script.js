@@ -68,6 +68,7 @@
 // Modal functionality
 (function(){
     const modal = document.getElementById('modal');
+    if(!modal) return;
     const modalTitle = modal.querySelector('.modal-title');
     const modalText = modal.querySelector('.modal-text');
     const modalImage = modal.querySelector('.modal-image');
@@ -154,8 +155,8 @@
         });
     });
 
-    closeBtn.addEventListener('click', closeModal);
-    overlay.addEventListener('click', closeModal);
+    if(closeBtn) closeBtn.addEventListener('click', closeModal);
+    if(overlay) overlay.addEventListener('click', closeModal);
 
     // Close modal with Escape key
     document.addEventListener('keydown', (e) => {
