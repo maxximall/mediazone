@@ -27,9 +27,12 @@ collections:
           - label: "Shows"
             name: "shows"
             widget: list
-            summary: "{{fields.title}} ({{fields.category}})"
+            summary: "{{fields.name | default: fields.title}} — {{fields.production | default: 'Unknown'}} ({{fields.date | default: 'No date'}})"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Name of show", name: "name", widget: "string", required: false }
+              - { label: "Title (legacy)", name: "title", widget: "string", required: false }
+              - { label: "Production", name: "production", widget: "string" }
+              - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
               - label: "Category"
                 name: "category"
                 widget: "select"

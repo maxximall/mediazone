@@ -54,13 +54,29 @@ section{
     grid-template-columns: repeat(6, 1fr);
     gap: 24px;
 }
-.show-card{ width: 100%; }
+.show-card{ width: 100%; position: relative; overflow: hidden; }
 .show-card img{
     width: 100%;
     height: 180px;
     object-fit: cover;
     display: block;
 }
+.show-meta{
+    position: absolute;
+    left: 0; right: 0; bottom: 0; top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 12px;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.0) 60%);
+    color: white;
+    opacity: 0;
+    transition: opacity 160ms ease-in-out;
+    pointer-events: none;
+}
+.show-card:hover .show-meta{ opacity: 1; }
+.show-name{ font-weight: 600; font-size: 14px; line-height: 1.2; }
+.show-subline{ font-size: 12px; opacity: 0.9; margin-top: 4px; }
 .show-card img:hover{
    cursor: pointer;
 }

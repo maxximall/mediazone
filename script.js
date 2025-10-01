@@ -46,10 +46,39 @@
         const card = document.createElement('div');
         card.className = 'show-card';
         card.setAttribute('data-category', show.category || 'documentary');
+
         const img = document.createElement('img');
         img.src = show.image;
-        img.alt = show.alt || show.title || 'Show image';
+        const name = show.name || show.title;
+        img.alt = show.alt || name || 'Show image';
         card.appendChild(img);
+
+        const meta = document.createElement('div');
+        meta.className = 'show-meta';
+
+        const titleEl = document.createElement('div');
+        titleEl.className = 'show-name';
+        titleEl.textContent = name || '';
+        meta.appendChild(titleEl);
+
+        const subEl = document.createElement('div');
+        subEl.className = 'show-subline';
+        const parts = [];
+        if (show.production) parts.push(show.production);
+        if (show.date) {
+            try {
+                const d = new Date(show.date);
+                const formatted = isNaN(d.getTime()) ? show.date : d.toLocaleDateString(undefined, { year: 'numeric', month: 'short' });
+                parts.push(formatted);
+            } catch(_) {
+                parts.push(show.date);
+            }
+        }
+        subEl.textContent = parts.join(' • ');
+        meta.appendChild(subEl);
+
+        card.appendChild(meta);
+
         return card;
     }
 
