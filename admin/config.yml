@@ -30,9 +30,8 @@ collections:
             summary: "{{fields.name | default: fields.title}} — {{fields.production | default: 'Unknown'}} ({{fields.date | default: 'No date'}})"
             fields:
               - { label: "Name of show", name: "name", widget: "string", required: false }
-              - { label: "Title (legacy)", name: "title", widget: "string", required: false }
               - { label: "Production", name: "production", widget: "string" }
-              - { label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
               - label: "Category"
                 name: "category"
                 widget: "select"
@@ -42,6 +41,4 @@ collections:
                   - { label: "Science", value: "science" }
                   - { label: "True crime", value: "true-crime" }
               - { label: "Image", name: "image", widget: "image", allow_multiple: false }
-              - { label: "Alt text", name: "alt", widget: "string" }
-              - { label: "Image credit (optional)", name: "credit", widget: "string", required: false }
 

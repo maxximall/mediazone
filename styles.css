@@ -85,6 +85,11 @@ section{
     transition: opacity 160ms ease-in-out;
     pointer-events: none;
 }
+.show-meta h5,
+.show-meta p{
+    color: white;
+    font-size: 16px;
+}
 .show-card:hover .show-meta{ opacity: 1; }
 .show-name{ font-weight: 600; font-size: 14px; line-height: 1.2; }
 .show-subline{ font-size: 12px; opacity: 0.9; margin-top: 4px; }
