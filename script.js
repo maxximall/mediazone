@@ -37,6 +37,48 @@
     window.addEventListener('resize', ()=> setSlide(index));
 })();
 
+// Header menu toggle (mobile)
+(function(){
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-nav');
+    if(!toggle || !nav) return;
+    toggle.addEventListener('click', ()=>{
+        const open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    // Close menu when clicking outside
+    document.addEventListener('click', (e)=>{
+        if(!nav.classList.contains('is-open')) return;
+        const within = nav.contains(e.target) || toggle.contains(e.target);
+        if(!within){
+            nav.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded','false');
+        }
+    });
+    // Close on escape
+    document.addEventListener('keydown', (e)=>{
+        if(e.key === 'Escape' && nav.classList.contains('is-open')){
+            nav.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded','false');
+        }
+    });
+})();
+
+// Splash screen fade-out
+(function(){
+    const splash = document.getElementById('splash');
+    if(!splash) return;
+    function hideSplash(){
+        splash.classList.add('is-hidden');
+        setTimeout(()=>{ if(splash && splash.parentNode){ splash.parentNode.removeChild(splash); } }, 450);
+    }
+    if(document.readyState === 'complete'){
+        setTimeout(hideSplash, 1000);
+    } else {
+        window.addEventListener('load', ()=> setTimeout(hideSplash, 1000));
+    }
+})();
+
 // Load and render shows from CMS JSON
 (function(){
     const grid = document.getElementById('shows-grid') || document.querySelector('.shows-grid');
@@ -56,12 +98,12 @@
         const meta = document.createElement('div');
         meta.className = 'show-meta';
 
-        const titleEl = document.createElement('div');
+        const titleEl = document.createElement('h5');
         titleEl.className = 'show-name';
         titleEl.textContent = name || '';
         meta.appendChild(titleEl);
 
-        const subEl = document.createElement('div');
+        const subEl = document.createElement('p');
         subEl.className = 'show-subline';
         const parts = [];
         if (show.production) parts.push(show.production);
@@ -110,43 +152,29 @@
     const modalData = {
         support: {
             title: 'Support for TV, Films and Podcasts',
-            text: 'Comprehensive mental health support tailored for the unique demands of media production. Our specialized services ensure the wellbeing of cast, crew, and contributors throughout the entire production lifecycle.',
-            image: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&q=80&auto=format&fit=crop',
-            features: [
-                '24/7 on-call psychological support',
-                'Pre-production risk assessments',
-                'Crisis intervention during filming',
-                'Post-production debriefing sessions',
-                'Customized support for sensitive content',
-                'Talent and crew wellness programs'
-            ]
+            text: 'Mindzone Media can supply, at short notice, Clinical Psychologists (Chartered and HCPC registered) with specialist expert experience for any type of television or filming project in the UK or Overseas. This may include pre-production screening, support during production (on/off rig) and post-TX support. We work across all televisions genres, as well as commercials/marketing projects, television dramas and mainstream films, including storyline development, script reviews, consultation and support for actors, compliance reviews, podcasts, as well as performance art projects.'
         },
-        training: {
-            title: 'Training & Development Programs',
-            text: 'Professional development programs designed to enhance mental health awareness and create supportive production environments. Our training empowers production teams with essential skills and knowledge.',
-            image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80&auto=format&fit=crop',
-            features: [
-                'Mental health first aid for production teams',
-                'Recognizing and responding to psychological distress',
-                'Creating psychologically safe work environments',
-                'Managing challenging content and situations',
-                'Leadership training for production managers',
-                'Customized workshops for specific productions'
-            ]
+        mentalHealth: {
+            title: 'Mental Health, First Aid Training',
+            text: "Training workshops are offered to improve production team's knowledge of mental health presentations for contributors and talent, minimise attrition and wastage, maintain the rights and dignity of vulnerable individuals, manage risk appropriately, supporting compliance requirements, and raising awareness for production team's self-care. Training workshops are offered to improve production team's knowledge of mental health presentations for contributors and talent, minimise attrition and wastage, maintain the rights and dignity of vulnerable individuals, manage risk appropriately, supporting compliance requirements, and raising awareness for production team's self-care."
         },
-        consultation: {
-            title: 'Professional Consultation Services',
-            text: 'Expert psychological consultation services for complex productions, sensitive content, and challenging situations. Our experienced clinical psychologists provide strategic guidance and support.',
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&auto=format&fit=crop',
-            features: [
-                'Production risk assessment and planning',
-                'Content sensitivity analysis',
-                'Crisis management consultation',
-                'Psychological safety audits',
-                'Expert witness services',
-                'Post-incident support and analysis'
-            ]
+        dutyOfCare: {
+            title: 'Duty Of Care For Contributors',
+            text: 'We offer pre-filming assessments for contributors to identify any psychological vulnerabilities which may be affected by their participation in any production. We will then offer recommendations and guidance on how to proceed with any contributor throughout the production process. We can also offer on-set support for contributors and the production team. We then suggest that some contributors might need a follow up session either pre or post TX. Especially if the production might be psychologically triggering for them.'
+        },
+        script: {
+            title: 'Script and Development Treatment Reviews',
+            text: 'At the beginning of your production you can get professional script and development treatment reviews from our specialist media psychologists at Mindzone Media. Our team of experienced professionals will provide thorough and detailed feedback on your script and development treatment, helping to manage risk surrounding sensitive themes and scenes and advise on psychological safety for actors and contributors.'
+        },
+        employeeAssistance: {
+            title: 'Employee Assistance and Staff Support',
+            text: 'Our team of highly experienced Consultant Clinical Psychologists provide dedicated employee assistance and staff support tailored to the unique pressures of working in the Film, TV and media industry. We understand the fast-paced, high-pressure environments that production teams, cast, and crew often face, and we offer confidential one-to-one support, mental health awareness workshops, resilience training, debriefing, and crisis response when needed. Whether it’s managing stress, navigating difficult workplace dynamics, or supporting individuals through personal challenges, we deliver compassionate, professional care that promotes mental health, resilience, and sustainable performance across the industry and the lifespan of a project.'
+        },
+        onCallSupport: {
+            title: 'Location / On Call Support',
+            text: 'Mindzone Media provides comprehensive support to your staff, cast, and crew, whether on-site or remotely across international time zones. Our extensive experience includes working on large-format studio productions with over 750 contributors, as well as more specialised and concentrated projects in remote locations and sometimes hostile environments. Our team is capable of supporting any location. We are committed to ensuring the mental health needs of your crew, actors, and contributor cast by considering, containing, and providing appropriate support to mitigate potential mental health risks and challenges.'
         }
+
     };
 
     function openModal(modalType) {
@@ -155,18 +183,8 @@
 
         modalTitle.textContent = data.title;
         modalText.textContent = data.text;
-        modalImage.style.backgroundImage = `url('${data.image}')`;
         
-        // Clear existing features
-        modalFeatures.innerHTML = '';
         
-        // Add new features
-        data.features.forEach(feature => {
-            const li = document.createElement('li');
-            li.textContent = feature;
-            modalFeatures.appendChild(li);
-        });
-
         modal.classList.add('is-active');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
     }
@@ -223,11 +241,11 @@
     applyFilter('all');
 })();
 
-// Image lightbox for shows grid
+// Image lightbox for shows grid and infographic
 (function(){
     const grid = document.querySelector('.shows-grid');
     const modal = document.getElementById('image-modal');
-    if(!grid || !modal) return;
+    if(!modal) return;
     const closeBtn = modal.querySelector('.modal-close');
     const overlay = modal.querySelector('.modal-overlay');
     const img = modal.querySelector('.image-modal-img');
@@ -246,12 +264,23 @@
         img.src = '';
     }
 
-    grid.addEventListener('click', (e)=>{
-        const target = e.target;
-        if(target && target.tagName === 'IMG'){
-            open(target.src.replace(/w=\d+/, 'w=1600'), target.alt);
-        }
-    });
+    if(grid){
+        grid.addEventListener('click', (e)=>{
+            const target = e.target;
+            if(target && target.tagName === 'IMG'){
+                open(target.src.replace(/w=\d+/, 'w=1600'), target.alt);
+            }
+        });
+    }
+    
+    // Add click listener for mindzone infographic
+    const infographic = document.getElementById('mindzone-infographic');
+    if(infographic) {
+        infographic.addEventListener('click', (e) => {
+            open(e.target.src, e.target.alt || 'Mindzone Infographic');
+        });
+    }
+    
     closeBtn.addEventListener('click', close);
     overlay.addEventListener('click', close);
     document.addEventListener('keydown', (e)=>{ if(e.key==='Escape' && modal.classList.contains('is-active')) close(); });

@@ -2,6 +2,17 @@ header{
     padding: 12px 80px;
     background-color: white;
 }
+header a{
+    font-weight: 400;
+}
+header a.active{
+    font-weight: 800;
+}
+/* Responsive nav */
+.menu-toggle{ display: none; background: none; border: none; padding: 8px; cursor: pointer; }
+#primary-nav{ display: flex; gap: 24px; }
+
+
 .secondary-button{
     padding: 16px;
     border: 1px solid var(--outline);
@@ -91,6 +102,9 @@ section{
     .shows-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 /* Card */
+.case-study-card{
+    height: fit-content;
+}
 .card-image,
 .case-study-card-image{
     height: 258px;
@@ -108,9 +122,47 @@ section{
 .case-study-card-info{
     padding: 16px;
     background-color: white;
+    height: 100%;
 }
 #traitors{
     background-image: url('./assets/traitors.png');
+}
+#drugs-map{
+    background-image: url('./assets/drug-map-of-britain.jpg');
+}
+#jury-murder{
+    background-image: url('./assets/the-jury-murder-trial.jpg');
+}
+
+/* Page Header */
+.page-header{
+    height: 256px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-position: center;
+}
+.page-header h2{
+    color: white;
+}
+.page-header#about-us{
+    background-image: url('./assets/about-us-bg.png');
+   
+}
+.page-header#services{
+    background-image: url('./assets/services.png');
+}
+.page-header#clients{
+    background-image: url('./assets/clients.png');
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px; /* space between items */
 }
 
 /* Carousel */
@@ -316,9 +368,20 @@ section{
 #training {
     background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=80&auto=format&fit=crop');
 }
-
-#consultation {
-    background-image: url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80&auto=format&fit=crop');
+#mental-health{
+    background-image: url('./assets/mental-health.avif');
+}
+#duty-of-care{
+    background-image: url('./assets/duty-of-care.avif');
+}
+#script{
+    background-image: url('./assets/script-and-development.avif');
+}
+#employee-assistance{
+    background-image: url('./assets/employee-assistance.avif');
+}
+#on-call-support{
+    background-image: url('./assets/on-call-support.avif');
 }
 
 footer{
@@ -327,6 +390,15 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+/* Responsive video iframe (16:9) at 50% width */
+.responsive-video{
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    display: block;
+    align-self: center;
+    max-width: 100%;
 }
 #hcpc, #bps{
     height: 80px;
@@ -337,9 +409,91 @@ footer .logo{
     height: 125px;
 }
 
+#mindzone-infographic{
+    width: 500px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+#mindzone-infographic:hover{
+    transform: scale(1.02);
+}
+#about-us-container{
+    max-width: 600px;
+}
+
+/* Our Services grid layout */
+#our-services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+#our-services  .card{
+    width: 100%;
+}
+#our-services > .horizontal{
+    display: contents; /* Flatten row wrappers so cards become grid items */
+}
+
+
+/* Splash screen */
+#splash{
+    position: fixed;
+    inset: 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    opacity: 1;
+    transition: opacity 400ms ease;
+}
+
+#splash.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.splash-logo{
+    width: 240px;
+    height: 182px;
+}
+
+.production-partners{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 24px;
+}
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+.testimonial{
+    border: 1px solid var(--outline);
+    padding: 64px;
+    position: relative;
+}
+
+.quote-img{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+@media (min-width: 900px){
+    #our-services{ gap: 40px; }
+}
+
 @media (max-width: 500px){
     .hero{ padding: 24px; }
+    .hero h1{
+        padding: 40px 0;
+    }
+    #hero-bg{
+        height: 500px;
+    }
     .carousel .slide{ height: 280px; }
+    .responsive-video{ width: 100%; }
     
     .modal-content {
         width: 95%;
@@ -362,4 +516,64 @@ footer .logo{
         height: 150px;
         margin-bottom: 20px;
     }
+    header{ 
+        position: relative;
+        padding: 8px 16px; 
+    }
+    section{
+        padding: 40px 16px;
+    }
+    #primary-nav{ 
+        display: none;
+        position: absolute;
+        top: 100%; left: 0;
+        right: 0; 
+        background: white; 
+        padding: 24px; 
+        flex-direction: column; 
+        gap: 40px; 
+        border-top: 1px solid var(--outline); 
+    }
+    #primary-nav.is-open{ display: flex; }
+    .menu-toggle{ display: inline-flex; align-items: center; justify-content: center; }
+    .logo{
+        width: 100px;
+        height: 76px;
+    }
+    footer{
+        padding: 40px 16px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    footer .icon-24{
+        width: 40px;
+        height: 40px;
+    }
+    .production-partners{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 8px;
+        justify-content: center;
+    }
+    .production-partners img{
+        width: 80px;
+    }
+    .page-header{
+        height: 164px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+        gap: 24px; /* space between items */
+    }
+    #mindzone-infographic{
+        width: 100%;
+    }
 }
+
