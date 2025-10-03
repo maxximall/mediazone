@@ -173,7 +173,12 @@
         onCallSupport: {
             title: 'Location / On Call Support',
             text: 'Mindzone Media provides comprehensive support to your staff, cast, and crew, whether on-site or remotely across international time zones. Our extensive experience includes working on large-format studio productions with over 750 contributors, as well as more specialised and concentrated projects in remote locations and sometimes hostile environments. Our team is capable of supporting any location. We are committed to ensuring the mental health needs of your crew, actors, and contributor cast by considering, containing, and providing appropriate support to mitigate potential mental health risks and challenges.'
+        },
+        lifeSpan: {
+            title: 'Supporting the Life Span of a Production',
+            text: ''
         }
+        
 
     };
 
