@@ -1,5 +1,11 @@
 {
   "shows": [
-   
+    {
+      "name": "Can I tell you a secret?",
+      "production": "Netfilx",
+      "date": "2025-10-23",
+      "category": "documentary",
+      "image": "/assets/secret-show.avif"
+    }
   ]
 }
