@@ -6,6 +6,13 @@
       "date": "2025-10-23",
       "category": "documentary",
       "image": "/assets/secret-show.avif"
+    },
+    {
+      "name": "Love Stalker Killer",
+      "production": "Netflix",
+      "date": "2025-10-10",
+      "category": "documentary",
+      "image": "/assets/love-stalker-killer.avif"
     }
   ]
 }
