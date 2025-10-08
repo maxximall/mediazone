@@ -11,14 +11,14 @@
       "image": "/assets/robbin-bennett.png"
     },
     {
-      "name": "Dr Anna Caffrey",
-      "title": "Clinical Psychologist",
-      "image": "/assets/anna-cafrey.png"
-    },
-    {
       "name": "Dr Susanna Waern",
       "title": "Clinical Psychologist",
       "image": "/assets/sussana-waern.png"
+    },
+    {
+      "name": "Dr Anna Caffrey",
+      "title": "Clinical Psychologist",
+      "image": "/assets/anna-cafrey.png"
     },
     {
       "name": "Dr Sophie Gosling",
