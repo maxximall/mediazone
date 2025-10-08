@@ -597,6 +597,8 @@ footer .logo{
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
         gap: 8px;
         justify-content: center;
+        align-items: center;
+        justify-content: center;
     }
     .production-partners img{
         width: 80px;
