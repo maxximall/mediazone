@@ -240,7 +240,7 @@
         },
         lifeSpan: {
             title: 'Supporting the Life Span of a Production',
-            text: ''
+            text: '',
         }
         
 
