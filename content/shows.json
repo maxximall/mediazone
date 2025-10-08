@@ -13,6 +13,20 @@
       "date": "2025-10-10",
       "category": "documentary",
       "image": "/assets/love-stalker-killer.avif"
+    },
+    {
+      "name": "Traitors",
+      "production": "BBBC",
+      "category": "true-crime",
+      "image": "/assets/the-traitors-s2-studio-lambert-bbc-one-2024_orig.jpg",
+      "date": "2025-10-24"
+    },
+    {
+      "name": "American Nightmare",
+      "category": "true-crime",
+      "image": "/assets/american-nightmare.jpg",
+      "date": "2025-10-16",
+      "production": "Netflix"
     }
   ]
 }
