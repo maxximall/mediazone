@@ -3,7 +3,7 @@
     {
       "name": "Dr Howard Fine",
       "title": "Clinical Psychologist",
-      "image": "/assets/howard-fine.png"
+      "image": "/assets/bbc.png"
     },
     {
       "name": "Dr Robin Bennett",
@@ -11,14 +11,14 @@
       "image": "/assets/robbin-bennett.png"
     },
     {
-      "name": "Dr Anna Caffrey",
-      "title": "Clinical Psychologist",
-      "image": "/assets/anna-cafrey.png"
-    },
-    {
       "name": "Dr Susanna Waern",
       "title": "Clinical Psychologist",
       "image": "/assets/sussana-waern.png"
+    },
+    {
+      "name": "Dr Anna Caffrey",
+      "title": "Clinical Psychologist",
+      "image": "/assets/anna-cafrey.png"
     },
     {
       "name": "Dr Sophie Gosling",
