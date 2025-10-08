@@ -1,22 +1,88 @@
 {
   "productionPartners": [
     {
-      "image": "/assets/bbc.png"
+      "image": "/assets/production-logos/zinc.jpg"
     },
     {
-      "image": "/assets/itv.png"
+      "image": "/assets/production-logos/72films.png"
     },
     {
-      "image": "/assets/peacock.png"
+      "image": "/assets/production-logos/Atlantic.png"
     },
     {
-      "image": "/assets/five.png"
+      "image": "/assets/production-logos/bbc-studios.png"
     },
     {
-      "image": "/assets/netflix.png"
+      "image": "/assets/production-logos/century.png"
     },
     {
-      "image": "/assets/four.png"
+      "image": "/assets/production-logos/crack-it.png"
+    },
+    {
+      "image": "/assets/production-logos/curious.png"
+    },
+    {
+      "image": "/assets/production-logos/DSP.png"
+    },
+    {
+      "image": "/assets/production-logos/Flabbergast.jpg"
+    },
+    {
+      "image": "/assets/production-logos/Flicker.jpg"
+    },
+    {
+      "image": "/assets/production-logos/Mindhouse.png"
+    },    
+    {
+      "image": "/assets/production-logos/Objective.png"
+    },
+    {
+      "image": "/assets/production-logos/Raw.png"
+    },
+    {
+      "image": "/assets/production-logos/red-studios.png"
+    },
+    {
+      "image": "/assets/production-logos/remarkable.png"
+    },
+    {
+      "image": "/assets/production-logos/Rogan.png"
+    },
+    {
+      "image": "/assets/production-logos/shine.png"
+    },
+    {
+      "image": "/assets/production-logos/Southshore.png"
+    },    {
+      "image": "/assets/production-logos/Spungold.png"
+    },
+    {
+      "image": "/assets/production-logos/story-films.png"
+    },
+    {
+      "image": "/assets/production-logos/studio-lambert.png"
+    },
+    {
+      "image": "/assets/production-logos/true-north.png"
+    },
+    {
+      "image": "/assets/production-logos/Truevision.png"
+    },
+    {
+      "image": "/assets/production-logos/twenty-twenty.png"
+    },
+    {
+      "image": "/assets/production-logos/two-four.jpg"
+    },
+    {
+      "image": "/assets/production-logos/Wag.png"
+    },
+    {
+      "image": "/assets/production-logos/wall-to-wall.png"
+    },
+    {
+      "image": "/assets/production-logos/Workerbee.png"
     }
+
   ]
 }
