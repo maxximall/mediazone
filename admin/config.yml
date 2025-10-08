@@ -37,9 +37,11 @@ collections:
                 widget: "select"
                 options:
                   - { label: "Documentary", value: "documentary" }
-                  - { label: "Reality", value: "reality" }
-                  - { label: "Science", value: "science" }
                   - { label: "True crime", value: "true-crime" }
+                  - { label: "Game shows", value: "game-shows" }
+                  - { label: "Dating", value: "dating" }
+                  - { label: "Drama", value: "drama" }
+                  - { label: "Film", value: "film" }
               - { label: "Image", name: "image", widget: "image", allow_multiple: false }
 
   - name: "team-members"

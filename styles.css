@@ -20,8 +20,8 @@ header a.active{
     width: fit-content;
 }
 .logo{
-    width: 115px;
-    height: 88px;
+    width: 140px;
+    height: 107px;
 }
 section{
     padding: 80px 124px;
@@ -358,6 +358,32 @@ section{
     font-weight: bold;
 }
 
+/* Modal actions */
+.modal-actions {
+    margin-top: 24px;
+    text-align: center;
+    display: flex !important;
+    justify-content: flex-start;
+}
+
+.enquire-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--primary);
+    padding: 12px 24px;
+    border: 1px solid var(--primary);
+    border-radius: 0px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.enquire-btn:hover {
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+}
+
 /* Card hover effect */
 .card {
     cursor: pointer;
@@ -449,12 +475,12 @@ footer .logo{
     align-items: center;
     justify-content: center;
     z-index: 2000;
-    opacity: 1;
-    transition: opacity 400ms ease;
+    transform: translateY(0);
+    transition: transform 500ms ease-in-out;
 }
 
 #splash.is-hidden{
-    opacity: 0;
+    transform: translateY(-100%);
     pointer-events: none;
 }
 
@@ -470,7 +496,7 @@ footer .logo{
 }
 .testimonials{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
 .testimonial{
@@ -579,6 +605,9 @@ footer .logo{
     }
     #mindzone-infographic{
         width: 100%;
+    }
+    .testimonials{
+        grid-template-columns: 1fr;
     }
 }
 

@@ -127,13 +127,13 @@
     });
 })();
 
-// Splash screen fade-out
+// Splash screen slide-down
 (function(){
     const splash = document.getElementById('splash');
     if(!splash) return;
     function hideSplash(){
         splash.classList.add('is-hidden');
-        setTimeout(()=>{ if(splash && splash.parentNode){ splash.parentNode.removeChild(splash); } }, 450);
+        setTimeout(()=>{ if(splash && splash.parentNode){ splash.parentNode.removeChild(splash); } }, 550);
     }
     if(document.readyState === 'complete'){
         setTimeout(hideSplash, 1000);
@@ -271,6 +271,7 @@
     const modalText = modal.querySelector('.modal-text');
     const modalImage = modal.querySelector('.modal-image');
     const modalFeatures = modal.querySelector('.modal-features');
+    const modalActions = modal.querySelector('.modal-actions');
     const closeBtn = modal.querySelector('.modal-close');
     const overlay = modal.querySelector('.modal-overlay');
     const cards = document.querySelectorAll('.card[data-modal]');
@@ -316,6 +317,10 @@
         modalTitle.textContent = data.title;
         modalText.textContent = data.text;
         
+        // Show enquire button for services modals
+        if (modalActions) {
+            modalActions.style.display = 'block';
+        }
         
         modal.classList.add('is-active');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
