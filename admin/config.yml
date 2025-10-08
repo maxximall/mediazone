@@ -64,3 +64,23 @@ collections:
               - { label: "Title/Position", name: "title", widget: "string", required: true }
               - { label: "Profile Image", name: "image", widget: "image", allow_multiple: false, required: true }
 
+  - name: "production-partners"
+    label: "Production Partners"
+    label_singular: "Production Partner"
+    description: "Production partner logos shown on the Clients page"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - name: "production-partners-list"
+        label: "All Production Partners"
+        file: "content/production-partners.json"
+        fields:
+          - label: "Production Partners"
+            name: "productionPartners"
+            widget: list
+            summary: "Partner Logo"
+            fields:
+              - { label: "Partner Logo", name: "image", widget: "image", allow_multiple: false, required: true }
+
