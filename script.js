@@ -175,6 +175,31 @@
         });
 })();
 
+// Load and render production partners from CMS JSON
+(function(){
+    const grid = document.getElementById('production-partners-grid');
+    if(!grid) return;
+
+    function createProductionPartnerCard(partner){
+        const img = document.createElement('img');
+        img.className = 'production-partner-img fill';
+        img.src = partner.image;
+        img.alt = 'Production partner logo';
+        return img;
+    }
+
+    fetch('content/production-partners.json', { cache: 'no-cache' })
+        .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load production-partners.json')))
+        .then(data => {
+            const partners = (data && Array.isArray(data.productionPartners)) ? data.productionPartners : [];
+            grid.innerHTML = '';
+            partners.forEach(partner => grid.appendChild(createProductionPartnerCard(partner)));
+        })
+        .catch(()=>{
+            // If fetch fails, leave whatever is in the HTML or keep empty silently
+        });
+})();
+
 // Modal functionality
 (function(){
     const modal = document.getElementById('modal');
