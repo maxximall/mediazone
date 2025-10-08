@@ -136,6 +136,45 @@
         });
 })();
 
+// Load and render team members from CMS JSON
+(function(){
+    const grid = document.getElementById('team-members-grid');
+    if(!grid) return;
+
+    function createTeamMemberCard(member){
+        const card = document.createElement('div');
+        card.className = 'team-member vertical v-8';
+
+        const img = document.createElement('img');
+        img.src = member.image;
+        img.alt = member.name || 'Team member photo';
+        card.appendChild(img);
+
+        const nameEl = document.createElement('h3');
+        nameEl.className = 'primary-text';
+        nameEl.textContent = member.name || '';
+        card.appendChild(nameEl);
+
+        const titleEl = document.createElement('p');
+        titleEl.className = 'secondary-text';
+        titleEl.textContent = member.title || '';
+        card.appendChild(titleEl);
+
+        return card;
+    }
+
+    fetch('content/team-members.json', { cache: 'no-cache' })
+        .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load team-members.json')))
+        .then(data => {
+            const teamMembers = (data && Array.isArray(data.teamMembers)) ? data.teamMembers : [];
+            grid.innerHTML = '';
+            teamMembers.forEach(member => grid.appendChild(createTeamMemberCard(member)));
+        })
+        .catch(()=>{
+            // If fetch fails, leave whatever is in the HTML or keep empty silently
+        });
+})();
+
 // Modal functionality
 (function(){
     const modal = document.getElementById('modal');

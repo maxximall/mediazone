@@ -1,0 +1,44 @@
+{
+  "teamMembers": [
+    {
+      "name": "Dr Howard Fine",
+      "title": "Clinical Psychologist",
+      "image": "/assets/howard-fine.png"
+    },
+    {
+      "name": "Dr Robin Bennett",
+      "title": "Clinical Psychologist",
+      "image": "/assets/robbin-bennett.png"
+    },
+    {
+      "name": "Dr Anna Caffrey",
+      "title": "Clinical Psychologist",
+      "image": "/assets/anna-cafrey.png"
+    },
+    {
+      "name": "Dr Susanna Waern",
+      "title": "Clinical Psychologist",
+      "image": "/assets/sussana-waern.png"
+    },
+    {
+      "name": "Dr Sophie Gosling",
+      "title": "Clinical Psychologist",
+      "image": "/assets/sophie-gosling.png"
+    },
+    {
+      "name": "Mia Freedman",
+      "title": "Clinical Psychologist",
+      "image": "/assets/mia-freedman.png"
+    },
+    {
+      "name": "Dr Mekayla Zahra",
+      "title": "Clinical Psychologist",
+      "image": "/assets/mekayla-zahra.png"
+    },
+    {
+      "name": "Dr Megan Prowse",
+      "title": "Clinical Psychologist",
+      "image": "/assets/megan-prowse.png"
+    }
+  ]
+}

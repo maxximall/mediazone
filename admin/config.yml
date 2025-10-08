@@ -14,7 +14,7 @@ collections:
   - name: "shows"
     label: "Shows"
     label_singular: "Show"
-    description: "Cards shown under 'Shows we’ve recently worked on'"
+    description: "Cards shown under 'Shows we've recently worked on'"
     format: "json"
     extension: "json"
     editor:
@@ -41,4 +41,26 @@ collections:
                   - { label: "Science", value: "science" }
                   - { label: "True crime", value: "true-crime" }
               - { label: "Image", name: "image", widget: "image", allow_multiple: false }
+
+  - name: "team-members"
+    label: "Team Members"
+    label_singular: "Team Member"
+    description: "Team members shown on the About Us page"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - name: "team-members-list"
+        label: "All Team Members"
+        file: "content/team-members.json"
+        fields:
+          - label: "Team Members"
+            name: "teamMembers"
+            widget: list
+            summary: "{{fields.name}} — {{fields.title}}"
+            fields:
+              - { label: "Full Name", name: "name", widget: "string", required: true }
+              - { label: "Title/Position", name: "title", widget: "string", required: true }
+              - { label: "Profile Image", name: "image", widget: "image", allow_multiple: false, required: true }
 
