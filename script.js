@@ -1,15 +1,38 @@
+// Load carousel slides and initialize carousel functionality
 (function(){
-    const track = document.querySelector('.carousel-track');
-    if(!track) return;
-    const slides = Array.from(track.children);
-    const prevBtn = document.querySelector('.carousel-btn.prev');
-    const nextBtn = document.querySelector('.carousel-btn.next');
-    const dotsNav = document.querySelector('.carousel-dots');
-    const dots = Array.from(dotsNav.children);
+    const track = document.getElementById('carousel-track');
+    const dotsNav = document.getElementById('carousel-dots');
+    if(!track || !dotsNav) return;
+    
+    let slides = [];
+    let dots = [];
     let index = 0;
     let autoTimer;
+    let prevBtn, nextBtn, carousel;
+
+    function createSlide(slideData, slideIndex) {
+        const slide = document.createElement('div');
+        slide.className = slideIndex === 0 ? 'slide is-active' : 'slide';
+        
+        const img = document.createElement('img');
+        img.src = slideData.image;
+        img.alt = `Production still ${slideIndex + 1}`;
+        slide.appendChild(img);
+        
+        return slide;
+    }
+
+    function createDot(dotIndex) {
+        const dot = document.createElement('button');
+        dot.className = dotIndex === 0 ? 'dot is-active' : 'dot';
+        dot.setAttribute('role', 'tab');
+        dot.setAttribute('aria-label', `Go to slide ${dotIndex + 1}`);
+        dot.setAttribute('aria-selected', dotIndex === 0 ? 'true' : 'false');
+        return dot;
+    }
 
     function setSlide(newIndex){
+        if (slides.length === 0) return;
         index = (newIndex + slides.length) % slides.length;
         const offset = -index * 100;
         track.style.transform = 'translateX(' + offset + '%)';
@@ -23,18 +46,58 @@
     function next(){ setSlide(index+1); }
     function prev(){ setSlide(index-1); }
 
-    nextBtn.addEventListener('click', next);
-    prevBtn.addEventListener('click', prev);
-    dots.forEach((dot,i)=> dot.addEventListener('click', ()=> setSlide(i)));
-
     function start(){ autoTimer = setInterval(next, 5000); }
     function stop(){ clearInterval(autoTimer); }
-    const carousel = document.querySelector('.carousel');
-    carousel.addEventListener('mouseenter', stop);
-    carousel.addEventListener('mouseleave', start);
-    start();
-    window.addEventListener('visibilitychange', ()=> document.hidden ? stop() : start());
-    window.addEventListener('resize', ()=> setSlide(index));
+
+    function initializeCarousel() {
+        // Get carousel elements after slides are loaded
+        prevBtn = document.querySelector('.carousel-btn.prev');
+        nextBtn = document.querySelector('.carousel-btn.next');
+        carousel = document.querySelector('.carousel');
+        
+        if (!prevBtn || !nextBtn || !carousel) return;
+
+        // Add event listeners
+        nextBtn.addEventListener('click', next);
+        prevBtn.addEventListener('click', prev);
+        dots.forEach((dot,i)=> dot.addEventListener('click', ()=> setSlide(i)));
+        
+        carousel.addEventListener('mouseenter', stop);
+        carousel.addEventListener('mouseleave', start);
+        start();
+        window.addEventListener('visibilitychange', ()=> document.hidden ? stop() : start());
+        window.addEventListener('resize', ()=> setSlide(index));
+    }
+
+    // Load carousel slides from JSON
+    fetch('content/carousel-slides.json', { cache: 'no-cache' })
+        .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load carousel-slides.json')))
+        .then(data => {
+            const carouselSlides = (data && Array.isArray(data.carouselSlides)) ? data.carouselSlides : [];
+            
+            // Clear existing content
+            track.innerHTML = '';
+            dotsNav.innerHTML = '';
+            
+            // Create slides and dots
+            carouselSlides.forEach((slideData, slideIndex) => {
+                const slide = createSlide(slideData, slideIndex);
+                const dot = createDot(slideIndex);
+                
+                track.appendChild(slide);
+                dotsNav.appendChild(dot);
+            });
+            
+            // Update references
+            slides = Array.from(track.children);
+            dots = Array.from(dotsNav.children);
+            
+            // Initialize carousel functionality
+            initializeCarousel();
+        })
+        .catch(()=>{
+            // If fetch fails, leave whatever is in the HTML or keep empty silently
+        });
 })();
 
 // Header menu toggle (mobile)

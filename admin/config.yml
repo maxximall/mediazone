@@ -84,3 +84,23 @@ collections:
             fields:
               - { label: "Partner Logo", name: "image", widget: "image", allow_multiple: false, required: true }
 
+  - name: "carousel-slides"
+    label: "Carousel Slides"
+    label_singular: "Carousel Slide"
+    description: "Images for the homepage carousel slideshow"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - name: "carousel-slides-list"
+        label: "All Carousel Slides"
+        file: "content/carousel-slides.json"
+        fields:
+          - label: "Carousel Slides"
+            name: "carouselSlides"
+            widget: list
+            summary: "Carousel Slide Image"
+            fields:
+              - { label: "Slide Image", name: "image", widget: "image", allow_multiple: false, required: true }
+

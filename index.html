@@ -71,23 +71,13 @@
         <div class="carousel" aria-label="Showreel carousel">
             <button class="carousel-btn prev" aria-label="Previous slide"><img src="./assets/chevron-left.svg"></button>
             <div class="carousel-track-container">
-                <div class="carousel-track">
-                    <div class="slide is-active">
-                        <img src="./assets/brits-down-under-rdf-west-c4-jan-2024-jpg.webp" alt="Production still 1" />
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/around-the-world-in-80-weighs-mothership-c4-jan-2024-2_orig.jpg" alt="Production still 2" />
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/bad-surgeon-netflix-review.jpg" alt="Production still 3" />
-                    </div>
+                <div class="carousel-track" id="carousel-track">
+                    <!-- Carousel slides will be loaded dynamically from JSON -->
                 </div>
             </div>
             <button class="carousel-btn next" aria-label="Next slide"><img src="./assets/chevron-right.svg"></button>
-            <div class="carousel-dots" role="tablist" aria-label="Carousel Pagination">
-                <button class="dot is-active" role="tab" aria-selected="true" aria-label="Go to slide 1"></button>
-                <button class="dot" role="tab" aria-label="Go to slide 2"></button>
-                <button class="dot" role="tab" aria-label="Go to slide 3"></button>
+            <div class="carousel-dots" id="carousel-dots" role="tablist" aria-label="Carousel Pagination">
+                <!-- Carousel dots will be loaded dynamically from JSON -->
             </div>
         </div>
     </section>
