@@ -113,15 +113,17 @@
                         <img src="./assets/arrow-right.svg" >
                     </div>
                 </div> <!-- card -->
-                <a href="./assets/mindzone-timeline.jpg">
-                    <div class="card vertical border" data-modal="lifeSpan">
-                        <div class="card-image" id="script"></div>
-                        <div class="card-info horizontal h-16">
-                            <h4 class="primary-text fill">Supporting the Life Span of a Production</h4>
-                            <img src="./assets/arrow-right.svg" >
-                        </div>
-                    </div> <!-- card -->
-                </a>
+
+
+                <div class="vertical border card" id="card-production-lifespan">
+                    <div class="card-image" id="production-lifespan"></div>
+                    <div class="card-info horizontal h-16">
+                        <h4 class="primary-text fill">Supporting the Life Span of a Production</h4>
+                        <img src="./assets/arrow-right.svg" >
+                    </div>
+                </div> <!-- card -->
+
+              
             </div> <!-- row -->
             
 
@@ -182,19 +184,26 @@
                 </div>
                 <div class="modal-body vertical v-24">
                     <p class="modal-text"></p>
-<<<<<<< HEAD
                     <div class="modal-actions vertical v-24">
                         <a href="mailto:Contact@mindzonemedia.com" class="secondary-button">Enquire Here</a>
-=======
-                    <div class="modal-action">
-                        <a href="mailto:Contact@mindzonemedia.com" class="secondary-button">Enquire here</a>
->>>>>>> 02eb65f (latest updates)
                     </div>
                 </div>
                 
             </div>
         </div>
+
+          <!-- Image Lightbox Modal -->
+    <div id="image-modal" class="modal" aria-hidden="true">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close image">&times;</button>
+            <div class="modal-body">
+                <img class="image-modal-img" src="" alt="Expanded image" />
+            </div>
+        </div>
+    </div>
     
     <script src="script.js"></script>
+ 
 </body>
 </html>

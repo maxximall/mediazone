@@ -1,6 +1,7 @@
 header{
     padding: 12px 80px;
     background-color: white;
+    border-bottom: 1px solid var(--outline);
 }
 header a{
     font-weight: 400;
@@ -389,12 +390,15 @@ section{
 }
 
 /* Card hover effect */
-.card {
+.card,
+.case-study-card
+ {
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
+.card:hover,
+.case-study-card:hover{
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
@@ -420,6 +424,9 @@ section{
 }
 #patience{
     background-image: url('./assets/Patience.jpeg');
+}
+#production-lifespan{
+    background-image: url('./assets/production-lifespan.png');
 }
 
 footer{
@@ -500,6 +507,7 @@ footer .logo{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 24px;
+    align-items: center;
 }
 .testimonials {
     display: grid;
@@ -618,6 +626,9 @@ footer .logo{
     }
     #mindzone-infographic{
         width: 100%;
+    }
+    .case-study-card-info{
+        height: auto;
     }
 }
 

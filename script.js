@@ -417,6 +417,14 @@
             open(e.target.src, e.target.alt || 'Mindzone Infographic');
         });
     }
+    const cardLifespan = document.getElementById('card-production-lifespan');
+    if (cardLifespan) {
+      cardLifespan.addEventListener('click', () => {
+        const imgSrc = './assets/mindzone-timeline.jpg' // ← specify your image path here
+        const imgAlt = 'Mindzone Timeline Image'; // ← optional alt text
+        open(imgSrc, imgAlt);
+      });
+    }
     
     closeBtn.addEventListener('click', close);
     overlay.addEventListener('click', close);
