@@ -48,6 +48,13 @@
       "production": "Amazon Origianl",
       "date": "2025-10-10",
       "category": "game-shows"
+    },
+    {
+      "name": "Traitors",
+      "production": "Studio Lambert",
+      "date": "1901-04-01",
+      "category": "documentary",
+      "image": "/assets/around-the-world-in-80-weighs-mothership-c4-jan-2024-2_orig.jpg"
     }
   ]
 }
