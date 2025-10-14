@@ -27,6 +27,34 @@
       "date": "2025-10-10",
       "category": "documentary",
       "image": "/assets/love-stalker-killer.avif"
+    },
+    {
+      "name": "The Traitors",
+      "image": "/assets/traitors.png",
+      "production": "Peacock",
+      "date": "2025-10-02",
+      "category": "documentary"
+    },
+    {
+      "name": "Dubai Hustle",
+      "image": "/assets/dubai-hustle.jpg",
+      "production": "Production",
+      "date": "2025-10-17",
+      "category": "game-shows"
+    },
+    {
+      "name": "Hot Mess Summer",
+      "image": "/assets/hot-mess-summer-naked-amazon-feb-2024_orig.jpg",
+      "production": "Amazon Origianl",
+      "date": "2025-10-10",
+      "category": "game-shows"
+    },
+    {
+      "name": "Traitors",
+      "production": "Studio Lambert",
+      "date": "1901-04-01",
+      "category": "documentary",
+      "image": "/assets/around-the-world-in-80-weighs-mothership-c4-jan-2024-2_orig.jpg"
     }
   ]
 }
