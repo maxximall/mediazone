@@ -15,10 +15,10 @@
       "date": "2025-01-01"
     },
     {
-      "name": "Can I tell you a secret?",
-      "production": "Netfilx",
-      "date": "2025-10-23",
-      "category": "documentary",
+      "name": "Can I tell You a Secret?",
+      "production": "Netfilx - Mindhouse",
+      "date": "2024-02-21",
+      "category": "true-crime",
       "image": "/assets/secret-show.avif"
     },
     {
@@ -29,24 +29,24 @@
       "image": "/assets/love-stalker-killer.avif"
     },
     {
-      "name": "The Traitors",
+      "name": "The Traitors USA",
       "image": "/assets/traitors.png",
-      "production": "Peacock",
-      "date": "2025-10-02",
+      "production": "Peacock - Studio Lambert",
+      "date": "2025-01-09",
       "category": "documentary"
     },
     {
       "name": "Dubai Hustle",
       "image": "/assets/dubai-hustle.jpg",
-      "production": "Production",
-      "date": "2025-10-17",
-      "category": "game-shows"
+      "production": "BBC3 - Multistory",
+      "date": "2024-01-02",
+      "category": "documentary"
     },
     {
       "name": "Hot Mess Summer",
       "image": "/assets/hot-mess-summer-naked-amazon-feb-2024_orig.jpg",
-      "production": "Amazon Origianl",
-      "date": "2025-10-10",
+      "production": "Amazon - Naked",
+      "date": "2024-02-07",
       "category": "game-shows"
     }
   ]
