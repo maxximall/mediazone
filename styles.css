@@ -149,6 +149,7 @@ section{
     padding: 16px;
     background-color: white;
     height: 200px;
+    overflow: hidden;
 }
 #traitors{
     background-image: url('./assets/traitors.png');
@@ -187,6 +188,66 @@ section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 40px; /* space between items */
+}
+
+/* Team Member Card */
+.team-member[role="button"] {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 8px;
+}
+
+.team-member[role="button"]:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-member[role="button"]:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.team-member[role="button"]:active {
+    transform: translateY(-2px);
+}
+
+.team-member img {
+    border-radius: 8px;
+    transition: opacity 0.2s ease;
+}
+
+.team-member[role="button"]:hover img {
+    opacity: 0.9;
+}
+
+/* Team Member Modal Specific Styles */
+#team-member-modal .modal-subtitle {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+#team-member-modal .modal-text {
+    line-height: 1.6;
+}
+
+#team-member-modal .modal-text p {
+    margin-bottom: 16px;
+}
+
+#team-member-modal .modal-text h1,
+#team-member-modal .modal-text h2,
+#team-member-modal .modal-text h3 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+#team-member-modal .modal-text a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+#team-member-modal .modal-text a:hover {
+    opacity: 0.8;
 }
 
 /* Carousel */

@@ -65,6 +65,7 @@ collections:
               - { label: "Full Name", name: "name", widget: "string", required: true }
               - { label: "Title/Position", name: "title", widget: "string", required: true }
               - { label: "Profile Image", name: "image", widget: "image", allow_multiple: false, required: true }
+              - { label: "Description/Bio", name: "description", widget: "markdown", required: false, hint: "Rich text biography shown in modal when team member is clicked" }
 
   - name: "production-partners"
     label: "Production Partners"

@@ -207,6 +207,14 @@
     function createTeamMemberCard(member){
         const card = document.createElement('div');
         card.className = 'team-member vertical v-8';
+        
+        // Make card clickable if description exists
+        if (member.description && member.description.trim()) {
+            card.style.cursor = 'pointer';
+            card.setAttribute('role', 'button');
+            card.setAttribute('tabindex', '0');
+            card.setAttribute('aria-label', `View ${member.name}'s profile`);
+        }
 
         const img = document.createElement('img');
         img.src = member.image;
@@ -223,6 +231,18 @@
         titleEl.textContent = member.title || '';
         card.appendChild(titleEl);
 
+        // Add click handler if description exists
+        if (member.description && member.description.trim()) {
+            const clickHandler = () => openTeamMemberModal(member);
+            card.addEventListener('click', clickHandler);
+            card.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    clickHandler();
+                }
+            });
+        }
+
         return card;
     }
 
@@ -236,6 +256,69 @@
         .catch(()=>{
             // If fetch fails, leave whatever is in the HTML or keep empty silently
         });
+})();
+
+// Team member modal functionality
+(function(){
+    const modal = document.getElementById('team-member-modal');
+    if(!modal) return;
+    
+    const modalTitle = modal.querySelector('.modal-title');
+    const modalSubtitle = modal.querySelector('.modal-subtitle');
+    const modalText = modal.querySelector('.modal-text');
+    const closeBtn = modal.querySelector('.modal-close');
+    const overlay = modal.querySelector('.modal-overlay');
+
+    // Simple markdown to HTML converter
+    function markdownToHtml(markdown) {
+        if (!markdown) return '';
+        
+        let html = markdown
+            // Headers
+            .replace(/^### (.*$)/gim, '<h3>$1</h3>')
+            .replace(/^## (.*$)/gim, '<h2>$1</h2>')
+            .replace(/^# (.*$)/gim, '<h1>$1</h1>')
+            // Bold
+            .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
+            .replace(/__(.*?)__/gim, '<strong>$1</strong>')
+            // Italic
+            .replace(/\*(.*?)\*/gim, '<em>$1</em>')
+            .replace(/_(.*?)_/gim, '<em>$1</em>')
+            // Links
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/gim, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+            // Line breaks
+            .replace(/\n\n/g, '</p><p>')
+            .replace(/\n/g, '<br>');
+        
+        return '<p>' + html + '</p>';
+    }
+
+    window.openTeamMemberModal = function(member) {
+        if (!member) return;
+        
+        modalTitle.textContent = member.name || '';
+        modalSubtitle.textContent = member.title || '';
+        modalText.innerHTML = markdownToHtml(member.description || '');
+        
+        modal.classList.add('is-active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    };
+
+    function closeModal() {
+        modal.classList.remove('is-active');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    if(closeBtn) closeBtn.addEventListener('click', closeModal);
+    if(overlay) overlay.addEventListener('click', closeModal);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('is-active')) {
+            closeModal();
+        }
+    });
 })();
 
 // Load and render production partners from CMS JSON
@@ -415,9 +498,15 @@
         const description = document.createElement('p');
         description.className = 'secondary-text';
         let descText = caseStudy.description || '';
-        // Truncate to 200 characters
+        // Truncate to 200 characters at word boundary
         if (descText.length > 200) {
-            descText = descText.substring(0, 200).trim() + '...';
+            descText = descText.substring(0, 200);
+            // Find the last space to avoid cutting words
+            const lastSpace = descText.lastIndexOf(' ');
+            if (lastSpace > 0) {
+                descText = descText.substring(0, lastSpace);
+            }
+            descText = descText.trim() + '...';
         }
         description.textContent = descText;
         info.appendChild(description);
