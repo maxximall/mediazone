@@ -140,9 +140,7 @@ section{
 #drugs-map{
     background-image: url('./assets/drug-map-of-britain.jpg');
 }
-#jury-murder{
-    background-image: url('./assets/the-jury-murder-trial.jpg');
-}
+/* Case study images are now loaded dynamically from CMS */
 
 /* Page Header */
 .page-header{
@@ -422,9 +420,7 @@ section{
 #on-call-support{
     background-image: url('./assets/on-call-support.avif');
 }
-#patience{
-    background-image: url('./assets/Patience.jpeg');
-}
+/* Case study images are now loaded dynamically from CMS */
 #production-lifespan{
     background-image: url('./assets/production-lifespan.png');
 }

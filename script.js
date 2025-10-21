@@ -378,6 +378,61 @@
     applyFilter('all');
 })();
 
+// Load and render case studies from CMS JSON
+(function(){
+    const grid = document.getElementById('case-studies-grid');
+    if(!grid) return;
+
+    function createCaseStudyCard(caseStudy){
+        const link = document.createElement('a');
+        link.className = 'fill';
+        link.href = caseStudy.type === 'internal' ? caseStudy.internalUrl : caseStudy.externalUrl;
+        if (caseStudy.type === 'external') {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        }
+
+        const card = document.createElement('div');
+        card.className = 'case-study-card vertical border fill';
+
+        const imageDiv = document.createElement('div');
+        imageDiv.className = 'case-study-card-image';
+        imageDiv.style.backgroundImage = `url(${caseStudy.image})`;
+        card.appendChild(imageDiv);
+
+        const info = document.createElement('div');
+        info.className = 'vertical v-8 case-study-card-info';
+
+        const title = document.createElement('h4');
+        title.className = 'primary-text';
+        title.textContent = caseStudy.title || '';
+        info.appendChild(title);
+
+        const description = document.createElement('p');
+        description.className = 'secondary-text';
+        description.textContent = caseStudy.description || '';
+        info.appendChild(description);
+
+        card.appendChild(info);
+        link.appendChild(card);
+
+        return link;
+    }
+
+    fetch('content/case-studies.json', { cache: 'no-cache' })
+        .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load case-studies.json')))
+        .then(data => {
+            const caseStudies = (data && Array.isArray(data.caseStudies)) ? data.caseStudies : [];
+            // Sort by order field
+            caseStudies.sort((a, b) => (a.order || 0) - (b.order || 0));
+            grid.innerHTML = '';
+            caseStudies.forEach(caseStudy => grid.appendChild(createCaseStudyCard(caseStudy)));
+        })
+        .catch(()=>{
+            // If fetch fails, leave whatever is in the HTML or keep empty silently
+        });
+})();
+
 // Image lightbox for shows grid and infographic
 (function(){
     const grid = document.querySelector('.shows-grid');

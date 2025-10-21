@@ -106,3 +106,35 @@ collections:
             fields:
               - { label: "Slide Image", name: "image", widget: "image", allow_multiple: false, required: true }
 
+  - name: "case-studies"
+    label: "Case Studies"
+    label_singular: "Case Study"
+    description: "Case studies shown on the homepage"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - name: "case-studies-list"
+        label: "All Case Studies"
+        file: "content/case-studies.json"
+        fields:
+          - label: "Case Studies"
+            name: "caseStudies"
+            widget: list
+            summary: "{{fields.title}} — {{fields.type}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: true }
+              - { label: "Description/Excerpt", name: "description", widget: "text", required: true }
+              - { label: "Cover Image", name: "image", widget: "image", allow_multiple: false, required: true }
+              - label: "Type"
+                name: "type"
+                widget: "select"
+                required: true
+                options:
+                  - { label: "Internal Page", value: "internal" }
+                  - { label: "External Link", value: "external" }
+              - { label: "Internal Page URL", name: "internalUrl", widget: "string", required: false, hint: "e.g. ./patience-case-study.html (only for internal pages)" }
+              - { label: "External URL", name: "externalUrl", widget: "string", required: false, hint: "Full URL starting with https:// (only for external links)" }
+              - { label: "Order", name: "order", widget: "number", default: 0, value_type: "int", hint: "Lower numbers appear first" }
+

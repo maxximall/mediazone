@@ -1,0 +1,21 @@
+{
+  "caseStudies": [
+    {
+      "title": "Unlocking Creativity and Supporting Neurodivergent Actors",
+      "description": "In the entertainment industry, where authenticity drives compelling narratives, supporting neurodivergent actors is vital for unlocking diverse creativity and representation.",
+      "image": "/assets/Patience.jpeg",
+      "type": "internal",
+      "internalUrl": "./patience-case-study.html",
+      "order": 1
+    },
+    {
+      "title": "The Jury: Murder Trial on Channel 4",
+      "description": "Dr Howard Fine on Channel 4's 'The Jury: Murder Trial', a programme he served as Consultant Clinical Psychologist on; plus a review from Dr Lee Curley.",
+      "image": "/assets/the-jury-murder-trial.jpg",
+      "type": "external",
+      "externalUrl": "https://www.bps.org.uk/psychologist/crucial-discourse-our-jury-system",
+      "order": 2
+    }
+  ]
+}
+

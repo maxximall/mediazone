@@ -17,13 +17,39 @@
 - Visit `/admin/` on your deployed site, e.g. `https://your-site.netlify.app/admin/`.
 - Log in via Netlify Identity.
 
-### 5) Manage Shows
+### 5) Manage Content
+
+#### Shows
 - Open collection "Shows" → "All Shows".
-- Add, edit, or delete entries; upload images to `assets/`.
+- Add, edit, or delete show entries with categories (Documentary, True Crime, Game Shows, Dating, Drama, Film).
 - Publishing will commit changes to `content/shows.json` on `main`.
+
+#### Team Members
+- Open collection "Team Members" → "All Team Members".
+- Add, edit, or delete team member profiles shown on the About Us page.
+- Publishing will commit changes to `content/team-members.json` on `main`.
+
+#### Production Partners
+- Open collection "Production Partners" → "All Production Partners".
+- Add or remove production partner logos shown on the Clients page.
+- Publishing will commit changes to `content/production-partners.json` on `main`.
+
+#### Carousel Slides
+- Open collection "Carousel Slides" → "All Carousel Slides".
+- Add or remove images for the homepage carousel slideshow.
+- Publishing will commit changes to `content/carousel-slides.json` on `main`.
+
+#### Case Studies
+- Open collection "Case Studies" → "All Case Studies".
+- Add, edit, or delete case studies shown on the homepage.
+- **Two types of case studies:**
+  - **Internal Page**: Links to a page on your website (e.g., `./patience-case-study.html`). Fill in the "Internal Page URL" field.
+  - **External Link**: Links to an external website (e.g., a blog article). Fill in the "External URL" field with the full URL starting with `https://`.
+- Use the "Order" field to control display order (lower numbers appear first).
+- Publishing will commit changes to `content/case-studies.json` on `main`.
 
 ### Notes
 - Backend is configured in `admin/config.yml` with `git-gateway`.
 - Media uploads are stored in `assets/` and referenced from JSON.
-- The frontend fetches `content/shows.json` at runtime and renders the grid.
+- The frontend fetches JSON files at runtime and renders content dynamically.
 
