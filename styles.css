@@ -191,33 +191,17 @@ section{
 }
 
 /* Team Member Card */
-.team-member[role="button"] {
+.team-member:hover {
+    cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    border-radius: 8px;
+}
+.team-member img{
+    width: 248px;
+    height:248px;
+    object-fit: cover;   /* fill box, cropping as needed */
+    object-position: center; /* always center the crop */
 }
 
-.team-member[role="button"]:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.team-member[role="button"]:focus {
-    outline: 2px solid var(--primary);
-    outline-offset: 2px;
-}
-
-.team-member[role="button"]:active {
-    transform: translateY(-2px);
-}
-
-.team-member img {
-    border-radius: 8px;
-    transition: opacity 0.2s ease;
-}
-
-.team-member[role="button"]:hover img {
-    opacity: 0.9;
-}
 
 /* Team Member Modal Specific Styles */
 #team-member-modal .modal-subtitle {
