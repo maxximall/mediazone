@@ -148,7 +148,7 @@ section{
 .case-study-card-info{
     padding: 16px;
     background-color: white;
-    height: 200px;
+    height: 240px;
     overflow: hidden;
 }
 #traitors{
@@ -762,5 +762,9 @@ footer .logo{
     .testimonials {
         grid-template-columns: repeat(1, 1fr);
       }
+    .team-member img{
+        width: 148px;
+        height: 148px;
+    }
 }
 
