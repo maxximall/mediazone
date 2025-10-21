@@ -43,10 +43,16 @@
 - Open collection "Case Studies" → "All Case Studies".
 - Add, edit, or delete case studies shown on the homepage.
 - **Two types of case studies:**
-  - **Internal Page**: Links to a page on your website (e.g., `./patience-case-study.html`). Fill in the "Internal Page URL" field.
+  - **Internal Page**: Content managed entirely through CMS. The full article (title, subtitle, body content) is stored in JSON and displayed on a dynamic page.
+    - **Slug**: URL-friendly identifier (e.g., `patience-neurodivergent-actors`). Must be unique.
+    - **Body Content**: Write the full article content. Supports basic markdown formatting:
+      - `**bold text**` for bold
+      - `*italic text*` for italic
+      - Separate paragraphs with double line breaks
   - **External Link**: Links to an external website (e.g., a blog article). Fill in the "External URL" field with the full URL starting with `https://`.
 - Use the "Order" field to control display order (lower numbers appear first).
 - Publishing will commit changes to `content/case-studies.json` on `main`.
+- Internal case studies are displayed at `case-study.html?slug=your-slug`.
 
 ### Notes
 - Backend is configured in `admin/config.yml` with `git-gateway`.

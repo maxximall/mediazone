@@ -386,8 +386,12 @@
     function createCaseStudyCard(caseStudy){
         const link = document.createElement('a');
         link.className = 'fill';
-        link.href = caseStudy.type === 'internal' ? caseStudy.internalUrl : caseStudy.externalUrl;
-        if (caseStudy.type === 'external') {
+        
+        // Set URL based on type
+        if (caseStudy.type === 'internal') {
+            link.href = `./case-study.html?slug=${caseStudy.slug}`;
+        } else {
+            link.href = caseStudy.externalUrl;
             link.setAttribute('target', '_blank');
             link.setAttribute('rel', 'noopener noreferrer');
         }

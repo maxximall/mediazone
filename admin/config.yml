@@ -125,7 +125,8 @@ collections:
             summary: "{{fields.title}} — {{fields.type}}"
             fields:
               - { label: "Title", name: "title", widget: "string", required: true }
-              - { label: "Description/Excerpt", name: "description", widget: "text", required: true }
+              - { label: "Slug", name: "slug", widget: "string", required: true, hint: "URL-friendly identifier (e.g., 'patience-neurodivergent-actors'). No spaces, use hyphens." }
+              - { label: "Description/Excerpt", name: "description", widget: "text", required: true, hint: "Short description shown on the homepage card" }
               - { label: "Cover Image", name: "image", widget: "image", allow_multiple: false, required: true }
               - label: "Type"
                 name: "type"
@@ -134,7 +135,8 @@ collections:
                 options:
                   - { label: "Internal Page", value: "internal" }
                   - { label: "External Link", value: "external" }
-              - { label: "Internal Page URL", name: "internalUrl", widget: "string", required: false, hint: "e.g. ./patience-case-study.html (only for internal pages)" }
+              - { label: "Subtitle", name: "subtitle", widget: "string", required: false, hint: "Subtitle shown below title (only for internal pages)" }
+              - { label: "Body Content", name: "body", widget: "markdown", required: false, hint: "Full article content in markdown format (only for internal pages)" }
               - { label: "External URL", name: "externalUrl", widget: "string", required: false, hint: "Full URL starting with https:// (only for external links)" }
               - { label: "Order", name: "order", widget: "number", default: 0, value_type: "int", hint: "Lower numbers appear first" }
 

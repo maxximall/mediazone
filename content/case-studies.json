@@ -2,14 +2,17 @@
   "caseStudies": [
     {
       "title": "Unlocking Creativity and Supporting Neurodivergent Actors",
+      "slug": "patience-neurodivergent-actors",
       "description": "In the entertainment industry, where authenticity drives compelling narratives, supporting neurodivergent actors is vital for unlocking diverse creativity and representation.",
       "image": "/assets/Patience.jpeg",
       "type": "internal",
-      "internalUrl": "./patience-case-study.html",
+      "subtitle": "Patience (Channel 4 / Eagle Eye Drama, January 2025)",
+      "body": "In the entertainment industry, where authenticity drives compelling narratives, supporting neurodivergent actors is vital for unlocking diverse creativity and representation. Our team of Clinical Psychologists are well versed in supporting actors with neurodivergence (including ADHD, Autism, Dyslexia, Dyspraxia, Dyscalculia and Tourette's), as well as reviewing scripts for accurate presentation and representation, and considering the individual needs of cast and crew.\n\nChannel 4's 2025 crime drama Patience, serves as a great case example, starring autistic and ADHD actor Ella Maisy Purvis as the neurodivergent archivist Patience Evans, who aids detectives in solving cases with her unique pattern-spotting skills. Purvis's authentic portrayal, informed by her own experiences, delivers nuanced performances that challenge stereotypes and foster empathy, much like how Robin Williams channelled his ADHD into iconic roles or Bella Ramsey infused vulnerability into The Last of Us.\n\nBy casting neurodivergent talent in these roles, productions such as Patience not only enrich storytelling but also demonstrate how hyperfocus and empathy, often traits of neurodiversity, elevate improvisation and emotional depth, proving that diverse minds are essential for innovative, relatable content. Neurodiversity isn't a deficit; it's a difference in how brains process the world, encompassing ADHD, autism, dyslexia, OCD, dyspraxia, and Tourette's. For actors, this can mean hyperfocus on character details that others overlook or an innate empathy that makes emotional scenes profoundly real. As voiceover director Marnie Demchick notes, \"Neurodivergent performers bring really nuanced performances, and often bring something to a role that other people don't\".\n\nThe entertainment industry mirrors society: diverse, messy, and full of potential. By supporting neurodivergent actors, we unlock creativity that benefits everyone, from more empathetic stories to a workforce that's truly representative. Despite breakthroughs like Patience, neurodivergent actors face significant barriers, including sensory sensitivities during auditions, last-minute script changes risking burnout, and the exhaustion of social masking to appear \"neurotypical\". To build on successes like Patience, which benefited from collaborative writing with Purvis to ensure fidelity, the industry should consider practical supports, such as risk reviewing a script, identifying strengths and potential challenging traits that may require additional support, time to allow for processing and integration, sensory breaks, clear communication, advocates for neurodiversity, and flexible schedules. As advocates and allies, we can amplify these voices through inclusive casting and resources like Equity's autistic artist networks, and creating inclusive scripts to attract neurodivergent talent, and where neurodivergence can thrive.",
       "order": 1
     },
     {
       "title": "The Jury: Murder Trial on Channel 4",
+      "slug": "jury-murder-trial",
       "description": "Dr Howard Fine on Channel 4's 'The Jury: Murder Trial', a programme he served as Consultant Clinical Psychologist on; plus a review from Dr Lee Curley.",
       "image": "/assets/the-jury-murder-trial.jpg",
       "type": "external",
@@ -18,4 +21,3 @@
     }
   ]
 }
-

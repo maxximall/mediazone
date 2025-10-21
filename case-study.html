@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Case Study - Mindzone Media</title>
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap">
+</head>
+<body>
+    <header class="horizontal space-between center-cross-axis">
+        <a href="./index.html">
+            <img class="logo" src="./assets/logo.png" />
+        </a>
+        
+        <nav id="primary-nav" class="vertical v-40" aria-label="Primary">
+            <div class="horizontal h-24 mobile-vertical v-24">
+                <a href="./productions.html">Productions</a>
+                <a href="about-us.html" class="active">About</a>
+                <a href="./services.html">Services</a>
+                <a href="./clients.html">Clients</a>
+            </div>
+            
+            <div class="horizontal h-8 desktop-hide">
+                <a href="https://x.com/Mindzonemedia">
+                    <img class="icon-24" src="./assets/twitter.svg" />
+                </a>
+                <a href="https://www.linkedin.com/company/mindzone-media/?viewAsMember=true">
+                    <img class="icon-24" src="./assets/linkedin.svg" />
+                </a>
+                <a href="https://www.instagram.com/mindzonemedia">
+                    <img class="icon-24" src="./assets/instagram.svg" />
+                </a>
+                <a href="https://www.facebook.com/mindzone.media">
+                    <img class="icon-24" src="./assets/facebook.svg" />
+                </a>
+               
+            </div>
+        </nav>
+         
+        <div class="horizontal h-8 m-hide">
+            <a href="https://x.com/Mindzonemedia">
+                <img class="icon-24" src="./assets/twitter.svg" />
+            </a>
+            <a href="https://www.linkedin.com/company/mindzone-media/?viewAsMember=true">
+                <img class="icon-24" src="./assets/linkedin.svg" />
+            </a>
+            <a href="https://www.instagram.com/mindzonemedia">
+                <img class="icon-24" src="./assets/instagram.svg" />
+            </a>
+            <a href="https://www.facebook.com/mindzone.media">
+                <img class="icon-24" src="./assets/facebook.svg" />
+            </a>
+           
+        </div>
+        <button class="menu-toggle" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">
+            <img class="icon-24" src="./assets/lucide_menu.svg" alt="Menu" />
+        </button>
+       
+    </header>
+
+    <section>
+        <div id="case-study-content" class="article-content vertical v-24">
+            <!-- Content will be loaded dynamically -->
+            <div style="text-align: center; padding: 60px 0;">
+                <p>Loading case study...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img class="logo" src="./assets/logo-on-brand.png" />
+        <div class="vertical v-16">
+            <h3 class="white-primary-text">Get in Touch</h3>
+            <div class="vertical v-16">
+                <p class="white-secondary-text">+44 208 123 6369</p>
+                <p class="white-secondary-text">+44 739 689 6230</p>
+                <p class="white-secondary-text">Contact@mindzonemedia.com</p>
+            </div>
+            <p class="white-secondary-text">London | Manchester | Brighton | Bath</p>
+        </div>
+        <div class="vertical v-24">
+            <a href="./productions.html" class="white-secondary-text">Productions</a>
+            <a href="./about-us.html" class="white-secondary-text">About</a>
+            <a href="./services.html" class="white-secondary-text">Services</a>
+            <a href="./clients.html" class="white-secondary-text">Clients</a>
+        </div>
+        
+        <div class="vertical v-24">
+            <div class="horizontal h-8">
+                <a href="https://x.com/Mindzonemedia">
+                    <img class="icon-24" src="./assets/white-twitter.svg" />
+                </a>
+                <a href="https://www.linkedin.com/company/mindzone-media/?viewAsMember=true">
+                    <img class="icon-24" src="./assets/white-linkedin.svg" />
+                </a>
+                <a href="https://www.instagram.com/mindzonemedia">
+                    <img class="icon-24" src="./assets/white-instagram.svg" />
+                </a>
+                <a href="https://www.facebook.com/mindzone.media">
+                    <img class="icon-24" src="./assets/white-fb.svg" />
+                </a>
+            </div>
+            <div class="horizontal h-8">
+                <img id="bps" src="./assets/bps.png" />
+                <img id="hcpc" src="./assets/hcpc.png" />
+            </div>
+        </div>
+       
+        
+
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Load case study content based on URL parameter
+        (function(){
+            const contentContainer = document.getElementById('case-study-content');
+            const pageTitle = document.getElementById('page-title');
+            if(!contentContainer) return;
+
+            // Get slug from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const slug = urlParams.get('slug');
+
+            if(!slug) {
+                contentContainer.innerHTML = '<div style="text-align: center; padding: 60px 0;"><p>Case study not found. Please return to the <a href="./index.html">homepage</a>.</p></div>';
+                return;
+            }
+
+            // Fetch case studies and find the matching one
+            fetch('content/case-studies.json', { cache: 'no-cache' })
+                .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load case-studies.json')))
+                .then(data => {
+                    const caseStudies = (data && Array.isArray(data.caseStudies)) ? data.caseStudies : [];
+                    const caseStudy = caseStudies.find(cs => cs.slug === slug && cs.type === 'internal');
+
+                    if(!caseStudy) {
+                        contentContainer.innerHTML = '<div style="text-align: center; padding: 60px 0;"><p>Case study not found. Please return to the <a href="./index.html">homepage</a>.</p></div>';
+                        return;
+                    }
+
+                    // Update page title
+                    pageTitle.textContent = caseStudy.title + ' - Mindzone Media';
+
+                    // Build the content
+                    const header = document.createElement('div');
+                    header.className = 'vertical v-16';
+
+                    const coverImg = document.createElement('img');
+                    coverImg.className = 'article-cover';
+                    coverImg.src = caseStudy.image;
+                    coverImg.alt = caseStudy.title;
+                    header.appendChild(coverImg);
+
+                    const title = document.createElement('h2');
+                    title.textContent = caseStudy.title;
+                    header.appendChild(title);
+
+                    if(caseStudy.subtitle) {
+                        const subtitle = document.createElement('p');
+                        subtitle.className = 'secondary-text bold';
+                        subtitle.textContent = caseStudy.subtitle;
+                        header.appendChild(subtitle);
+                    }
+
+                    contentContainer.innerHTML = '';
+                    contentContainer.appendChild(header);
+
+                    // Process body content - split by newlines and create paragraphs
+                    if(caseStudy.body) {
+                        const paragraphs = caseStudy.body.split('\n\n');
+                        paragraphs.forEach(text => {
+                            if(text.trim()) {
+                                const p = document.createElement('p');
+                                // Simple markdown-style bold conversion (**text** -> <strong>text</strong>)
+                                p.innerHTML = text.trim()
+                                    .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+                                    .replace(/\*(.+?)\*/g, '<em>$1</em>');
+                                contentContainer.appendChild(p);
+                            }
+                        });
+                    }
+                })
+                .catch(() => {
+                    contentContainer.innerHTML = '<div style="text-align: center; padding: 60px 0;"><p>Error loading case study. Please return to the <a href="./index.html">homepage</a>.</p></div>';
+                });
+        })();
+    </script>
+</body>
+</html>
+
