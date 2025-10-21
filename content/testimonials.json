@@ -1,0 +1,23 @@
+{
+  "testimonials": [
+    {
+      "quote": "Mindzone is at the top of its game. I've worked with Howie for over a decade, and he's my number one choice for psychological support on a show.Aside from being incredibly knowledgeable, he's also a joy to have on location. When he's not physically with the crew, it's reassuring to know he's only ever a phone call away. The man never sleeps! The world is a better place with people like Howie in it.",
+      "authorName": "Siobhan Panayiotou",
+      "authorTitle": "Senior Production Manager | Potato - ITV Studios",
+      "order": 1
+    },
+    {
+      "quote": "We have been working with Mindzone Media for the last 10+ years and personally I've been working with Howie for over two decades! The level of care, attention to detail and understanding of the industry makes them our first choice across many of our productions. The wider team means that you have plenty of options for availability and choice of matching your contributor to the psychologist you feel is most suited. Reports come back quickly, invoicing is efficient, and the trust and support offered is second to none",
+      "authorName": "Victoria Howarth",
+      "authorTitle": "Welfare Executive, Shine TV",
+      "order": 2
+    },
+    {
+      "quote": "Mindzone are a lifeline for our productions with sensitive subject matters and contributors. Whether it's training or psychological support, we trust that the welfare of our contributors and production team is in good hands.",
+      "authorName": "Darapon Vongsa-Nga",
+      "authorTitle": "Production Executive | CURIOUS FILMS",
+      "order": 3
+    }
+  ]
+}
+

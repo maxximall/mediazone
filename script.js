@@ -346,6 +346,57 @@
         });
 })();
 
+// Load and render testimonials from CMS JSON
+(function(){
+    const container = document.getElementById('testimonials-container');
+    if(!container) return;
+
+    function createTestimonialCard(testimonial){
+        const card = document.createElement('div');
+        card.className = 'testimonial vertical v-24';
+
+        const quoteImg = document.createElement('img');
+        quoteImg.src = './assets/quote-sign.svg';
+        quoteImg.className = 'quote-img';
+        card.appendChild(quoteImg);
+
+        const quote = document.createElement('p');
+        quote.className = 'primary-text';
+        quote.textContent = testimonial.quote || '';
+        card.appendChild(quote);
+
+        const authorInfo = document.createElement('div');
+        authorInfo.className = 'vertical';
+
+        const authorName = document.createElement('p');
+        authorName.className = 'secondary-text';
+        authorName.textContent = testimonial.authorName || '';
+        authorInfo.appendChild(authorName);
+
+        const authorTitle = document.createElement('p');
+        authorTitle.className = 'secondary-text bold';
+        authorTitle.textContent = testimonial.authorTitle || '';
+        authorInfo.appendChild(authorTitle);
+
+        card.appendChild(authorInfo);
+
+        return card;
+    }
+
+    fetch('content/testimonials.json', { cache: 'no-cache' })
+        .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load testimonials.json')))
+        .then(data => {
+            const testimonials = (data && Array.isArray(data.testimonials)) ? data.testimonials : [];
+            // Sort by order field
+            testimonials.sort((a, b) => (a.order || 0) - (b.order || 0));
+            container.innerHTML = '';
+            testimonials.forEach(testimonial => container.appendChild(createTestimonialCard(testimonial)));
+        })
+        .catch(()=>{
+            // If fetch fails, leave whatever is in the HTML or keep empty silently
+        });
+})();
+
 // Modal functionality
 (function(){
     const modal = document.getElementById('modal');

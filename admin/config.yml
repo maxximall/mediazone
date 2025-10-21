@@ -141,3 +141,26 @@ collections:
               - { label: "External URL", name: "externalUrl", widget: "string", required: false, hint: "Full URL starting with https:// (only for external links)" }
               - { label: "Order", name: "order", widget: "number", default: 0, value_type: "int", hint: "Lower numbers appear first" }
 
+  - name: "testimonials"
+    label: "Testimonials"
+    label_singular: "Testimonial"
+    description: "Client testimonials shown on the Clients page"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - name: "testimonials-list"
+        label: "All Testimonials"
+        file: "content/testimonials.json"
+        fields:
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: list
+            summary: "{{fields.authorName}} — {{fields.authorTitle}}"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text", required: true, hint: "The testimonial text" }
+              - { label: "Author Name", name: "authorName", widget: "string", required: true }
+              - { label: "Author Title", name: "authorTitle", widget: "string", required: true, hint: "Job title and company" }
+              - { label: "Order", name: "order", widget: "number", default: 0, value_type: "int", hint: "Lower numbers appear first" }
+
