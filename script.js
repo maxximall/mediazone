@@ -549,9 +549,9 @@
         const description = document.createElement('p');
         description.className = 'secondary-text';
         let descText = caseStudy.description || '';
-        // Truncate to 200 characters at word boundary
-        if (descText.length > 200) {
-            descText = descText.substring(0, 200);
+        // Truncate to 150 characters at word boundary
+        if (descText.length > 150) {
+            descText = descText.substring(0, 150);
             // Find the last space to avoid cutting words
             const lastSpace = descText.lastIndexOf(' ');
             if (lastSpace > 0) {

@@ -239,6 +239,8 @@ section{
 .carousel{
     position: relative;
     overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
 }
 .carousel-track-container{ overflow: hidden; }
 .carousel-track{
@@ -249,7 +251,7 @@ section{
 .carousel .slide{
     min-width: 100%;
     max-width: 100%;
-    height: 700px;
+    height: 500px;
 }
 .carousel .slide img{
     width: 100%;
@@ -590,7 +592,7 @@ footer .logo{
 }
 
 .broadcasters-track img {
-    height: 60px;
+    height: 120px;
     width: auto;
     object-fit: contain;
     flex-shrink: 0;
@@ -651,6 +653,9 @@ footer .logo{
     }
     #hero-bg{
         height: 500px;
+    }
+    .carousel{
+        width: 100%;
     }
     .carousel .slide{ height: 280px; }
     .responsive-video{ width: 100%; }
