@@ -48,6 +48,13 @@
       "production": "Amazon - Naked",
       "date": "2024-02-07",
       "category": "game-shows"
+    },
+    {
+      "name": "Wonka: The Scandal That Rocked Britain",
+      "production": "Channel 5 - Mentorn",
+      "date": "2024-03-16",
+      "category": "documentary",
+      "image": "/assets/wonka-the-scandal-that-rocked-britain-c5-march-2024_orig.jpeg"
     }
   ]
 }
