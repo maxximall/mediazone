@@ -1,15 +1,6 @@
 {
   "caseStudies": [
     {
-      "order": 0,
-      "title": "Test 2 ",
-      "slug": "test-2",
-      "description": "This is another case study",
-      "type": "external",
-      "externalUrl": "https://www.lipsum.com/",
-      "image": "/assets/brands-people-br2HgQuvq6I-unsplash.jpg"
-    },
-    {
       "title": "Unlocking Creativity and Supporting Neurodivergent Actors",
       "slug": "patience-neurodivergent-actors",
       "description": "In the entertainment industry, where authenticity drives compelling narratives, supporting neurodivergent actors is vital for unlocking diverse creativity and representation.",
