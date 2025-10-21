@@ -28,6 +28,16 @@
       "type": "internal",
       "subtitle": "Test subtitlel",
       "body": "dsdfdsf"
+    },
+    {
+      "order": 0,
+      "title": "Test 2 ",
+      "slug": "test-2",
+      "image": "/assets/Patience.jpeg",
+      "type": "internal",
+      "subtitle": "fdgdfg",
+      "body": "dfgdfgdfg",
+      "description": "sdfsdfdsf"
     }
   ]
 }
