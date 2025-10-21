@@ -385,7 +385,7 @@
 
     function createCaseStudyCard(caseStudy){
         const link = document.createElement('a');
-        link.className = 'fill';
+        link.className = 'case-study-card-link';
         
         // Set URL based on type
         if (caseStudy.type === 'internal') {
@@ -414,7 +414,12 @@
 
         const description = document.createElement('p');
         description.className = 'secondary-text';
-        description.textContent = caseStudy.description || '';
+        let descText = caseStudy.description || '';
+        // Truncate to 200 characters
+        if (descText.length > 200) {
+            descText = descText.substring(0, 200).trim() + '...';
+        }
+        description.textContent = descText;
         info.appendChild(description);
 
         card.appendChild(info);

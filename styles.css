@@ -112,8 +112,24 @@ section{
     .shows-grid{ grid-template-columns: repeat(2, 1fr); }
 }
 /* Card */
+.case-studies-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 100%;
+}
+
+.case-study-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
 .case-study-card{
-    height: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .card-image,
 .case-study-card-image{
@@ -526,6 +542,7 @@ footer .logo{
     margin: 0 auto;
 }
 
+
 @media (min-width: 900px){
     #our-services{ gap: 40px; }
 }
@@ -625,6 +642,10 @@ footer .logo{
     }
     .case-study-card-info{
         height: auto;
+    }
+    .case-studies-grid-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 }
 
