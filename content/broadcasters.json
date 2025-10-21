@@ -1,0 +1,11 @@
+{
+  "broadcasters": [
+    { "image": "./assets/bbc.png" },
+    { "image": "./assets/itv.png" },
+    { "image": "./assets/peacock.png" },
+    { "image": "./assets/five.png" },
+    { "image": "./assets/netflix.png" },
+    { "image": "./assets/four.png" }
+  ]
+}
+

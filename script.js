@@ -582,6 +582,41 @@
         });
 })();
 
+// Load and render broadcasters as infinite carousel
+(function(){
+    const track = document.getElementById('broadcasters-track');
+    if(!track) return;
+
+    function createBroadcasterLogo(broadcaster){
+        const img = document.createElement('img');
+        img.src = broadcaster.image;
+        img.alt = 'Broadcaster logo';
+        return img;
+    }
+
+    fetch('content/broadcasters.json', { cache: 'no-cache' })
+        .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load broadcasters.json')))
+        .then(data => {
+            const broadcasters = (data && Array.isArray(data.broadcasters)) ? data.broadcasters : [];
+            
+            // Clear existing content
+            track.innerHTML = '';
+            
+            // Create logos
+            broadcasters.forEach(broadcaster => {
+                track.appendChild(createBroadcasterLogo(broadcaster));
+            });
+            
+            // Duplicate the logos for seamless infinite scroll
+            broadcasters.forEach(broadcaster => {
+                track.appendChild(createBroadcasterLogo(broadcaster));
+            });
+        })
+        .catch(()=>{
+            // If fetch fails, keep empty silently
+        });
+})();
+
 // Image lightbox for shows grid and infographic
 (function(){
     const grid = document.querySelector('.shows-grid');
