@@ -97,6 +97,27 @@
       "date": "2025-08-03",
       "category": "challenge-shows",
       "image": "/assets/celebrity-sas-s7-minnow-films-channel-4-aug-2025_orig.jpg"
+    },
+    {
+      "name": "Fortune Hotel",
+      "production": "ITV - Tuesdays Child",
+      "date": "2025-08-06",
+      "category": "challenge-shows",
+      "image": "/assets/fortune-hotel-tuesdays-child-itv-may-2024-3_orig.jpeg"
+    },
+    {
+      "name": "Freddie Flintoff Field Of Dreams",
+      "production": "BBC - Southshore",
+      "date": "2024-08-08",
+      "category": "documentary",
+      "image": "/assets/freddie-flintoffs-field-of-dreams-on-tour-south-shore-bbc-1-aug-2024_orig.jpg"
+    },
+    {
+      "name": "Love Is Blind Sweden",
+      "production": "Netflix - Mastiff",
+      "date": "2025-03-06",
+      "category": "dating",
+      "image": "/assets/whatsapp-image-2024-03-06-at-14.44.35_2a42f715.jpg"
     }
   ]
 }
