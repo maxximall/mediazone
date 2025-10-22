@@ -76,6 +76,27 @@
       "date": "2023-12-07",
       "image": "/assets/bad-surgeon-netflix-review.jpg",
       "category": "true-crime"
+    },
+    {
+      "name": "Banged Up",
+      "production": "Channel 4 - Shine",
+      "date": "2023-10-11",
+      "category": "documentary",
+      "image": "/assets/banged-up-shine-channel-4-oct-2023.jpeg"
+    },
+    {
+      "name": "Buying London",
+      "production": "Netflix - Naked",
+      "date": "2024-05-22",
+      "category": "documentary",
+      "image": "/assets/p27314915-b-h10-aa_orig.jpg"
+    },
+    {
+      "name": "Celebrity SAS: Who Dares Wins",
+      "production": "Channel 4 - Minnow Films",
+      "date": "2025-08-03",
+      "category": "challenge-shows",
+      "image": "/assets/celebrity-sas-s7-minnow-films-channel-4-aug-2025_orig.jpg"
     }
   ]
 }
