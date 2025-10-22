@@ -118,6 +118,27 @@
       "date": "2025-03-06",
       "category": "dating",
       "image": "/assets/whatsapp-image-2024-03-06-at-14.44.35_2a42f715.jpg"
+    },
+    {
+      "name": "Popstar Academy - Katseye",
+      "production": "Netflix - HYBE",
+      "date": "2024-08-22",
+      "category": "documentary",
+      "image": "/assets/pop-star-academy-katseye-geffen-netflix-sept-2024-2_orig.jpg"
+    },
+    {
+      "name": "Secret Life Of 5 Year Olds",
+      "production": "Channel 4 / YouTube - DSP",
+      "date": "2024-07-22",
+      "category": "documentary",
+      "image": "/assets/secret-life-of-5-year-olds-dsp-channel-4-youtube-july-2024_orig.jpg"
+    },
+    {
+      "name": "Squid Game - The Challenge",
+      "production": "Netflix - Studio Lambert",
+      "date": "2023-11-22",
+      "category": "challenge-shows",
+      "image": "/assets/p25727671-b-h9-ab_orig.jpg"
     }
   ]
 }
