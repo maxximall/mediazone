@@ -139,6 +139,27 @@
       "date": "2023-11-22",
       "category": "challenge-shows",
       "image": "/assets/p25727671-b-h9-ab_orig.jpg"
+    },
+    {
+      "name": "The Jury Murder Trial",
+      "production": "Channel 4 - Screendog",
+      "date": "2025-08-07",
+      "category": "documentary",
+      "image": "/assets/the-jury-murder-trial-screen-dog-channel-4-feb-2024-jpg_orig.webp"
+    },
+    {
+      "name": "The Space Shuttle That Fell To Earth",
+      "production": "BBC - Mindhouse Productions",
+      "date": "2024-02-22",
+      "category": "documentary",
+      "image": "/assets/the-space-shuttle-that-fell-to-earth-mindhouse-bbc-cnn-feb-2024.jpeg"
+    },
+    {
+      "name": "Philip Schofield - Castaway",
+      "production": "Channel 5 - Burning Bright Productions",
+      "date": "2024-09-22",
+      "category": "documentary",
+      "image": "/assets/phillip-schofield-cast-away-burning-bright-c5-october-2024-2_orig.jpg"
     }
   ]
 }
