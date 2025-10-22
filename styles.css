@@ -36,7 +36,7 @@ section{
 }
 /* Hero */
 .hero{ 
-    padding: 0px 80px; 
+    padding: 0px 80px 160px 80px; 
 }
 #hero-bg{
     background-color: var(--primary);
@@ -50,6 +50,9 @@ section{
 .hero h1{
     padding: 80px 0;
     color: white;
+}
+.link{
+    text-decoration: underline;
 }
 
 /* Filters + Shows grid */
@@ -251,7 +254,7 @@ section{
 .carousel .slide{
     min-width: 100%;
     max-width: 100%;
-    height: 500px;
+    aspect-ratio: 100 / 60;
 }
 .carousel .slide img{
     width: 100%;
@@ -549,7 +552,7 @@ footer .logo{
     justify-content: center;
     z-index: 2000;
     transform: translateY(0);
-    transition: transform 500ms ease-in-out;
+    transition: transform 600ms ease-in-out;
 }
 
 #splash.is-hidden{
@@ -560,6 +563,18 @@ footer .logo{
 .splash-logo{
     width: 240px;
     height: 182px;
+    animation: splash-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes splash-pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
 }
 
 .production-partners{
@@ -587,7 +602,7 @@ footer .logo{
     display: flex;
     gap: 80px;
     align-items: center;
-    animation: scroll-infinite 30s linear infinite;
+    animation: scroll-infinite 45s linear infinite;
     will-change: transform;
 }
 
@@ -730,7 +745,7 @@ footer .logo{
     /* Broadcasters carousel mobile adjustments */
     .broadcasters-track {
         gap: 40px;
-        animation-duration: 20s;
+        animation-duration: 30s;
     }
     
     .broadcasters-track img {

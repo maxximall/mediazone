@@ -127,13 +127,13 @@
     });
 })();
 
-// Splash screen slide-down
+// Splash screen slide down
 (function(){
     const splash = document.getElementById('splash');
     if(!splash) return;
     function hideSplash(){
         splash.classList.add('is-hidden');
-        setTimeout(()=>{ if(splash && splash.parentNode){ splash.parentNode.removeChild(splash); } }, 550);
+        setTimeout(()=>{ if(splash && splash.parentNode){ splash.parentNode.removeChild(splash); } }, 650);
     }
     if(document.readyState === 'complete'){
         setTimeout(hideSplash, 1000);
