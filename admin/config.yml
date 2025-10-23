@@ -38,6 +38,7 @@ collections:
                 options:
                   - { label: "Documentary", value: "documentary" }
                   - { label: "True crime", value: "true-crime" }
+                  - { label: "Reality", value: "reality" }
                   - { label: "Game shows", value: "game-shows" }
                   - { label: "Dating", value: "dating" }
                   - { label: "Challenge Shows", value: "challenge-shows" }
