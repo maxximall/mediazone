@@ -167,6 +167,20 @@
       "date": "2024-10-29",
       "category": "challenge-shows",
       "image": "/assets/junior-task-master-avalon-c4-nov-2024_orig.jpg"
+    },
+    {
+      "name": "Hunted",
+      "production": "Channel 4 - Shine",
+      "date": "2025-10-12",
+      "category": "challenge-shows",
+      "image": "/assets/hunted-press-pack.jpg"
+    },
+    {
+      "name": "Gladiators",
+      "production": "BBC - Hungry Bear",
+      "date": "2025-01-23",
+      "category": "challenge-shows",
+      "image": "/assets/gladiators-hungry-bear-bbc-jan-2024-2-png_orig.jpeg"
     }
   ]
 }
