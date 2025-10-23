@@ -181,6 +181,34 @@
       "date": "2025-01-23",
       "category": "challenge-shows",
       "image": "/assets/gladiators-hungry-bear-bbc-jan-2024-2-png_orig.jpeg"
+    },
+    {
+      "name": "Around The World In 80 Weighs",
+      "production": "Channel 4 - Mothership",
+      "category": "reality",
+      "image": "/assets/around-the-world-in-80-weighs-mothership-c4-jan-2024-2_orig.jpg",
+      "date": "2024-01-23"
+    },
+    {
+      "name": "Brits Down Under",
+      "production": "Channel 4 - RDF West",
+      "date": "2024-01-23",
+      "category": "reality",
+      "image": "/assets/brits-down-under-rdf-west-c4-jan-2024-jpg.webp"
+    },
+    {
+      "name": "Drug Map of Britain",
+      "production": "BBC - BBC Studios",
+      "date": "2024-02-23",
+      "category": "documentary",
+      "image": "/assets/drugs-map-of-britain-bbc-studios-open-university-feb-2024_orig.jpg"
+    },
+    {
+      "name": "Into the Jungle with Ed Stafford",
+      "production": "Channel 4 - Twenty Twenty",
+      "date": "2024-01-23",
+      "category": "documentary",
+      "image": "/assets/into-the-jungle-with-ed-stafford-c4-twentytwenty-oct-2024_orig.jpg"
     }
   ]
 }
