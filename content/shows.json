@@ -10,7 +10,7 @@
     {
       "name": "Traitors",
       "production": "BBC - Studio Lambert",
-      "category": "true-crime",
+      "category": "game-shows",
       "image": "/assets/the-traitors-s2-studio-lambert-bbc-one-2024_orig.jpg",
       "date": "2025-01-01"
     },
@@ -33,21 +33,21 @@
       "image": "/assets/traitors.png",
       "production": "Peacock - Studio Lambert",
       "date": "2025-01-09",
-      "category": "documentary"
+      "category": "game-shows"
     },
     {
       "name": "Dubai Hustle",
       "image": "/assets/dubai-hustle.jpg",
       "production": "BBC3 - Multistory",
       "date": "2024-01-02",
-      "category": "documentary"
+      "category": "reality"
     },
     {
       "name": "Hot Mess Summer",
       "image": "/assets/hot-mess-summer-naked-amazon-feb-2024_orig.jpg",
       "production": "Amazon - Naked",
       "date": "2024-02-07",
-      "category": "game-shows"
+      "category": "reality"
     },
     {
       "name": "Wonka: The Scandal That Rocked Britain",
@@ -88,7 +88,7 @@
       "name": "Buying London",
       "production": "Netflix - Naked",
       "date": "2024-05-22",
-      "category": "documentary",
+      "category": "reality",
       "image": "/assets/p27314915-b-h10-aa_orig.jpg"
     },
     {
@@ -102,14 +102,14 @@
       "name": "Fortune Hotel",
       "production": "ITV - Tuesdays Child",
       "date": "2025-08-06",
-      "category": "challenge-shows",
+      "category": "game-shows",
       "image": "/assets/fortune-hotel-tuesdays-child-itv-may-2024-3_orig.jpeg"
     },
     {
       "name": "Freddie Flintoff Field Of Dreams",
       "production": "BBC - Southshore",
       "date": "2024-08-08",
-      "category": "documentary",
+      "category": "reality",
       "image": "/assets/freddie-flintoffs-field-of-dreams-on-tour-south-shore-bbc-1-aug-2024_orig.jpg"
     },
     {
@@ -130,7 +130,7 @@
       "name": "Secret Life Of 5 Year Olds",
       "production": "Channel 4 / YouTube - DSP",
       "date": "2024-07-22",
-      "category": "documentary",
+      "category": "reality",
       "image": "/assets/secret-life-of-5-year-olds-dsp-channel-4-youtube-july-2024_orig.jpg"
     },
     {
@@ -158,7 +158,7 @@
       "name": "Philip Schofield - Castaway",
       "production": "Channel 5 - Burning Bright Productions",
       "date": "2024-09-22",
-      "category": "documentary",
+      "category": "reality",
       "image": "/assets/phillip-schofield-cast-away-burning-bright-c5-october-2024-2_orig.jpg"
     },
     {
