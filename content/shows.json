@@ -113,13 +113,6 @@
       "image": "/assets/freddie-flintoffs-field-of-dreams-on-tour-south-shore-bbc-1-aug-2024_orig.jpg"
     },
     {
-      "name": "Love Is Blind Sweden",
-      "production": "Netflix - Mastiff",
-      "date": "2025-03-06",
-      "category": "dating",
-      "image": "/assets/whatsapp-image-2024-03-06-at-14.44.35_2a42f715.jpg"
-    },
-    {
       "name": "Popstar Academy - Katseye",
       "production": "Netflix - HYBE",
       "date": "2024-08-22",
@@ -181,6 +174,62 @@
       "date": "2025-01-23",
       "category": "challenge-shows",
       "image": "/assets/gladiators-hungry-bear-bbc-jan-2024-2-png_orig.jpeg"
+    },
+    {
+      "name": "Around The World In 80 Weighs",
+      "production": "Channel 4 - Mothership",
+      "category": "reality",
+      "image": "/assets/around-the-world-in-80-weighs-mothership-c4-jan-2024-2_orig.jpg",
+      "date": "2024-01-23"
+    },
+    {
+      "name": "Brits Down Under",
+      "production": "Channel 4 - RDF West",
+      "date": "2024-01-23",
+      "category": "reality",
+      "image": "/assets/brits-down-under-rdf-west-c4-jan-2024-jpg.webp"
+    },
+    {
+      "name": "Drug Map of Britain",
+      "production": "BBC - BBC Studios",
+      "date": "2024-02-23",
+      "category": "documentary",
+      "image": "/assets/drugs-map-of-britain-bbc-studios-open-university-feb-2024_orig.jpg"
+    },
+    {
+      "name": "Into the Jungle with Ed Stafford",
+      "production": "Channel 4 - Twenty Twenty",
+      "date": "2024-01-23",
+      "category": "documentary",
+      "image": "/assets/into-the-jungle-with-ed-stafford-c4-twentytwenty-oct-2024_orig.jpg"
+    },
+    {
+      "name": "Lockerbie",
+      "production": "Sky - Mindhouse Productions",
+      "date": "2023-12-23",
+      "category": "documentary",
+      "image": "/assets/mindhouse-sky-dec-2023-3.jpeg"
+    },
+    {
+      "name": "Love it or List it",
+      "production": "Channel 4 - Raise The Roof Productions",
+      "category": "reality",
+      "image": "/assets/love-it-or-list-it-raise-the-roof-productions-c4-dec-2023-2.jpg",
+      "date": "2025-04-02"
+    },
+    {
+      "name": "Made in Korea :K Pop Experience",
+      "production": "BBC - Moon and Back Media",
+      "date": "2024-01-23",
+      "category": "reality",
+      "image": "/assets/made-in-korea-the-k-pop-experience-moon-back-bbc-one-sept-2024_orig.jpg"
+    },
+    {
+      "name": "My Wife My Abuser",
+      "production": "Channel 5 - Atticus Films",
+      "date": "2024-03-24",
+      "category": "documentary",
+      "image": "/assets/my-wife-my-abuser-atticus-films-c5-march-2024-1_orig.jpg"
     }
   ]
 }
