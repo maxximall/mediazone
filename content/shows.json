@@ -1,13 +1,6 @@
 {
   "shows": [
     {
-      "name": "Dragons Den",
-      "production": "BBC - BBC Studios",
-      "date": "2025-01-09",
-      "category": "reality",
-      "image": "/assets/dd.jpg"
-    },
-    {
       "name": "Building The Band",
       "production": "Netflix - Remarkable",
       "date": "2025-07-24",
@@ -15,11 +8,25 @@
       "image": "/assets/building-the-band-061125-e1e0782eb63641a0880778a56a3721d9.webp"
     },
     {
+      "name": "Love it or List it",
+      "production": "Channel 4 - Raise The Roof Productions",
+      "category": "reality",
+      "image": "/assets/love-it-or-list-it-raise-the-roof-productions-c4-dec-2023-2.jpg",
+      "date": "2025-04-02"
+    },
+    {
       "name": "Love is Blind Sweden S2",
       "production": "Netflix - Mastiff",
       "date": "2025-03-13",
       "category": "dating",
       "image": "/assets/picture-1.jpg"
+    },
+    {
+      "name": "Dragons Den",
+      "production": "BBC - BBC Studios",
+      "date": "2025-01-09",
+      "category": "reality",
+      "image": "/assets/dd.jpg"
     },
     {
       "name": "American Nightmare",
@@ -230,13 +237,6 @@
       "date": "2023-12-23",
       "category": "documentary",
       "image": "/assets/mindhouse-sky-dec-2023-3.jpeg"
-    },
-    {
-      "name": "Love it or List it",
-      "production": "Channel 4 - Raise The Roof Productions",
-      "category": "reality",
-      "image": "/assets/love-it-or-list-it-raise-the-roof-productions-c4-dec-2023-2.jpg",
-      "date": "2025-04-02"
     },
     {
       "name": "Made in Korea :K Pop Experience",
