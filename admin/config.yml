@@ -43,6 +43,7 @@ collections:
                   - { label: "Dating", value: "dating" }
                   - { label: "Challenge Shows", value: "challenge-shows" }
                   - { label: "Scripted", value: "scripted" }
+                  - { label: "Podcasts", value: "podcasts" }
               - { label: "Image", name: "image", widget: "image", allow_multiple: false }
 
   - name: "team-members"

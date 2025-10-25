@@ -191,6 +191,14 @@
         .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load shows.json')))
         .then(data => {
             const shows = (data && Array.isArray(data.shows)) ? data.shows : [];
+            
+            // Sort shows by date (most recent first)
+            shows.sort((a, b) => {
+                const dateA = new Date(a.date || '1900-01-01');
+                const dateB = new Date(b.date || '1900-01-01');
+                return dateB - dateA; // Most recent first
+            });
+            
             grid.innerHTML = '';
             shows.forEach(show => grid.appendChild(createCard(show)));
         })
