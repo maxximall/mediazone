@@ -286,6 +286,20 @@
       "date": "2025-02-26",
       "category": "documentary",
       "image": "/assets/surgeons.jpg"
+    },
+    {
+      "name": "Inside S2",
+      "production": "Netflix - Cowshed",
+      "date": "2025-03-17",
+      "category": "reality",
+      "image": "/assets/inside.jpg"
+    },
+    {
+      "name": "Long Lost Family: Born Without A Trace",
+      "date": "2025-06-18",
+      "category": "documentary",
+      "image": "/assets/born.jpg",
+      "production": "ITV - Wall to Wall"
     }
   ]
 }
