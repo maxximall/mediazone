@@ -300,6 +300,20 @@
       "category": "documentary",
       "image": "/assets/born.jpg",
       "production": "ITV - Wall to Wall"
+    },
+    {
+      "name": "Masterchef",
+      "production": "BBC - Shine",
+      "date": "2025-08-06",
+      "category": "challenge-shows",
+      "image": "/assets/masterchef.jpg"
+    },
+    {
+      "name": "Our Dream Farm",
+      "production": "Channel 4 - Big Circus",
+      "date": "2025-03-15",
+      "category": "reality",
+      "image": "/assets/farm.jpg"
     }
   ]
 }
