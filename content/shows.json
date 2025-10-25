@@ -272,6 +272,13 @@
       "date": "2025-03-13",
       "category": "reality",
       "image": "/assets/picture-1.jpg"
+    },
+    {
+      "name": "Geordie Shore",
+      "production": "Paramount+ - Lime",
+      "date": "2025-01-07",
+      "category": "reality",
+      "image": "/assets/geordie.jpg"
     }
   ]
 }
