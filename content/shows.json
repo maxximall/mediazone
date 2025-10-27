@@ -314,6 +314,27 @@
       "date": "2025-03-15",
       "category": "reality",
       "image": "/assets/farm.jpg"
+    },
+    {
+      "name": "UK to US School Swap",
+      "production": "Channel 4 - Love Productions",
+      "date": "2025-03-27",
+      "category": "documentary",
+      "image": "/assets/school.jpg"
+    },
+    {
+      "name": "The Agency Unfiltered",
+      "production": "BBC - IWC",
+      "date": "2025-02-17",
+      "category": "reality",
+      "image": "/assets/agency.jpg"
+    },
+    {
+      "name": "The Only Way Is Essex",
+      "production": "ITV - Lime",
+      "date": "2025-02-23",
+      "category": "reality",
+      "image": "/assets/towie.jpg"
     }
   ]
 }
