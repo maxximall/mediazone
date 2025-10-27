@@ -356,6 +356,13 @@
       "date": "2025-04-30",
       "category": "true-crime",
       "image": "/assets/groomed.jpg"
+    },
+    {
+      "name": "Chess Masters",
+      "production": "BBC - Curve Media",
+      "date": "2025-03-10",
+      "category": "challenge-shows",
+      "image": "/assets/chess.png"
     }
   ]
 }
