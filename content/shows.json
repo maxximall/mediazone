@@ -335,6 +335,27 @@
       "date": "2025-02-23",
       "category": "reality",
       "image": "/assets/towie.jpg"
+    },
+    {
+      "name": "Patience",
+      "production": "Channel 4 - Eagle Eye Drama",
+      "date": "2025-01-08",
+      "category": "scripted",
+      "image": "/assets/Patience.jpeg"
+    },
+    {
+      "name": "The Challenge S40",
+      "production": "MTV - Bunim Murray",
+      "date": "2024-08-14",
+      "category": "challenge-shows",
+      "image": "/assets/challenge.jpg"
+    },
+    {
+      "name": "Groomed a National Scandal",
+      "production": "Channel 4 - Candour",
+      "date": "2025-04-30",
+      "category": "true-crime",
+      "image": "/assets/groomed.jpg"
     }
   ]
 }
