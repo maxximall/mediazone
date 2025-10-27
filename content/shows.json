@@ -356,6 +356,34 @@
       "date": "2025-04-30",
       "category": "true-crime",
       "image": "/assets/groomed.jpg"
+    },
+    {
+      "name": "Chess Masters",
+      "production": "BBC - Curve Media",
+      "date": "2025-03-10",
+      "category": "challenge-shows",
+      "image": "/assets/chess.png"
+    },
+    {
+      "name": "Cause of Death",
+      "production": "Channel 5 - Candour",
+      "date": "2025-05-25",
+      "category": "true-crime",
+      "image": "/assets/death.jpg"
+    },
+    {
+      "name": "Hunting The Predators",
+      "production": "Channel 5 - Crack it",
+      "date": "2025-02-26",
+      "category": "true-crime",
+      "image": "/assets/predators.png"
+    },
+    {
+      "name": "Every Woman",
+      "production": "MTV - Dare Pics",
+      "date": "2025-01-10",
+      "category": "documentary",
+      "image": "/assets/every-woman.jpg"
     }
   ]
 }
