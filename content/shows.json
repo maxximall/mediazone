@@ -384,6 +384,27 @@
       "date": "2025-01-10",
       "category": "documentary",
       "image": "/assets/every-woman.jpg"
+    },
+    {
+      "name": "Stacey Dooley Shoplifters ",
+      "production": "BBC - Little Dooley",
+      "date": "2025-03-13",
+      "category": "documentary",
+      "image": "/assets/dooley.jpg"
+    },
+    {
+      "name": "Untold - Diddy In Plain Sight",
+      "production": "Channel 4 - Lion TV",
+      "date": "2025-05-10",
+      "category": "documentary",
+      "image": "/assets/diddy.jpg"
+    },
+    {
+      "name": "Faking It",
+      "production": "Channel 5 - DSP",
+      "date": "2025-05-20",
+      "category": "reality",
+      "image": "/assets/faking.jpg"
     }
   ]
 }
