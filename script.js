@@ -147,6 +147,9 @@
     const grid = document.getElementById('shows-grid') || document.querySelector('.shows-grid');
     if(!grid) return;
 
+    // Check if we're on the index page
+    const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/');
+
     function createCard(show){
         const card = document.createElement('div');
         card.className = 'show-card';
@@ -187,6 +190,17 @@
         return card;
     }
 
+    function createSeeMoreButton() {
+        const button = document.createElement('a');
+        button.href = './productions.html';
+        button.className = 'secondary-button';
+        button.textContent = 'See more';
+        button.style.margin = '40px auto 0 auto';
+        button.style.display = 'block';
+        button.style.width = 'fit-content';
+        return button;
+    }
+
     fetch('content/shows.json', { cache: 'no-cache' })
         .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load shows.json')))
         .then(data => {
@@ -200,7 +214,19 @@
             });
             
             grid.innerHTML = '';
-            shows.forEach(show => grid.appendChild(createCard(show)));
+            
+            // On index page, limit to 30 shows and add "See more" button if needed
+            if (isIndexPage && shows.length > 30) {
+                const limitedShows = shows.slice(0, 30);
+                limitedShows.forEach(show => grid.appendChild(createCard(show)));
+                
+                // Add "See more" button after the grid
+                const seeMoreButton = createSeeMoreButton();
+                grid.parentNode.appendChild(seeMoreButton);
+            } else {
+                // On other pages or if 30 or fewer shows, show all
+                shows.forEach(show => grid.appendChild(createCard(show)));
+            }
         })
         .catch(()=>{
             // If fetch fails, leave whatever is in the HTML or keep empty silently
