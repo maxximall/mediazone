@@ -268,7 +268,7 @@
 
     function createTeamMemberCard(member){
         const card = document.createElement('div');
-        card.className = 'team-member vertical v-8';
+        card.className = 'team-member vertical v-4';
         
         // Make card clickable if description exists
         if (member.description && member.description.trim()) {
@@ -288,17 +288,17 @@
         nameEl.textContent = member.name || '';
         card.appendChild(nameEl);
 
-        const titleEl = document.createElement('p');
-        titleEl.className = 'secondary-text';
-        titleEl.textContent = member.title || '';
-        card.appendChild(titleEl);
-
         if (member.credentials && member.credentials.trim()) {
             const credentialsEl = document.createElement('p');
             credentialsEl.className = 'secondary-text';
             credentialsEl.textContent = member.credentials;
             card.appendChild(credentialsEl);
         }
+
+        const titleEl = document.createElement('p');
+        titleEl.className = 'secondary-text bold';
+        titleEl.textContent = member.title || '';
+        card.appendChild(titleEl);
 
         // Add click handler if description exists
         if (member.description && member.description.trim()) {
