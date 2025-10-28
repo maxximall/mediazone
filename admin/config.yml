@@ -66,6 +66,7 @@ collections:
             fields:
               - { label: "Full Name", name: "name", widget: "string", required: true }
               - { label: "Title/Position", name: "title", widget: "string", required: true }
+              - { label: "Credentials", name: "credentials", widget: "string", required: false, hint: "Professional credentials or qualifications" }
               - { label: "Profile Image", name: "image", widget: "image", allow_multiple: false, required: true }
               - { label: "Description/Bio", name: "description", widget: "markdown", required: false, hint: "Rich text biography shown in modal when team member is clicked" }
 

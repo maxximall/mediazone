@@ -283,7 +283,7 @@
         img.alt = member.name || 'Team member photo';
         card.appendChild(img);
 
-        const nameEl = document.createElement('h3');
+        const nameEl = document.createElement('h4');
         nameEl.className = 'primary-text';
         nameEl.textContent = member.name || '';
         card.appendChild(nameEl);
@@ -292,6 +292,13 @@
         titleEl.className = 'secondary-text';
         titleEl.textContent = member.title || '';
         card.appendChild(titleEl);
+
+        if (member.credentials && member.credentials.trim()) {
+            const credentialsEl = document.createElement('p');
+            credentialsEl.className = 'secondary-text';
+            credentialsEl.textContent = member.credentials;
+            card.appendChild(credentialsEl);
+        }
 
         // Add click handler if description exists
         if (member.description && member.description.trim()) {
