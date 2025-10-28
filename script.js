@@ -149,6 +149,10 @@
 
     // Check if we're on the index page
     const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/' || window.location.pathname.endsWith('/');
+    
+    // Store all shows data globally for filtering
+    let allShows = [];
+    let seeMoreButton = null;
 
     function createCard(show){
         const card = document.createElement('div');
@@ -201,32 +205,56 @@
         return button;
     }
 
+    function renderShows(shows, currentFilter = 'all') {
+        grid.innerHTML = '';
+        
+        // Remove existing see more button
+        if (seeMoreButton && seeMoreButton.parentNode) {
+            seeMoreButton.parentNode.removeChild(seeMoreButton);
+            seeMoreButton = null;
+        }
+        
+        if (isIndexPage) {
+            // On index page, limit to 30 shows per category
+            const filteredShows = currentFilter === 'all' ? shows : shows.filter(show => show.category === currentFilter);
+            
+            if (filteredShows.length > 30) {
+                const limitedShows = filteredShows.slice(0, 30);
+                limitedShows.forEach(show => grid.appendChild(createCard(show)));
+                
+                // Add "See more" button after the grid
+                seeMoreButton = createSeeMoreButton();
+                grid.parentNode.appendChild(seeMoreButton);
+            } else {
+                filteredShows.forEach(show => grid.appendChild(createCard(show)));
+            }
+        } else {
+            // On other pages, show all shows
+            shows.forEach(show => grid.appendChild(createCard(show)));
+        }
+    }
+
+    // Make renderShows globally available for the filter function
+    window.renderShows = renderShows;
+    window.allShows = allShows;
+
     fetch('content/shows.json', { cache: 'no-cache' })
         .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load shows.json')))
         .then(data => {
-            const shows = (data && Array.isArray(data.shows)) ? data.shows : [];
+            allShows = (data && Array.isArray(data.shows)) ? data.shows : [];
             
             // Sort shows by date (most recent first)
-            shows.sort((a, b) => {
+            allShows.sort((a, b) => {
                 const dateA = new Date(a.date || '1900-01-01');
                 const dateB = new Date(b.date || '1900-01-01');
                 return dateB - dateA; // Most recent first
             });
             
-            grid.innerHTML = '';
+            // Update global reference
+            window.allShows = allShows;
             
-            // On index page, limit to 30 shows and add "See more" button if needed
-            if (isIndexPage && shows.length > 30) {
-                const limitedShows = shows.slice(0, 30);
-                limitedShows.forEach(show => grid.appendChild(createCard(show)));
-                
-                // Add "See more" button after the grid
-                const seeMoreButton = createSeeMoreButton();
-                grid.parentNode.appendChild(seeMoreButton);
-            } else {
-                // On other pages or if 30 or fewer shows, show all
-                shows.forEach(show => grid.appendChild(createCard(show)));
-            }
+            // Initial render
+            renderShows(allShows);
         })
         .catch(()=>{
             // If fetch fails, leave whatever is in the HTML or keep empty silently
@@ -525,12 +553,18 @@
     if(!container || !buttons.length) return;
 
     function applyFilter(filter){
-        const cards = container.querySelectorAll('.show-card');
-        cards.forEach(card => {
-            const category = card.getAttribute('data-category');
-            const show = filter === 'all' || category === filter;
-            card.style.display = show ? '' : 'none';
-        });
+        // Use the global renderShows function if available
+        if (window.renderShows && window.allShows) {
+            window.renderShows(window.allShows, filter);
+        } else {
+            // Fallback to original logic for non-index pages
+            const cards = container.querySelectorAll('.show-card');
+            cards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                const show = filter === 'all' || category === filter;
+                card.style.display = show ? '' : 'none';
+            });
+        }
     }
 
     buttons.forEach(btn => {
