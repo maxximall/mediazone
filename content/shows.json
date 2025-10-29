@@ -447,6 +447,27 @@
       "date": "2025-04-17",
       "category": "documentary",
       "image": "/assets/love-my-facee-1.jpg"
+    },
+    {
+      "name": "New Lives In The Wild",
+      "production": "Channel 5 - Ricochet",
+      "date": "2024-10-15",
+      "category": "reality",
+      "image": "/assets/new-lives-in-wild.jpg"
+    },
+    {
+      "name": "Make it To Market",
+      "production": "BBC - Flabbergast",
+      "date": "2025-07-16",
+      "category": "reality",
+      "image": "/assets/make-it-to-market.jpg"
+    },
+    {
+      "name": "Georgia Harrison - Porn, Power and Profit",
+      "production": "ITV - Potato",
+      "date": "2025-02-18",
+      "category": "documentary",
+      "image": "/assets/georgia.jpg"
     }
   ]
 }
