@@ -426,6 +426,27 @@
       "date": "2025-04-02",
       "category": "true-crime",
       "image": "/assets/murder-scene.jpg"
+    },
+    {
+      "name": "Operation Ouch",
+      "production": "CBBC - Operation Ouch",
+      "date": "2025-02-24",
+      "category": "documentary",
+      "image": "/assets/operation.jpg"
+    },
+    {
+      "name": "Change Your Mind Change Your Life",
+      "production": "BBC - Twenty Twenty",
+      "date": "2025-05-13",
+      "category": "documentary",
+      "image": "/assets/chanage-your-mind.jpg"
+    },
+    {
+      "name": "Love My Face",
+      "production": "Channel 4 - Flabbergast",
+      "date": "2025-04-17",
+      "category": "documentary",
+      "image": "/assets/love-my-facee-1.jpg"
     }
   ]
 }
