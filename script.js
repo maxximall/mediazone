@@ -657,6 +657,27 @@
         });
 })();
 
+// Load and render about-us content from CMS JSON
+(function(){
+    const titleEl = document.getElementById('about-us-title');
+    const textEl = document.getElementById('about-us-text');
+    if(!titleEl || !textEl) return;
+
+    fetch('content/about-us.json', { cache: 'no-cache' })
+        .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load about-us.json')))
+        .then(data => {
+            if (data.title) {
+                titleEl.textContent = data.title;
+            }
+            if (data.text) {
+                textEl.textContent = data.text;
+            }
+        })
+        .catch(()=>{
+            // If fetch fails, leave whatever is in the HTML or keep empty silently
+        });
+})();
+
 // Load and render broadcasters as infinite carousel
 (function(){
     const track = document.getElementById('broadcasters-track');

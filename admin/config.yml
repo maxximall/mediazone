@@ -187,3 +187,18 @@ collections:
             fields:
               - { label: "Broadcaster Logo", name: "image", widget: "image", allow_multiple: false, required: true }
 
+  - name: "about-us"
+    label: "About Us"
+    description: "Title and text content for the About Us page"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - name: "about-us-content"
+        label: "About Us Content"
+        file: "content/about-us.json"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: true, hint: "Main heading for the About Us page" }
+          - { label: "Text", name: "text", widget: "text", required: true, hint: "Main paragraph text for the About Us page" }
+
