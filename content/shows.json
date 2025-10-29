@@ -405,6 +405,27 @@
       "date": "2025-05-20",
       "category": "reality",
       "image": "/assets/faking.jpg"
+    },
+    {
+      "name": "P Diddy The Rise and Fall",
+      "production": "BBC - Proper Content",
+      "date": "2025-04-30",
+      "category": "documentary",
+      "image": "/assets/diddy-rise.jpg"
+    },
+    {
+      "production": "Channel 5 - Spungold",
+      "name": "Killer at The Crime Scene",
+      "date": "2025-02-25",
+      "category": "true-crime",
+      "image": "/assets/killer-crime.jpg"
+    },
+    {
+      "name": "Murder Scene in The Incident Room",
+      "production": "Channel 5 - True North",
+      "date": "2025-04-02",
+      "category": "true-crime",
+      "image": "/assets/murder-scene.jpg"
     }
   ]
 }
