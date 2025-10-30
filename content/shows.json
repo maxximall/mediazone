@@ -475,6 +475,27 @@
       "date": "2025-07-31",
       "category": "documentary",
       "image": "/assets/77.jpg"
+    },
+    {
+      "name": "Last Pundit",
+      "production": "BBC - Boom",
+      "date": "2025-07-08",
+      "category": "game-shows",
+      "image": "/assets/pundit.jpg"
+    },
+    {
+      "name": "Johnny Vegas Antiques",
+      "production": "Quest - Plum Pictures",
+      "date": "2025-07-08",
+      "category": "documentary",
+      "image": "/assets/vegas.jpg"
+    },
+    {
+      "name": "Critical",
+      "production": "Netflix - Garden",
+      "date": "2025-07-25",
+      "category": "documentary",
+      "image": "/assets/critical.png"
     }
   ]
 }
