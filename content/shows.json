@@ -468,6 +468,13 @@
       "date": "2025-02-18",
       "category": "documentary",
       "image": "/assets/georgia.jpg"
+    },
+    {
+      "name": "Attack on London Hunting The 7/7 Bombing",
+      "production": "Netflix - Garden",
+      "date": "2025-07-31",
+      "category": "documentary",
+      "image": "/assets/77.jpg"
     }
   ]
 }
