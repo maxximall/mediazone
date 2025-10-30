@@ -496,6 +496,20 @@
       "date": "2025-07-25",
       "category": "documentary",
       "image": "/assets/critical.png"
+    },
+    {
+      "date": "2025-03-25",
+      "name": "Bad Romance",
+      "production": "Hulu - Twenty Twenty",
+      "category": "true-crime",
+      "image": "/assets/romance.jpg"
+    },
+    {
+      "production": "BBC - BBC Studios",
+      "category": "documentary",
+      "name": "Heston - My Life with Bipolar",
+      "date": "2025-06-25",
+      "image": "/assets/heston.jpg"
     }
   ]
 }
