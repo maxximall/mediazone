@@ -531,6 +531,27 @@
       "date": "2025-04-09",
       "category": "reality",
       "image": "/assets/celebrity-big-brother-initial-itv-1-april-2025_orig.jpg"
+    },
+    {
+      "name": "Ashley Cain : Into The Danger Zone",
+      "production": "BBC - True North",
+      "date": "2025-04-02",
+      "category": "documentary",
+      "image": "/assets/ashely-cain-into-the-danger-zone-true-north-bbc-april-2025-2_orig.jpg"
+    },
+    {
+      "name": "Celebrity Bear Hunt",
+      "production": "Netflix - Workerbee",
+      "date": "2025-02-05",
+      "category": "challenge-shows",
+      "image": "/assets/celebrity-bear-hunt-workerbee-netflix-feb-2025.jpg"
+    },
+    {
+      "name": "George Clarke's Building Homes",
+      "production": "Channel 4 - Plum Pictures",
+      "date": "2025-02-11",
+      "category": "reality",
+      "image": "/assets/george-clarkes-building-home-plum-pictures-c4-feb-2025.jpg"
     }
   ]
 }
