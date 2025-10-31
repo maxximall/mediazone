@@ -510,6 +510,27 @@
       "name": "Heston - My Life with Bipolar",
       "date": "2025-06-25",
       "image": "/assets/heston.jpg"
+    },
+    {
+      "name": "Destination X",
+      "production": "BBC1 - Two Four",
+      "date": "2025-07-01",
+      "category": "challenge-shows",
+      "image": "/assets/p0lrkqx6.jpg"
+    },
+    {
+      "name": "Destination X USA",
+      "production": "NBC/Peacock - Two Four",
+      "date": "2025-05-08",
+      "category": "challenge-shows",
+      "image": "/assets/destination-x-twofour-nbc-may-2025-2_orig.jpg"
+    },
+    {
+      "name": "Celebrity Big Brother",
+      "production": "ITV - Initial",
+      "date": "2025-04-09",
+      "category": "reality",
+      "image": "/assets/celebrity-big-brother-initial-itv-1-april-2025_orig.jpg"
     }
   ]
 }
