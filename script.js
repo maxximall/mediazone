@@ -496,10 +496,11 @@
         const imageDiv = document.createElement('div');
         imageDiv.className = 'card-image';
         if (service.image) {
-            const img = document.createElement('img');
-            img.src = service.image;
-            img.alt = service.title;
-            imageDiv.appendChild(img);
+            // Set as background image to match CSS styling
+            imageDiv.style.backgroundImage = `url(${service.image})`;
+            imageDiv.style.backgroundSize = 'cover';
+            imageDiv.style.backgroundPosition = 'center center';
+            imageDiv.setAttribute('aria-label', service.title);
         } else if (service.imageId) {
             imageDiv.id = service.imageId;
         }
