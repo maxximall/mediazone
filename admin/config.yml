@@ -202,3 +202,29 @@ collections:
           - { label: "Title", name: "title", widget: "string", required: true, hint: "Main heading for the About Us page" }
           - { label: "Text", name: "text", widget: "text", required: true, hint: "Main paragraph text for the About Us page" }
 
+  - name: "services"
+    label: "Services"
+    label_singular: "Service"
+    description: "Services shown on the homepage and services page"
+    format: "json"
+    extension: "json"
+    editor:
+      preview: false
+    files:
+      - name: "services-list"
+        label: "All Services"
+        file: "content/services.json"
+        fields:
+          - label: "Services"
+            name: "services"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: true, hint: "Service title shown on the card" }
+              - { label: "Description", name: "description", widget: "text", required: true, hint: "Service description shown in the modal" }
+              - { label: "Image", name: "image", widget: "image", allow_multiple: false, required: false, hint: "Optional service card image" }
+              - { label: "Image ID", name: "imageId", widget: "string", required: false, hint: "CSS ID for the image div (e.g., 'support', 'mental-health'). Used for styling if no image uploaded." }
+              - { label: "Slug", name: "slug", widget: "string", required: true, hint: "Unique identifier for the service (e.g., 'support', 'mentalHealth'). Used for modal functionality." }
+              - { label: "Special Type", name: "specialType", widget: "select", required: false, options: [{ label: "None", value: "" }, { label: "Production Lifespan (opens image lightbox)", value: "lifeSpan" }], hint: "Special behavior for certain services" }
+              - { label: "Order", name: "order", widget: "number", default: 0, value_type: "int", hint: "Lower numbers appear first" }
+

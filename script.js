@@ -466,91 +466,168 @@
         });
 })();
 
-// Modal functionality
+// Load and render services from CMS JSON
 (function(){
-    const modal = document.getElementById('modal');
-    if(!modal) return;
-    const modalTitle = modal.querySelector('.modal-title');
-    const modalText = modal.querySelector('.modal-text');
-    const modalImage = modal.querySelector('.modal-image');
-    const modalFeatures = modal.querySelector('.modal-features');
-    const modalActions = modal.querySelector('.modal-actions');
-    const closeBtn = modal.querySelector('.modal-close');
-    const overlay = modal.querySelector('.modal-overlay');
-    const cards = document.querySelectorAll('.card[data-modal]');
+    const servicesContainer = document.getElementById('our-services');
+    if(!servicesContainer) return;
 
-    // Modal content data
-    const modalData = {
-        support: {
-            title: 'Support for TV, Films and Podcasts',
-            text: 'Mindzone Media can supply, at short notice, Clinical Psychologists (Chartered and HCPC registered) with specialist expert experience for any type of television or filming project in the UK or Overseas. This may include pre-production screening, support during production (on/off rig) and post-TX support. We work across all televisions genres, as well as commercials/marketing projects, television dramas and mainstream films, including storyline development, script reviews, consultation and support for actors, compliance reviews, podcasts, as well as performance art projects.'
-        },
-        mentalHealth: {
-            title: 'Mental Health, First Aid Training',
-            text: "Training workshops are offered to improve production team's knowledge of mental health presentations for contributors and talent, minimise attrition and wastage, maintain the rights and dignity of vulnerable individuals, manage risk appropriately, supporting compliance requirements, and raising awareness for production team's self-care. Training workshops are offered to improve production team's knowledge of mental health presentations for contributors and talent, minimise attrition and wastage, maintain the rights and dignity of vulnerable individuals, manage risk appropriately, supporting compliance requirements, and raising awareness for production team's self-care."
-        },
-        dutyOfCare: {
-            title: 'Duty Of Care For Contributors',
-            text: 'We offer pre-filming assessments for contributors to identify any psychological vulnerabilities which may be affected by their participation in any production. We will then offer recommendations and guidance on how to proceed with any contributor throughout the production process. We can also offer on-set support for contributors and the production team. We then suggest that some contributors might need a follow up session either pre or post TX. Especially if the production might be psychologically triggering for them.'
-        },
-        script: {
-            title: 'Script and Development Treatment Reviews',
-            text: 'At the beginning of your production you can get professional script and development treatment reviews from our specialist media psychologists at Mindzone Media. Our team of experienced professionals will provide thorough and detailed feedback on your script and development treatment, helping to manage risk surrounding sensitive themes and scenes and advise on psychological safety for actors and contributors.'
-        },
-        employeeAssistance: {
-            title: 'Employee Assistance and Staff Support',
-            text: 'Our team of highly experienced Consultant Clinical Psychologists provide dedicated employee assistance and staff support tailored to the unique pressures of working in the Film, TV and media industry. We understand the fast-paced, high-pressure environments that production teams, cast, and crew often face, and we offer confidential one-to-one support, mental health awareness workshops, resilience training, debriefing, and crisis response when needed. Whether it’s managing stress, navigating difficult workplace dynamics, or supporting individuals through personal challenges, we deliver compassionate, professional care that promotes mental health, resilience, and sustainable performance across the industry and the lifespan of a project.'
-        },
-        onCallSupport: {
-            title: 'Location / On Call Support',
-            text: 'Mindzone Media provides comprehensive support to your staff, cast, and crew, whether on-site or remotely across international time zones. Our extensive experience includes working on large-format studio productions with over 750 contributors, as well as more specialised and concentrated projects in remote locations and sometimes hostile environments. Our team is capable of supporting any location. We are committed to ensuring the mental health needs of your crew, actors, and contributor cast by considering, containing, and providing appropriate support to mitigate potential mental health risks and challenges.'
-        },
-        lifeSpan: {
-            title: 'Supporting the Life Span of a Production',
-            text: '',
+    // Store services data globally for modal functionality
+    let servicesData = {};
+
+    function createServiceCard(service){
+        const card = document.createElement('div');
+        card.className = 'card vertical border';
+        
+        // Handle special type (like production lifespan)
+        if (service.specialType === 'lifeSpan') {
+            card.id = 'card-production-lifespan';
+            // Add click handler for lightbox
+            card.addEventListener('click', () => {
+                const imgSrc = './assets/mindzone-timeline.jpg';
+                const imgAlt = 'Mindzone Timeline Image';
+                if (window.openImageModal) {
+                    window.openImageModal(imgSrc, imgAlt);
+                }
+            });
+        } else {
+            card.setAttribute('data-modal', service.slug);
         }
-        
 
-    };
-
-    function openModal(modalType) {
-        const data = modalData[modalType];
-        if (!data) return;
-
-        modalTitle.textContent = data.title;
-        modalText.textContent = data.text;
-        
-        // Show enquire button for services modals
-        if (modalActions) {
-            modalActions.style.display = 'block';
+        const imageDiv = document.createElement('div');
+        imageDiv.className = 'card-image';
+        if (service.image) {
+            const img = document.createElement('img');
+            img.src = service.image;
+            img.alt = service.title;
+            imageDiv.appendChild(img);
+        } else if (service.imageId) {
+            imageDiv.id = service.imageId;
         }
-        
-        modal.classList.add('is-active');
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        card.appendChild(imageDiv);
+
+        const cardInfo = document.createElement('div');
+        cardInfo.className = 'card-info horizontal h-16';
+
+        const title = document.createElement('h4');
+        title.className = 'primary-text fill';
+        title.textContent = service.title;
+        cardInfo.appendChild(title);
+
+        const arrow = document.createElement('img');
+        arrow.src = './assets/arrow-right.svg';
+        cardInfo.appendChild(arrow);
+
+        card.appendChild(cardInfo);
+
+        return card;
     }
 
-    function closeModal() {
-        modal.classList.remove('is-active');
-        document.body.style.overflow = ''; // Restore scrolling
-    }
-
-    // Event listeners
-    cards.forEach(card => {
-        card.addEventListener('click', (e) => {
-            const modalType = card.getAttribute('data-modal');
-            openModal(modalType);
+    // Load services and render them
+    fetch('content/services.json', { cache: 'no-cache' })
+        .then(r => r.ok ? r.json() : Promise.reject(new Error('Failed to load services.json')))
+        .then(data => {
+            const services = (data && Array.isArray(data.services)) ? data.services : [];
+            
+            // Sort by order
+            services.sort((a, b) => (a.order || 0) - (b.order || 0));
+            
+            // Store services data for modal functionality
+            services.forEach(service => {
+                servicesData[service.slug] = service;
+            });
+            
+            // Clear existing content
+            servicesContainer.innerHTML = '';
+            
+            // Create and append service cards
+            services.forEach(service => {
+                servicesContainer.appendChild(createServiceCard(service));
+            });
+            
+            // Update global reference for modal
+            window.servicesData = servicesData;
+            
+            // Initialize modal after services are loaded
+            initializeServicesModal();
+        })
+        .catch(() => {
+            // If fetch fails, leave whatever is in the HTML or keep empty silently
         });
-    });
+})();
 
-    if(closeBtn) closeBtn.addEventListener('click', closeModal);
-    if(overlay) overlay.addEventListener('click', closeModal);
+// Modal functionality for services
+(function(){
+    let modalInitialized = false;
+    
+    function initializeServicesModal() {
+        if (modalInitialized) return; // Prevent multiple initializations
+        
+        const modal = document.getElementById('modal');
+        if(!modal) return;
+        const modalTitle = modal.querySelector('.modal-title');
+        const modalText = modal.querySelector('.modal-text');
+        const modalActions = modal.querySelector('.modal-actions');
+        const closeBtn = modal.querySelector('.modal-close');
+        const overlay = modal.querySelector('.modal-overlay');
+        const servicesContainer = document.getElementById('our-services');
 
-    // Close modal with Escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && modal.classList.contains('is-active')) {
-            closeModal();
+        function openModal(modalType) {
+            const service = window.servicesData && window.servicesData[modalType];
+            if (!service) return;
+
+            modalTitle.textContent = service.title;
+            modalText.textContent = service.description || '';
+            
+            // Show enquire button for services modals
+            if (modalActions) {
+                modalActions.style.display = 'block';
+            }
+            
+            modal.classList.add('is-active');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
         }
-    });
+
+        function closeModal() {
+            modal.classList.remove('is-active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Use event delegation for dynamically created cards
+        if (servicesContainer) {
+            servicesContainer.addEventListener('click', (e) => {
+                const card = e.target.closest('.card[data-modal]');
+                if (!card) return;
+                
+                // Skip if it's the production lifespan card (handled separately)
+                if (card.id === 'card-production-lifespan') return;
+                
+                const modalType = card.getAttribute('data-modal');
+                if (modalType) {
+                    openModal(modalType);
+                }
+            });
+        }
+
+        if(closeBtn) closeBtn.addEventListener('click', closeModal);
+        if(overlay) overlay.addEventListener('click', closeModal);
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('is-active')) {
+                closeModal();
+            }
+        });
+        
+        modalInitialized = true;
+    }
+    
+    // Make function globally available
+    window.initializeServicesModal = initializeServicesModal;
+    
+    // Initialize if modal exists
+    if (document.getElementById('modal')) {
+        initializeServicesModal();
+    }
 })();
 
 // Shows filters
@@ -729,6 +806,9 @@
         modal.setAttribute('aria-hidden','false');
         document.body.style.overflow = 'hidden';
     }
+    
+    // Make open function globally available for services
+    window.openImageModal = open;
     function close(){
         modal.classList.remove('is-active');
         modal.setAttribute('aria-hidden','true');

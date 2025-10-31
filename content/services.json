@@ -1,0 +1,55 @@
+{
+  "services": [
+    {
+      "title": "Support for TV, Films and Podcasts",
+      "description": "Mindzone Media can supply, at short notice, Clinical Psychologists (Chartered and HCPC registered) with specialist expert experience for any type of television or filming project in the UK or Overseas. This may include pre-production screening, support during production (on/off rig) and post-TX support. We work across all televisions genres, as well as commercials/marketing projects, television dramas and mainstream films, including storyline development, script reviews, consultation and support for actors, compliance reviews, podcasts, as well as performance art projects.",
+      "imageId": "support",
+      "slug": "support",
+      "order": 0
+    },
+    {
+      "title": "Mental Health, First Aid Training",
+      "description": "Training workshops are offered to improve production team's knowledge of mental health presentations for contributors and talent, minimise attrition and wastage, maintain the rights and dignity of vulnerable individuals, manage risk appropriately, supporting compliance requirements, and raising awareness for production team's self-care. Training workshops are offered to improve production team's knowledge of mental health presentations for contributors and talent, minimise attrition and wastage, maintain the rights and dignity of vulnerable individuals, manage risk appropriately, supporting compliance requirements, and raising awareness for production team's self-care.",
+      "imageId": "mental-health",
+      "slug": "mentalHealth",
+      "order": 1
+    },
+    {
+      "title": "Duty Of Care For Contributors",
+      "description": "We offer pre-filming assessments for contributors to identify any psychological vulnerabilities which may be affected by their participation in any production. We will then offer recommendations and guidance on how to proceed with any contributor throughout the production process. We can also offer on-set support for contributors and the production team. We then suggest that some contributors might need a follow up session either pre or post TX. Especially if the production might be psychologically triggering for them.",
+      "imageId": "duty-of-care",
+      "slug": "dutyOfCare",
+      "order": 2
+    },
+    {
+      "title": "Script and Development Treatment Reviews",
+      "description": "At the beginning of your production you can get professional script and development treatment reviews from our specialist media psychologists at Mindzone Media. Our team of experienced professionals will provide thorough and detailed feedback on your script and development treatment, helping to manage risk surrounding sensitive themes and scenes and advise on psychological safety for actors and contributors.",
+      "imageId": "script",
+      "slug": "script",
+      "order": 3
+    },
+    {
+      "title": "Employee Assistance and Staff Support",
+      "description": "Our team of highly experienced Consultant Clinical Psychologists provide dedicated employee assistance and staff support tailored to the unique pressures of working in the Film, TV and media industry. We understand the fast-paced, high-pressure environments that production teams, cast, and crew often face, and we offer confidential one-to-one support, mental health awareness workshops, resilience training, debriefing, and crisis response when needed. Whether it's managing stress, navigating difficult workplace dynamics, or supporting individuals through personal challenges, we deliver compassionate, professional care that promotes mental health, resilience, and sustainable performance across the industry and the lifespan of a project.",
+      "imageId": "employee-assistance",
+      "slug": "employeeAssistance",
+      "order": 4
+    },
+    {
+      "title": "Location / On Call Support",
+      "description": "Mindzone Media provides comprehensive support to your staff, cast, and crew, whether on-site or remotely across international time zones. Our extensive experience includes working on large-format studio productions with over 750 contributors, as well as more specialised and concentrated projects in remote locations and sometimes hostile environments. Our team is capable of supporting any location. We are committed to ensuring the mental health needs of your crew, actors, and contributor cast by considering, containing, and providing appropriate support to mitigate potential mental health risks and challenges.",
+      "imageId": "on-call-support",
+      "slug": "onCallSupport",
+      "order": 5
+    },
+    {
+      "title": "Supporting the Life Span of a Production",
+      "description": "",
+      "imageId": "production-lifespan",
+      "slug": "lifeSpan",
+      "specialType": "lifeSpan",
+      "order": 6
+    }
+  ]
+}
+
