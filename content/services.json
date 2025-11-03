@@ -13,7 +13,8 @@
       "description": "Training workshops are offered to improve production team's knowledge of mental health presentations for contributors and talent, minimise attrition and wastage, maintain the rights and dignity of vulnerable individuals, manage risk appropriately, supporting compliance requirements, and raising awareness for production team's self-care. Training workshops are offered to improve production team's knowledge of mental health presentations for contributors and talent, minimise attrition and wastage, maintain the rights and dignity of vulnerable individuals, manage risk appropriately, supporting compliance requirements, and raising awareness for production team's self-care.",
       "imageId": "mental-health",
       "slug": "mentalHealth",
-      "order": 1
+      "order": 1,
+      "image": "/assets/tesc-shoot.jpeg"
     },
     {
       "title": "Duty Of Care For Contributors",
