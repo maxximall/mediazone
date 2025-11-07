@@ -214,10 +214,11 @@
             seeMoreButton = null;
         }
         
+        // Filter shows based on current filter
+        const filteredShows = currentFilter === 'all' ? shows : shows.filter(show => show.category === currentFilter);
+        
         if (isIndexPage) {
             // On index page, limit to 30 shows per category
-            const filteredShows = currentFilter === 'all' ? shows : shows.filter(show => show.category === currentFilter);
-            
             if (filteredShows.length > 30) {
                 const limitedShows = filteredShows.slice(0, 30);
                 limitedShows.forEach(show => grid.appendChild(createCard(show)));
@@ -229,8 +230,8 @@
                 filteredShows.forEach(show => grid.appendChild(createCard(show)));
             }
         } else {
-            // On other pages, show all shows
-            shows.forEach(show => grid.appendChild(createCard(show)));
+            // On other pages, show all filtered shows
+            filteredShows.forEach(show => grid.appendChild(createCard(show)));
         }
     }
 
