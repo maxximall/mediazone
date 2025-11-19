@@ -762,6 +762,13 @@
       "date": "2025-02-20",
       "category": "challenge-shows",
       "image": "/assets/celeb-bear.jpeg"
+    },
+    {
+      "name": "The Fear Clinic",
+      "production": "Channel 4 - Wonderhood Studios",
+      "date": "2025-01-04",
+      "category": "documentary",
+      "image": "/assets/fear.jpeg"
     }
   ]
 }
