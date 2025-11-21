@@ -37,6 +37,7 @@ section{
 /* Hero */
 .hero{ 
     padding: 0px 80px;
+    padding-top: 160px;
     height: 100vh;
     min-height: 600px;
     display: flex;
@@ -676,6 +677,7 @@ footer .logo{
 @media (max-width: 768px) and (min-width: 501px){
     .hero{ 
         padding: 40px;
+        padding-top: 120px;
         min-height: 550px;
     }
     .hero h1{
@@ -692,6 +694,7 @@ footer .logo{
 @media (max-width: 500px){
     .hero{ 
         padding: 24px;
+        padding-top: 100px;
         min-height: 500px;
     }
     .hero h1{
