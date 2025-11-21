@@ -37,8 +37,7 @@ section{
 /* Hero */
 .hero{ 
     padding: 0px 80px;
-    padding-top: 160px;
-    height: 100vh;
+    height: calc(100vh - 149px);
     min-height: 600px;
     display: flex;
     flex-direction: column;
@@ -677,7 +676,7 @@ footer .logo{
 @media (max-width: 768px) and (min-width: 501px){
     .hero{ 
         padding: 40px;
-        padding-top: 120px;
+        height: calc(100vh - 149px);
         min-height: 550px;
     }
     .hero h1{
@@ -694,7 +693,7 @@ footer .logo{
 @media (max-width: 500px){
     .hero{ 
         padding: 24px;
-        padding-top: 100px;
+        height: calc(100vh - 92px);
         min-height: 500px;
     }
     .hero h1{
