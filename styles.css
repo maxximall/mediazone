@@ -2,6 +2,8 @@ header{
     padding: 12px 80px;
     background-color: white;
     border-bottom: 1px solid var(--outline);
+    position: relative;
+    z-index: 10;
 }
 header a{
     font-weight: 400;
@@ -37,13 +39,15 @@ section{
 /* Hero */
 .hero{ 
     padding: 0px 80px;
-    height: calc(100vh - 149px);
-    min-height: 600px;
+    padding-top: 180px;
+    height: 100vh;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-top: -149px;
 }
 #hero-bg{
     background-color: var(--primary);
@@ -676,8 +680,10 @@ footer .logo{
 @media (max-width: 768px) and (min-width: 501px){
     .hero{ 
         padding: 40px;
-        height: calc(100vh - 149px);
-        min-height: 550px;
+        padding-top: 160px;
+        height: 100vh;
+        box-sizing: border-box;
+        margin-top: -149px;
     }
     .hero h1{
         font-size: 42px;
@@ -693,8 +699,10 @@ footer .logo{
 @media (max-width: 500px){
     .hero{ 
         padding: 24px;
-        height: calc(100vh - 92px);
-        min-height: 500px;
+        padding-top: 110px;
+        height: 100vh;
+        box-sizing: border-box;
+        margin-top: -92px;
     }
     .hero h1{
         padding: 0;
