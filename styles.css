@@ -37,7 +37,6 @@ section{
 /* Hero */
 .hero{ 
     padding: 40px 80px; /* Add vertical padding to prevent overlap */
-    height: calc(100vh - 149px); /* Account for header height (125px logo + 24px padding) */
     min-height: 600px;
     display: flex;
     flex-direction: column;
