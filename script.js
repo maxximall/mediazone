@@ -479,17 +479,10 @@
         const card = document.createElement('div');
         card.className = 'card vertical border';
         
-        // Handle special type (like production lifespan)
+        // Handle special type (like production lifespan) - use regular modal with image
         if (service.specialType === 'lifeSpan') {
             card.id = 'card-production-lifespan';
-            // Add click handler for lightbox
-            card.addEventListener('click', () => {
-                const imgSrc = './assets/mindzone-timeline.jpg';
-                const imgAlt = 'Mindzone Timeline Image';
-                if (window.openImageModal) {
-                    window.openImageModal(imgSrc, imgAlt);
-                }
-            });
+            card.setAttribute('data-modal', service.slug);
         } else {
             card.setAttribute('data-modal', service.slug);
         }
@@ -580,6 +573,36 @@
             modalTitle.textContent = service.title;
             modalText.textContent = service.description || '';
             
+            // Handle special type services that need an image in the modal
+            const modalBody = modal.querySelector('.modal-body');
+            let existingImage = modalBody.querySelector('.modal-service-image');
+            
+            if (service.specialType === 'lifeSpan' && service.image) {
+                // Create or update image element for lifeSpan services
+                if (!existingImage) {
+                    existingImage = document.createElement('img');
+                    existingImage.className = 'modal-service-image';
+                    existingImage.style.width = '100%';
+                    existingImage.style.height = 'auto';
+                    existingImage.style.maxHeight = '400px';
+                    existingImage.style.objectFit = 'contain';
+                    existingImage.style.borderRadius = '8px';
+                    existingImage.style.marginBottom = '24px';
+                    existingImage.style.display = 'block';
+                    // Insert image before modal text
+                    modalBody.insertBefore(existingImage, modalText);
+                }
+                existingImage.src = service.image;
+                existingImage.alt = service.title || 'Service image';
+                existingImage.style.display = 'block';
+            } else {
+                // Remove image if it exists and this is not a lifeSpan service
+                if (existingImage) {
+                    existingImage.style.display = 'none';
+                    existingImage.src = '';
+                }
+            }
+            
             // Show enquire button for services modals
             if (modalActions) {
                 modalActions.style.display = 'block';
@@ -592,6 +615,13 @@
         function closeModal() {
             modal.classList.remove('is-active');
             document.body.style.overflow = ''; // Restore scrolling
+            // Clear image when closing modal
+            const modalBody = modal.querySelector('.modal-body');
+            const existingImage = modalBody && modalBody.querySelector('.modal-service-image');
+            if (existingImage) {
+                existingImage.src = '';
+                existingImage.style.display = 'none';
+            }
         }
 
         // Use event delegation for dynamically created cards
@@ -600,8 +630,6 @@
                 const card = e.target.closest('.card[data-modal]');
                 if (!card) return;
                 
-                // Skip if it's the production lifespan card (handled separately)
-                if (card.id === 'card-production-lifespan') return;
                 
                 const modalType = card.getAttribute('data-modal');
                 if (modalType) {
@@ -833,14 +861,6 @@
         infographic.addEventListener('click', (e) => {
             open(e.target.src, e.target.alt || 'Mindzone Infographic');
         });
-    }
-    const cardLifespan = document.getElementById('card-production-lifespan');
-    if (cardLifespan) {
-      cardLifespan.addEventListener('click', () => {
-        const imgSrc = './assets/mindzone-timeline.jpg' // ← specify your image path here
-        const imgAlt = 'Mindzone Timeline Image'; // ← optional alt text
-        open(imgSrc, imgAlt);
-      });
     }
     
     closeBtn.addEventListener('click', close);
