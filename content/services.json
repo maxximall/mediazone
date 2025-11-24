@@ -42,7 +42,8 @@
       "description": "Mindzone Media provides comprehensive support to your actors, cast, and crew, whether on-site or remotely, across international time zones. Our extensive experience includes working on large-format studio productions with high numbers of contributors, as well as more specialised and concentrated projects in remote locations and hostile environments. Our team can support any location. We are committed to ensuring the mental health needs of productions - considering, containing, and providing appropriate support to mitigate potential mental health risks and challenges.",
       "imageId": "on-call-support",
       "slug": "onCallSupport",
-      "order": 5
+      "order": 5,
+      "image": "/assets/img_4661.jpg"
     },
     {
       "title": "Supporting the Lifespan of a Production",
@@ -51,7 +52,7 @@
       "slug": "lifeSpan",
       "specialType": "lifeSpan",
       "order": 6,
-      "image": "/assets/dreamstime_m_48173729.jpg"
+      "image": "/assets/img_7767.jpg"
     }
   ]
 }
