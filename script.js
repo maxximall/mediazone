@@ -577,8 +577,9 @@
             const modalBody = modal.querySelector('.modal-body');
             let existingImage = modalBody.querySelector('.modal-service-image');
             
-            if (service.specialType === 'lifeSpan' && service.image) {
+            if (service.specialType === 'lifeSpan') {
                 // Create or update image element for lifeSpan services
+                // Always use the hardcoded image path for the modal
                 if (!existingImage) {
                     existingImage = document.createElement('img');
                     existingImage.className = 'modal-service-image';
@@ -592,7 +593,7 @@
                     // Insert image before modal text
                     modalBody.insertBefore(existingImage, modalText);
                 }
-                existingImage.src = service.image;
+                existingImage.src = './assets/resize-image-project.png';
                 existingImage.alt = service.title || 'Service image';
                 existingImage.style.display = 'block';
             } else {
