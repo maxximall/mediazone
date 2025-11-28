@@ -418,6 +418,29 @@ section{
     color: #555;
 }
 
+.modal-text ul {
+    margin: 16px 0;
+    padding-left: 24px;
+    list-style-type: disc;
+}
+
+.modal-text li {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.modal-text p {
+    margin: 16px 0;
+}
+
+.modal-text p:first-child {
+    margin-top: 0;
+}
+
+.modal-text p:last-child {
+    margin-bottom: 0;
+}
+
 .modal-features {
     list-style: none;
     padding: 0;

@@ -554,6 +554,101 @@
 (function(){
     let modalInitialized = false;
     
+    // Markdown to HTML converter with bullet list support
+    function markdownToHtml(markdown) {
+        if (!markdown) return '';
+        
+        // Split into lines for processing
+        const lines = markdown.split('\n');
+        let result = [];
+        let inList = false;
+        let currentParagraph = [];
+        
+        function flushParagraph() {
+            if (currentParagraph.length > 0) {
+                const paraText = currentParagraph.join(' ').trim();
+                if (paraText) {
+                    result.push(paraText);
+                }
+                currentParagraph = [];
+            }
+        }
+        
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            
+            // Check if line is a list item (starts with *, -, or + followed by space)
+            const listMatch = line.match(/^[\*\-\+]\s+(.+)$/);
+            
+            if (listMatch) {
+                // It's a list item
+                flushParagraph(); // Flush any pending paragraph
+                
+                if (!inList) {
+                    result.push('<ul>');
+                    inList = true;
+                }
+                result.push('<li>' + listMatch[1] + '</li>');
+            } else {
+                // Not a list item
+                if (inList) {
+                    result.push('</ul>');
+                    inList = false;
+                }
+                
+                if (line === '') {
+                    // Empty line - flush paragraph
+                    flushParagraph();
+                } else {
+                    // Add to current paragraph
+                    currentParagraph.push(line);
+                }
+            }
+        }
+        
+        // Flush any remaining paragraph
+        flushParagraph();
+        
+        // Close any open list
+        if (inList) {
+            result.push('</ul>');
+        }
+        
+        // Join result and process other markdown
+        let html = result.join('\n');
+        
+        // Headers
+        html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+        html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+        html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+        
+        // Bold (must come before italic to avoid conflicts)
+        html = html.replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>');
+        html = html.replace(/__(.*?)__/gim, '<strong>$1</strong>');
+        
+        // Links
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/gim, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Italic (single asterisk, but not at start of line for lists)
+        html = html.replace(/\*([^*\n]+?)\*/gim, '<em>$1</em>');
+        html = html.replace(/_([^_\n]+?)_/gim, '<em>$1</em>');
+        
+        // Wrap non-tag content in paragraphs
+        const parts = html.split(/(<[hul][^>]*>.*?<\/[hul][^>]*>)/gi);
+        html = parts.map(part => {
+            part = part.trim();
+            if (!part) return '';
+            // If it's already a tag, return as is
+            if (/^<[hul]/.test(part)) {
+                return part;
+            }
+            // Otherwise wrap in paragraph
+            return '<p>' + part + '</p>';
+        }).join('');
+        
+        return html;
+    }
+    
     function initializeServicesModal() {
         if (modalInitialized) return; // Prevent multiple initializations
         
@@ -571,7 +666,7 @@
             if (!service) return;
 
             modalTitle.textContent = service.title;
-            modalText.textContent = service.description || '';
+            modalText.innerHTML = markdownToHtml(service.description || '');
             
             // Handle special type services that need an image in the modal
             const modalBody = modal.querySelector('.modal-body');
