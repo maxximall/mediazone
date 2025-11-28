@@ -221,7 +221,7 @@ collections:
             summary: "{{fields.title}}"
             fields:
               - { label: "Title", name: "title", widget: "string", required: true, hint: "Service title shown on the card" }
-              - { label: "Description", name: "description", widget: "text", required: true, hint: "Service description shown in the modal" }
+              - { label: "Description", name: "description", widget: "markdown", required: true, hint: "Service description shown in the modal. Supports rich text formatting including bullet lists." }
               - { label: "Image", name: "image", widget: "image", allow_multiple: false, required: false, hint: "Optional service card image" }
               - { label: "Image ID", name: "imageId", widget: "string", required: false, hint: "CSS ID for the image div (e.g., 'support', 'mental-health'). Used for styling if no image uploaded." }
               - { label: "Slug", name: "slug", widget: "string", required: true, hint: "Unique identifier for the service (e.g., 'support', 'mentalHealth'). Used for modal functionality." }
