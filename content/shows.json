@@ -790,6 +790,34 @@
       "date": "2025-01-08",
       "category": "documentary",
       "image": "/assets/eat-smart-secrets-of-the-glucose-goddess-south-shore-c4-jan-2025_orig.jpg"
+    },
+    {
+      "name": "Harrods: The Rise and Fall of a British Institution",
+      "production": "Channel 5 - Little Gem",
+      "date": "2025-02-02",
+      "category": "documentary",
+      "image": "/assets/harrods-the-rise-and-fall-of-a-british-institution-little-gem-channel-feb-2025_orig.jpeg"
+    },
+    {
+      "name": "Game of Throws - Inside Darts",
+      "production": "Sky - Dorothy Street Pictures",
+      "date": "2024-11-06",
+      "category": "challenge-shows",
+      "image": "/assets/game-of-throws-inside-darts-dorothy-street-pictures-sky-nov-2024-2_orig.jpg"
+    },
+    {
+      "name": "One Day in October",
+      "production": "Channel 4 - Amos Pictures",
+      "date": "2024-10-15",
+      "category": "documentary",
+      "image": "/assets/one-day-in-october-amos-pictures-c4-oct-2024_orig.jpeg"
+    },
+    {
+      "name": "Celebrity SAS Who Dares Wins (Series 6)",
+      "production": "Channel 4 - Minnow",
+      "date": "2024-10-29",
+      "category": "challenge-shows",
+      "image": "/assets/celebrity-sas-who-dares-wins-minnow-cc4-oct-2024_orig.jpg"
     }
   ]
 }
