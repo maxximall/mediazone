@@ -839,6 +839,27 @@
       "date": "2024-06-29",
       "category": "documentary",
       "image": "/assets/the-stormtrooper-scandal-dsp-bbc-two-june-2024_orig.jpg"
+    },
+    {
+      "name": "Me and the Voice in My Head",
+      "production": "Channel 4 - Hungry Bear",
+      "date": "2024-05-29",
+      "category": "documentary",
+      "image": "/assets/me-and-the-voice-in-my-head-hungry-bear-c4-may-2024_orig.jpeg"
+    },
+    {
+      "name": "Undercover: Can Probation Keep Us Safe?",
+      "production": "BBC Panorama - Hardcash",
+      "date": "2024-05-29",
+      "category": "documentary",
+      "image": "/assets/undercover-can-probation-keep-us-safe-hardcash-panorama-bbc-one-may-2024_orig.jpg"
+    },
+    {
+      "name": "Dancing For The Devil: The 7m TikTok Cult",
+      "production": "Netflix - Dirty Robber",
+      "date": "2024-05-29",
+      "category": "true-crime",
+      "image": "/assets/dancing-for-the-devil-7m-tiktok-cult-dirty-robber-netflix-may-2024-4_orig.jpg"
     }
   ]
 }
