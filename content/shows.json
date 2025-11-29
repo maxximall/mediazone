@@ -818,6 +818,27 @@
       "date": "2024-10-29",
       "category": "challenge-shows",
       "image": "/assets/celebrity-sas-who-dares-wins-minnow-cc4-oct-2024_orig.jpg"
+    },
+    {
+      "name": "Cult Massacre : One Day in Jonestown",
+      "production": "Hulu/Nat Geo - 72 Films",
+      "date": "2024-06-29",
+      "category": "true-crime",
+      "image": "/assets/cult-massacre-one-day-in-jonestown-72-films-hulu-national-geographic-june-2024-2_orig.jpg"
+    },
+    {
+      "name": "Squid Games: The Challenge S2",
+      "production": "Netflix - Studio Lambert/Garden",
+      "date": "2025-11-04",
+      "category": "challenge-shows",
+      "image": "/assets/mv5bngu4zmqxzjytyje2ys00owm2ltg2zmmtmdmwywi1mzg0y2njxkeyxkfqcgc-._v1_.jpg"
+    },
+    {
+      "name": "The Stormtrooper Scandal",
+      "production": "BBC 2 - DSP",
+      "date": "2024-06-29",
+      "category": "documentary",
+      "image": "/assets/the-stormtrooper-scandal-dsp-bbc-two-june-2024_orig.jpg"
     }
   ]
 }
