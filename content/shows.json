@@ -495,7 +495,7 @@
       "production": "Netflix - Garden",
       "date": "2025-07-25",
       "category": "documentary",
-      "image": "/assets/critical.png"
+      "image": "/assets/download1.jpeg"
     },
     {
       "date": "2025-03-25",
@@ -769,6 +769,20 @@
       "date": "2025-01-04",
       "category": "documentary",
       "image": "/assets/fear.jpeg"
+    },
+    {
+      "name": "The Eunuch Maker",
+      "production": "Crime and Investigation  - Future Studios",
+      "date": "2025-01-13",
+      "category": "true-crime",
+      "image": "/assets/eunuchs_thumbnail_1920x1080_v1_logo.jpg"
+    },
+    {
+      "name": "Red Flags: Are we Dating The Same Guy",
+      "production": "Channel 4 - Firecrest",
+      "date": "2025-11-24",
+      "category": "true-crime",
+      "image": "/assets/4115d5d5-2330-427c-bcdc-a2f14afdb274.jpg"
     }
   ]
 }
