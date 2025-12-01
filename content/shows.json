@@ -902,6 +902,13 @@
       "date": "2025-03-12",
       "category": "game-shows",
       "image": "/assets/bbc-chess.jpg"
+    },
+    {
+      "name": "Fortune Hotel S1",
+      "production": "ITV - Tuesdays Child",
+      "date": "2024-05-15",
+      "category": "challenge-shows",
+      "image": "/assets/fortune-hotel-tuesdays-child-itv-may-2024-3_orig.jpeg"
     }
   ]
 }
