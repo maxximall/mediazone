@@ -143,6 +143,24 @@
     },
     {
       "image": "/assets/garden.jpeg"
+    },
+    {
+      "image": "/assets/initial.png"
+    },
+    {
+      "image": "/assets/impossible.jpeg"
+    },
+    {
+      "image": "/assets/hungey.png"
+    },
+    {
+      "image": "/assets/hidden.png"
+    },
+    {
+      "image": "/assets/flashing.png"
+    },
+    {
+      "image": "/assets/itn.png"
     }
   ]
 }
