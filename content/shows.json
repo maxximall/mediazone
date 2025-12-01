@@ -895,6 +895,13 @@
       "date": "2023-11-16",
       "category": "documentary",
       "image": "/assets/f9mtesrwqaa5o7d_orig.jpg"
+    },
+    {
+      "name": "Chess Masters: The End Game",
+      "production": "BBC - Curve Media",
+      "date": "2025-03-12",
+      "category": "game-shows",
+      "image": "/assets/bbc-chess.jpg"
     }
   ]
 }
