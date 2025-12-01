@@ -32,7 +32,7 @@
     },
     {
       "image": "/assets/production-logos/Mindhouse.png"
-    },    
+    },
     {
       "image": "/assets/production-logos/Objective.png"
     },
@@ -53,7 +53,8 @@
     },
     {
       "image": "/assets/production-logos/Southshore.png"
-    },    {
+    },
+    {
       "image": "/assets/production-logos/Spungold.png"
     },
     {
@@ -82,7 +83,36 @@
     },
     {
       "image": "/assets/production-logos/Workerbee.png"
+    },
+    {
+      "image": "/assets/britespark.png"
+    },
+    {
+      "image": "/assets/brinkworth.jpeg"
+    },
+    {
+      "image": "/assets/curve.png"
+    },
+    {
+      "image": "/assets/boxtobox.png"
+    },
+    {
+      "image": "/assets/afromic.jpeg"
+    },
+    {
+      "image": "/assets/boom.png"
+    },
+    {
+      "image": "/assets/blast.png"
+    },
+    {
+      "image": "/assets/blink.png"
+    },
+    {
+      "image": "/assets/big-deal.png"
+    },
+    {
+      "image": "/assets/bango-logo.png"
     }
-
   ]
 }
