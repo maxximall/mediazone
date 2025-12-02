@@ -190,7 +190,7 @@ section{
    
 }
 .page-header#services{
-    background-image: url('./assets/services.png');
+    background-image: url('./assets/servicesbg.png');
 }
 .page-header#clients{
     background-image: url('./assets/clients.png');
@@ -228,7 +228,26 @@ section{
 }
 
 #team-member-modal .modal-text p {
-    margin-bottom: 16px;
+    margin: 16px 0;
+}
+
+#team-member-modal .modal-text p:first-child {
+    margin-top: 0;
+}
+
+#team-member-modal .modal-text p:last-child {
+    margin-bottom: 0;
+}
+
+#team-member-modal .modal-text ul {
+    margin: 16px 0;
+    padding-left: 24px;
+    list-style-type: disc;
+}
+
+#team-member-modal .modal-text li {
+    margin: 8px 0;
+    line-height: 1.6;
 }
 
 #team-member-modal .modal-text h1,

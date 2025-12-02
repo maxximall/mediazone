@@ -339,28 +339,127 @@
     const closeBtn = modal.querySelector('.modal-close');
     const overlay = modal.querySelector('.modal-overlay');
 
-    // Simple markdown to HTML converter
+    // Markdown to HTML converter with bullet list support
     function markdownToHtml(markdown) {
         if (!markdown) return '';
         
-        let html = markdown
-            // Headers
-            .replace(/^### (.*$)/gim, '<h3>$1</h3>')
-            .replace(/^## (.*$)/gim, '<h2>$1</h2>')
-            .replace(/^# (.*$)/gim, '<h1>$1</h1>')
-            // Bold
-            .replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>')
-            .replace(/__(.*?)__/gim, '<strong>$1</strong>')
-            // Italic
-            .replace(/\*(.*?)\*/gim, '<em>$1</em>')
-            .replace(/_(.*?)_/gim, '<em>$1</em>')
-            // Links
-            .replace(/\[([^\]]+)\]\(([^)]+)\)/gim, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
-            // Line breaks
-            .replace(/\n\n/g, '</p><p>')
-            .replace(/\n/g, '<br>');
+        // Split into lines for processing
+        const lines = markdown.split('\n');
+        let result = [];
+        let inList = false;
+        let currentParagraph = [];
         
-        return '<p>' + html + '</p>';
+        function flushParagraph() {
+            if (currentParagraph.length > 0) {
+                const paraText = currentParagraph.join(' ').trim();
+                if (paraText) {
+                    result.push(paraText);
+                }
+                currentParagraph = [];
+            }
+        }
+        
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            
+            // Check if line is a list item (starts with *, -, or + followed by space)
+            const listMatch = line.match(/^[\*\-\+]\s+(.+)$/);
+            
+            if (listMatch) {
+                // It's a list item
+                flushParagraph(); // Flush any pending paragraph
+                
+                if (!inList) {
+                    result.push('<ul>');
+                    inList = true;
+                }
+                result.push('<li>' + listMatch[1] + '</li>');
+            } else {
+                // Not a list item
+                if (inList) {
+                    result.push('</ul>');
+                    inList = false;
+                }
+                
+                if (line === '') {
+                    // Empty line - flush paragraph
+                    flushParagraph();
+                } else {
+                    // Add to current paragraph
+                    currentParagraph.push(line);
+                }
+            }
+        }
+        
+        // Flush any remaining paragraph
+        flushParagraph();
+        
+        // Close any open list
+        if (inList) {
+            result.push('</ul>');
+        }
+        
+        // Join result and process other markdown
+        let html = result.join('\n');
+        
+        // Headers
+        html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+        html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+        html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+        
+        // Bold (must come before italic to avoid conflicts)
+        html = html.replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>');
+        html = html.replace(/__(.*?)__/gim, '<strong>$1</strong>');
+        
+        // Links
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/gim, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+        
+        // Italic (single asterisk, but not at start of line for lists)
+        html = html.replace(/\*([^*\n]+?)\*/gim, '<em>$1</em>');
+        html = html.replace(/_([^_\n]+?)_/gim, '<em>$1</em>');
+        
+        // Wrap non-tag content in paragraphs
+        // Split by HTML block elements (headers, lists) but keep them
+        const blockElementRegex = /(<(?:h[1-6]|ul|ol)[^>]*>.*?<\/(?:h[1-6]|ul|ol)>)/gi;
+        const blockElements = [];
+        let match;
+        
+        // Find all block elements
+        while ((match = blockElementRegex.exec(html)) !== null) {
+            blockElements.push({
+                index: match.index,
+                length: match[0].length,
+                content: match[0]
+            });
+        }
+        
+        // Reconstruct HTML with paragraphs around non-block content
+        if (blockElements.length === 0) {
+            // No block elements, wrap everything in paragraph
+            html = '<p>' + html.trim() + '</p>';
+        } else {
+            let result = '';
+            let lastIndex = 0;
+            for (let i = 0; i < blockElements.length; i++) {
+                const block = blockElements[i];
+                // Add paragraph for content before this block
+                const beforeContent = html.substring(lastIndex, block.index).trim();
+                if (beforeContent) {
+                    result += '<p>' + beforeContent + '</p>';
+                }
+                // Add the block element
+                result += block.content;
+                lastIndex = block.index + block.length;
+            }
+            // Add paragraph for content after last block
+            const afterContent = html.substring(lastIndex).trim();
+            if (afterContent) {
+                result += '<p>' + afterContent + '</p>';
+            }
+            html = result;
+        }
+        
+        return html;
     }
 
     window.openTeamMemberModal = function(member) {
@@ -634,17 +733,45 @@
         html = html.replace(/_([^_\n]+?)_/gim, '<em>$1</em>');
         
         // Wrap non-tag content in paragraphs
-        const parts = html.split(/(<[hul][^>]*>.*?<\/[hul][^>]*>)/gi);
-        html = parts.map(part => {
-            part = part.trim();
-            if (!part) return '';
-            // If it's already a tag, return as is
-            if (/^<[hul]/.test(part)) {
-                return part;
+        // Split by HTML block elements (headers, lists) but keep them
+        const blockElementRegex = /(<(?:h[1-6]|ul|ol)[^>]*>.*?<\/(?:h[1-6]|ul|ol)>)/gi;
+        const blockElements = [];
+        let match;
+        
+        // Find all block elements
+        while ((match = blockElementRegex.exec(html)) !== null) {
+            blockElements.push({
+                index: match.index,
+                length: match[0].length,
+                content: match[0]
+            });
+        }
+        
+        // Reconstruct HTML with paragraphs around non-block content
+        if (blockElements.length === 0) {
+            // No block elements, wrap everything in paragraph
+            html = '<p>' + html.trim() + '</p>';
+        } else {
+            let result = '';
+            let lastIndex = 0;
+            for (let i = 0; i < blockElements.length; i++) {
+                const block = blockElements[i];
+                // Add paragraph for content before this block
+                const beforeContent = html.substring(lastIndex, block.index).trim();
+                if (beforeContent) {
+                    result += '<p>' + beforeContent + '</p>';
+                }
+                // Add the block element
+                result += block.content;
+                lastIndex = block.index + block.length;
             }
-            // Otherwise wrap in paragraph
-            return '<p>' + part + '</p>';
-        }).join('');
+            // Add paragraph for content after last block
+            const afterContent = html.substring(lastIndex).trim();
+            if (afterContent) {
+                result += '<p>' + afterContent + '</p>';
+            }
+            html = result;
+        }
         
         return html;
     }
