@@ -353,7 +353,8 @@
             if (currentParagraph.length > 0) {
                 const paraText = currentParagraph.join(' ').trim();
                 if (paraText) {
-                    result.push(paraText);
+                    // Wrap in paragraph tag immediately
+                    result.push('<p>' + paraText + '</p>');
                 }
                 currentParagraph = [];
             }
@@ -399,13 +400,14 @@
             result.push('</ul>');
         }
         
-        // Join result and process other markdown
+        // Join result and process markdown formatting within each element
         let html = result.join('\n');
         
-        // Headers
-        html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
-        html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
-        html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+        // Process markdown formatting within paragraphs and list items
+        // Headers (process before other formatting)
+        html = html.replace(/<p>(###\s+)(.*?)(<\/p>)/gim, '<h3>$2</h3>');
+        html = html.replace(/<p>(##\s+)(.*?)(<\/p>)/gim, '<h2>$2</h2>');
+        html = html.replace(/<p>(#\s+)(.*?)(<\/p>)/gim, '<h1>$2</h1>');
         
         // Bold (must come before italic to avoid conflicts)
         html = html.replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>');
@@ -417,47 +419,6 @@
         // Italic (single asterisk, but not at start of line for lists)
         html = html.replace(/\*([^*\n]+?)\*/gim, '<em>$1</em>');
         html = html.replace(/_([^_\n]+?)_/gim, '<em>$1</em>');
-        
-        // Wrap non-tag content in paragraphs
-        // Split by HTML block elements (headers, lists) but keep them
-        const blockElementRegex = /(<(?:h[1-6]|ul|ol)[^>]*>.*?<\/(?:h[1-6]|ul|ol)>)/gi;
-        const blockElements = [];
-        let match;
-        
-        // Find all block elements
-        while ((match = blockElementRegex.exec(html)) !== null) {
-            blockElements.push({
-                index: match.index,
-                length: match[0].length,
-                content: match[0]
-            });
-        }
-        
-        // Reconstruct HTML with paragraphs around non-block content
-        if (blockElements.length === 0) {
-            // No block elements, wrap everything in paragraph
-            html = '<p>' + html.trim() + '</p>';
-        } else {
-            let result = '';
-            let lastIndex = 0;
-            for (let i = 0; i < blockElements.length; i++) {
-                const block = blockElements[i];
-                // Add paragraph for content before this block
-                const beforeContent = html.substring(lastIndex, block.index).trim();
-                if (beforeContent) {
-                    result += '<p>' + beforeContent + '</p>';
-                }
-                // Add the block element
-                result += block.content;
-                lastIndex = block.index + block.length;
-            }
-            // Add paragraph for content after last block
-            const afterContent = html.substring(lastIndex).trim();
-            if (afterContent) {
-                result += '<p>' + afterContent + '</p>';
-            }
-            html = result;
-        }
         
         return html;
     }
@@ -667,7 +628,8 @@
             if (currentParagraph.length > 0) {
                 const paraText = currentParagraph.join(' ').trim();
                 if (paraText) {
-                    result.push(paraText);
+                    // Wrap in paragraph tag immediately
+                    result.push('<p>' + paraText + '</p>');
                 }
                 currentParagraph = [];
             }
@@ -713,13 +675,14 @@
             result.push('</ul>');
         }
         
-        // Join result and process other markdown
+        // Join result and process markdown formatting within each element
         let html = result.join('\n');
         
-        // Headers
-        html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
-        html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
-        html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+        // Process markdown formatting within paragraphs and list items
+        // Headers (process before other formatting)
+        html = html.replace(/<p>(###\s+)(.*?)(<\/p>)/gim, '<h3>$2</h3>');
+        html = html.replace(/<p>(##\s+)(.*?)(<\/p>)/gim, '<h2>$2</h2>');
+        html = html.replace(/<p>(#\s+)(.*?)(<\/p>)/gim, '<h1>$2</h1>');
         
         // Bold (must come before italic to avoid conflicts)
         html = html.replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>');
@@ -731,47 +694,6 @@
         // Italic (single asterisk, but not at start of line for lists)
         html = html.replace(/\*([^*\n]+?)\*/gim, '<em>$1</em>');
         html = html.replace(/_([^_\n]+?)_/gim, '<em>$1</em>');
-        
-        // Wrap non-tag content in paragraphs
-        // Split by HTML block elements (headers, lists) but keep them
-        const blockElementRegex = /(<(?:h[1-6]|ul|ol)[^>]*>.*?<\/(?:h[1-6]|ul|ol)>)/gi;
-        const blockElements = [];
-        let match;
-        
-        // Find all block elements
-        while ((match = blockElementRegex.exec(html)) !== null) {
-            blockElements.push({
-                index: match.index,
-                length: match[0].length,
-                content: match[0]
-            });
-        }
-        
-        // Reconstruct HTML with paragraphs around non-block content
-        if (blockElements.length === 0) {
-            // No block elements, wrap everything in paragraph
-            html = '<p>' + html.trim() + '</p>';
-        } else {
-            let result = '';
-            let lastIndex = 0;
-            for (let i = 0; i < blockElements.length; i++) {
-                const block = blockElements[i];
-                // Add paragraph for content before this block
-                const beforeContent = html.substring(lastIndex, block.index).trim();
-                if (beforeContent) {
-                    result += '<p>' + beforeContent + '</p>';
-                }
-                // Add the block element
-                result += block.content;
-                lastIndex = block.index + block.length;
-            }
-            // Add paragraph for content after last block
-            const afterContent = html.substring(lastIndex).trim();
-            if (afterContent) {
-                result += '<p>' + afterContent + '</p>';
-            }
-            html = result;
-        }
         
         return html;
     }

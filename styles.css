@@ -195,6 +195,10 @@ section{
 .page-header#clients{
     background-image: url('./assets/clients.png');
 }
+.page-header#productions{
+    background-image: url('./assets/productions-bg.png');
+}
+
 
 /* Team Grid */
 .team-grid {
