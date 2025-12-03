@@ -781,7 +781,8 @@ footer .logo{
     }
     header{ 
         position: relative;
-        padding: 8px 16px; 
+        padding: 8px 16px;
+        z-index: 100;
     }
     section{
         padding: 40px 16px;
@@ -795,7 +796,9 @@ footer .logo{
         padding: 24px; 
         flex-direction: column; 
         gap: 40px; 
-        border-top: 1px solid var(--outline); 
+        border-top: 1px solid var(--outline);
+        z-index: 100;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     #primary-nav.is-open{ display: flex; }
     .menu-toggle{ display: inline-flex; align-items: center; justify-content: center; }
