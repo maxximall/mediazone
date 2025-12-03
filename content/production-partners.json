@@ -185,6 +185,21 @@
     },
     {
       "image": "/assets/lion.png"
+    },
+    {
+      "image": "/assets/orchard.svg"
+    },
+    {
+      "image": "/assets/novel.jpeg"
+    },
+    {
+      "image": "/assets/nest.png"
+    },
+    {
+      "image": "/assets/naked.png"
+    },
+    {
+      "image": "/assets/mother.png"
     }
   ]
 }
