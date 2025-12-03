@@ -1,6 +1,33 @@
 {
   "productionPartners": [
     {
+      "image": "/assets/initial.png"
+    },
+    {
+      "image": "/assets/production-logos/two-four.jpg"
+    },
+    {
+      "image": "/assets/production-logos/twenty-twenty.png"
+    },
+    {
+      "image": "/assets/production-logos/studio-lambert.png"
+    },
+    {
+      "image": "/assets/production-logos/Southshore.png"
+    },
+    {
+      "image": "/assets/production-logos/shine.png"
+    },
+    {
+      "image": "/assets/production-logos/remarkable.png"
+    },
+    {
+      "image": "/assets/production-logos/bbc-studios.png"
+    },
+    {
+      "image": "/assets/production-logos/DSP.png"
+    },
+    {
       "image": "/assets/production-logos/zinc.jpg"
     },
     {
@@ -10,9 +37,6 @@
       "image": "/assets/production-logos/Atlantic.png"
     },
     {
-      "image": "/assets/production-logos/bbc-studios.png"
-    },
-    {
       "image": "/assets/production-logos/century.png"
     },
     {
@@ -20,9 +44,6 @@
     },
     {
       "image": "/assets/production-logos/curious.png"
-    },
-    {
-      "image": "/assets/production-logos/DSP.png"
     },
     {
       "image": "/assets/production-logos/Flabbergast.jpg"
@@ -43,16 +64,7 @@
       "image": "/assets/production-logos/red-studios.png"
     },
     {
-      "image": "/assets/production-logos/remarkable.png"
-    },
-    {
       "image": "/assets/production-logos/Rogan.png"
-    },
-    {
-      "image": "/assets/production-logos/shine.png"
-    },
-    {
-      "image": "/assets/production-logos/Southshore.png"
     },
     {
       "image": "/assets/production-logos/Spungold.png"
@@ -61,19 +73,10 @@
       "image": "/assets/production-logos/story-films.png"
     },
     {
-      "image": "/assets/production-logos/studio-lambert.png"
-    },
-    {
       "image": "/assets/production-logos/true-north.png"
     },
     {
       "image": "/assets/production-logos/Truevision.png"
-    },
-    {
-      "image": "/assets/production-logos/twenty-twenty.png"
-    },
-    {
-      "image": "/assets/production-logos/two-four.jpg"
     },
     {
       "image": "/assets/production-logos/Wag.png"
@@ -124,7 +127,7 @@
       "image": "/assets/emporium.png"
     },
     {
-      "image": "/assets/dancing-ledge.png"
+      "image": "/assets/dllogo.png"
     },
     {
       "image": "/assets/dare.png"
@@ -133,19 +136,13 @@
       "image": "/assets/hello-dolly.png"
     },
     {
-      "image": "/assets/goldwala.jpeg"
-    },
-    {
-      "image": "/assets/goldhawk.jpeg"
+      "image": "/assets/goldhawk.png"
     },
     {
       "image": "/assets/gallus.jpeg"
     },
     {
       "image": "/assets/garden.jpeg"
-    },
-    {
-      "image": "/assets/initial.png"
     },
     {
       "image": "/assets/impossible.jpeg"
@@ -161,6 +158,21 @@
     },
     {
       "image": "/assets/itn.png"
+    },
+    {
+      "image": "/assets/knickers-white-logo.avif"
+    },
+    {
+      "image": "/assets/kaw-kaw.png"
+    },
+    {
+      "image": "/assets/kailash.png"
+    },
+    {
+      "image": "/assets/iwc.jpeg"
+    },
+    {
+      "image": "/assets/itv-news.png"
     }
   ]
 }
