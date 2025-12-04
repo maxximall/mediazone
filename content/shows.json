@@ -930,6 +930,13 @@
       "date": "2025-10-29",
       "category": "documentary",
       "image": "/assets/test-image.jpg"
+    },
+    {
+      "name": "Hijack",
+      "production": "Apple TV - Forty Films",
+      "date": "2023-07-04",
+      "category": "scripted",
+      "image": "/assets/hijackidelbamainseriesimage59903.jpg.jpeg"
     }
   ]
 }
