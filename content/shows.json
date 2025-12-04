@@ -979,6 +979,41 @@
       "date": "2023-09-04",
       "category": "documentary",
       "image": "/assets/7f9a3789ec712b7e872b6f4a1934a9710f64a99f060a25edc38634f3c90b5363.png"
+    },
+    {
+      "name": "Emergency Nurses: A&E Stories",
+      "production": "ITV - Crack It",
+      "date": "2023-09-04",
+      "category": "documentary",
+      "image": "/assets/1197620.jpg"
+    },
+    {
+      "name": "Scrapper",
+      "production": "BBC Film",
+      "date": "2023-08-04",
+      "category": "scripted",
+      "image": "/assets/mv5bnmmzywi0m2utogi3ms00ogi2ltk1zdytowu3ndgwzdu0zty4xkeyxkfqcgc-._v1_.jpg"
+    },
+    {
+      "name": "London Bridge Facing Terror",
+      "production": "Channel 4 - Raw",
+      "date": "2023-08-04",
+      "category": "true-crime",
+      "image": "/assets/london_bridge_facing_terror_tt_hero_1920x1080.jpg"
+    },
+    {
+      "name": "Alone",
+      "production": "Channel 4 - The Garden",
+      "date": "2023-08-04",
+      "category": "reality",
+      "image": "/assets/alone-ep-1-73983_001_d-1206626-tc-10.03.03.03-copy.jpg"
+    },
+    {
+      "name": "The Sixth Commandment",
+      "production": "BBC - True Vision",
+      "date": "2023-07-04",
+      "category": "scripted",
+      "image": "/assets/mv5bnmewmjrimdmtywjlny00ytqwlwe5mtktyja3mtuxmdzhnde2xkeyxkfqcgc-._v1_.jpg"
     }
   ]
 }
