@@ -944,6 +944,41 @@
       "date": "2019-12-04",
       "category": "scripted",
       "image": "/assets/be55f93ccd3c1f6670814e34732899d33c95461d01903639a5b7286e2b964b80.jpg"
+    },
+    {
+      "name": "Handmade: Britains Best Woodworker",
+      "production": "Channel 4 - Plimsoll",
+      "date": "2023-10-05",
+      "category": "challenge-shows",
+      "image": "/assets/handmade.jpeg"
+    },
+    {
+      "name": "Who Killed Jill Dando?",
+      "production": "Netflix - Empress Films",
+      "date": "2023-09-04",
+      "category": "true-crime",
+      "image": "/assets/mv5bngjlotexytqtyti5yi00zdvjlwe3yzgtmdrmy2e3nzewnti3xkeyxkfqcgc-._v1_fmjpg_ux1000_.jpg"
+    },
+    {
+      "name": "The Russell Murders: Who Killed Lin & Megan?",
+      "production": "Sky Docs - Rare TV",
+      "date": "2023-09-04",
+      "category": "true-crime",
+      "image": "/assets/mv5bzwq0mmninmetzwuyoc00nwvilwfmnzctnwy3zdazmgmxztq1xkeyxkfqcgc-._v1_fmjpg_ux1000_.jpg"
+    },
+    {
+      "name": "Russell Brand: In Plain Sight",
+      "production": "Channel 4 - Hardcash",
+      "date": "2023-09-12",
+      "category": "documentary",
+      "image": "/assets/russell-brand.jpeg"
+    },
+    {
+      "name": "Victoria Secret: The Tour '23",
+      "production": "Amazon - Pulse",
+      "date": "2023-09-04",
+      "category": "documentary",
+      "image": "/assets/7f9a3789ec712b7e872b6f4a1934a9710f64a99f060a25edc38634f3c90b5363.png"
     }
   ]
 }
