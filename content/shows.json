@@ -1007,6 +1007,41 @@
       "date": "2025-06-24",
       "category": "documentary",
       "image": "/assets/trainwrecl2.png"
+    },
+    {
+      "name": "The Deepest Breath",
+      "production": "Netflix - Ventureland",
+      "date": "2023-07-09",
+      "category": "documentary",
+      "image": "/assets/mv5byjnhyzk5nzmtmzq0os00mjdklwe0zjgtngnloty3mzu4njrkxkeyxkfqcgc-._v1_.jpg"
+    },
+    {
+      "name": "90 Day Fiance UK",
+      "production": "Discovery+ - CPL",
+      "date": "2023-07-09",
+      "category": "dating",
+      "image": "/assets/6b79f6983f8df18cfe261305f367861c3b84f88b8940f6629fba407244d0530c.jpg"
+    },
+    {
+      "name": "Laura Whitmore Investigates",
+      "production": "ITV - Rumpus",
+      "date": "2023-07-09",
+      "category": "documentary",
+      "image": "/assets/laura_whitmore.jpg"
+    },
+    {
+      "name": "Aftershock: Everest and Nepal Earthquake",
+      "production": "Netflix - Raw",
+      "date": "2022-10-09",
+      "category": "documentary",
+      "image": "/assets/aftershock.jpg"
+    },
+    {
+      "name": "The Big Swindle",
+      "production": "Discovery + - Crack It",
+      "date": "2023-06-08",
+      "category": "documentary",
+      "image": "/assets/6184074084253f242dbff4ac0a10901aa0026f1e2baf319b1175d441e9ceec33.jpg"
     }
   ]
 }
