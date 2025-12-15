@@ -1091,6 +1091,41 @@
       "date": "2023-04-14",
       "category": "documentary",
       "image": "/assets/fufl_qiwcaehnwt.jpg"
+    },
+    {
+      "name": "Vishal",
+      "production": "BBC Sound - BBC Studios",
+      "date": "2023-04-15",
+      "category": "podcasts",
+      "image": "/assets/p0fhbvqb.jpg"
+    },
+    {
+      "name": "Naked Alone and Racing To Get Home",
+      "production": "E4 - Avalon",
+      "date": "2023-04-15",
+      "category": "challenge-shows",
+      "image": "/assets/naked-alone-and-racing-to-get-home_showtile.png.925c69dbda4e699dd56278707b6794ac.jpg"
+    },
+    {
+      "name": "Made Up In Belfast",
+      "production": "BBC / Afromic Productions",
+      "date": "2023-04-25",
+      "category": "reality",
+      "image": "/assets/unnamed.png"
+    },
+    {
+      "name": "Finding Michael",
+      "production": "Disney / Shine",
+      "date": "2023-03-15",
+      "category": "documentary",
+      "image": "/assets/mv5bmmrimtvjywetzme1ms00zdkyltk2nwytmmfizjk5otu2ngi0xkeyxkfqcgc-._v1_fmjpg_ux1000_.jpg"
+    },
+    {
+      "name": "Jason and Clara: In Memory of Maudie",
+      "production": "ITV ",
+      "date": "2023-03-15",
+      "category": "documentary",
+      "image": "/assets/fsskf80xoaadoda.jpg"
     }
   ]
 }
