@@ -1126,6 +1126,48 @@
       "date": "2023-03-15",
       "category": "documentary",
       "image": "/assets/fsskf80xoaadoda.jpg"
+    },
+    {
+      "name": "Celebrity Hunted",
+      "production": "Channel 4 - Shine",
+      "date": "2023-03-17",
+      "category": "challenge-shows",
+      "image": "/assets/medium742561s5celebrity-hunted-s5-7-147242f.jpg"
+    },
+    {
+      "name": "Bend It Like Bollywood",
+      "production": "BBC - Clockwork Productions",
+      "date": "2023-03-17",
+      "category": "reality",
+      "image": "/assets/p0f68jjw.jpg"
+    },
+    {
+      "name": "Go Hard or Go Home",
+      "production": "BBC - Wall to Wall",
+      "date": "2023-02-15",
+      "category": "challenge-shows",
+      "image": "/assets/p0f2svhg.jpg"
+    },
+    {
+      "name": "Bronson Fit to be Free",
+      "production": "Channel 4 - Naked Productions",
+      "date": "2023-02-17",
+      "category": "true-crime",
+      "image": "/assets/bef124c0-d96b-47fa-bb4a-3ed6451726f6.jpg"
+    },
+    {
+      "name": "Fred West The Glasgow Girls",
+      "production": "Sky - IWC Media",
+      "date": "2023-02-17",
+      "category": "true-crime",
+      "image": "/assets/24120_7180_glasgow_girls_landscape.jpg"
+    },
+    {
+      "name": "File on 4: Living with Andrew Tate",
+      "production": "Radio 4 - BBC",
+      "date": "2023-02-17",
+      "category": "podcasts",
+      "image": "/assets/p0f23vgd.jpg"
     }
   ]
 }
