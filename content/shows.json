@@ -1231,6 +1231,41 @@
       "date": "2023-01-26",
       "category": "documentary",
       "image": "/assets/974760-emily-atack-asking-for-it-0-230-0-345-crop.jpg"
+    },
+    {
+      "name": "Young Masterchef",
+      "production": "BBC - Shine",
+      "date": "2023-01-26",
+      "category": "challenge-shows",
+      "image": "/assets/jan23.jpg"
+    },
+    {
+      "name": "Written in The Stars",
+      "production": "Discovery+ - STV",
+      "date": "2022-12-21",
+      "category": "challenge-shows",
+      "image": "/assets/19006829-copy.jpg"
+    },
+    {
+      "name": "Save Our Squad: With David Beckham",
+      "production": "Disney+ - Twenty Twenty Productions",
+      "date": "2022-11-28",
+      "category": "documentary",
+      "image": "/assets/p_disneyplusoriginals_saveoursquadwithdavidbeckham_post_7f58fa36.jpeg"
+    },
+    {
+      "name": "Pride Of Britain Awards",
+      "production": "ITV - Multistory",
+      "date": "2022-11-26",
+      "category": "reality",
+      "image": "/assets/pfb22-copy.jpg"
+    },
+    {
+      "name": "Masterchef : The Proffessionals",
+      "production": "BBC - Shine",
+      "date": "2022-11-26",
+      "category": "challenge-shows",
+      "image": "/assets/proffessionals22.jpg"
     }
   ]
 }
