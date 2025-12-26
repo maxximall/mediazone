@@ -1196,6 +1196,41 @@
       "date": "2023-02-01",
       "category": "documentary",
       "image": "/assets/p0f2bclv.jpg"
+    },
+    {
+      "name": "Know Your Sh!T: Inside Our Guts",
+      "production": "Channel 4 - Monkey Kingdom",
+      "date": "2023-01-26",
+      "category": "documentary",
+      "image": "/assets/website-tile-know-you-sht-copy.jpg"
+    },
+    {
+      "name": "SAS: Who Dares Wins",
+      "production": "Channel 4 - Minnow",
+      "date": "2023-01-26",
+      "category": "challenge-shows",
+      "image": "/assets/sas23.jpeg"
+    },
+    {
+      "name": "Th Hatchet Wielding Hitchhiker",
+      "production": "Netflix - Raw",
+      "date": "2023-01-26",
+      "category": "true-crime",
+      "image": "/assets/mv5bzgizywnjnwqtmduwzs00ztnmlwflogmtnmq4n2u1mmq5ywflxkeyxkfqcgc-._v1_.jpg"
+    },
+    {
+      "name": "Special Forces: Worlds Toughest Test",
+      "production": "Fox USA - Minnow",
+      "date": "2023-01-26",
+      "category": "challenge-shows",
+      "image": "/assets/mv5bzjkzzwi5ztetmtvkni00nzriltk3otitzjrjyjc2nwi2oduzxkeyxkfqcgc-._v1_.jpg"
+    },
+    {
+      "name": "Emily Attack: Asking for it?",
+      "production": "BBC - Little Gem",
+      "date": "2023-01-26",
+      "category": "documentary",
+      "image": "/assets/974760-emily-atack-asking-for-it-0-230-0-345-crop.jpg"
     }
   ]
 }
