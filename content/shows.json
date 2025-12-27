@@ -1266,6 +1266,27 @@
       "date": "2022-11-26",
       "category": "challenge-shows",
       "image": "/assets/proffessionals22.jpg"
+    },
+    {
+      "name": "How to Survive a Dictator with Munya Chawawa",
+      "production": "Channel 4 - Rumpus Media",
+      "date": "2022-10-27",
+      "category": "documentary",
+      "image": "/assets/44711a48-08dc-4eba-a59df91f470a7378-copy.jpg"
+    },
+    {
+      "name": "Celebrity SAS: Who dares wins (series 1-4) ",
+      "production": "Channel 4 - Minnow Films",
+      "date": "2022-10-27",
+      "category": "challenge-shows",
+      "image": "/assets/medium_72477_s4_celeb-sas-series-4-1-group-shot_2.jpg"
+    },
+    {
+      "name": "Head On: Rugby, Dementia and Me",
+      "production": "BBC - Raw",
+      "date": "2022-10-27",
+      "category": "documentary",
+      "image": "/assets/img_4747-1-1400x933.jpg"
     }
   ]
 }
