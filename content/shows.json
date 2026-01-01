@@ -1420,6 +1420,41 @@
       "date": "2022-02-01",
       "category": "documentary",
       "image": "/assets/cecfefeb-c997-4e8c-9783-b135f4ebc005-copy.jpg"
+    },
+    {
+      "name": "Freeze: Skating on the Edge",
+      "production": "BBC - Blast",
+      "date": "2022-02-22",
+      "category": "challenge-shows",
+      "image": "/assets/freeze-skating-on-the-edge-bbc-three-blast-films-feb-2022.jpeg"
+    },
+    {
+      "name": "The Tindler Swindler ",
+      "production": "Netflix - Raw",
+      "date": "2022-01-01",
+      "category": "true-crime",
+      "image": "/assets/tinder-copy.jpg"
+    },
+    {
+      "name": "We are England",
+      "production": "BBC - BBC Studios",
+      "date": "2022-01-01",
+      "category": "documentary",
+      "image": "/assets/03216957_poster_w780-copy.jpg"
+    },
+    {
+      "name": "Seat at The Table",
+      "production": "YouTube - Silverback Films",
+      "date": "2022-02-01",
+      "category": "documentary",
+      "image": "/assets/hqdefault.jpg"
+    },
+    {
+      "name": "Dating's Deadliest Secrets",
+      "production": "BBC - Perfect Storm",
+      "date": "2022-02-01",
+      "category": "documentary",
+      "image": "/assets/p0bpcv95.jpg"
     }
   ]
 }
