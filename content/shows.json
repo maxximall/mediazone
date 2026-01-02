@@ -1560,6 +1560,41 @@
       "date": "2021-09-02",
       "category": "documentary",
       "image": "/assets/nowhere-to-run-abuse-by-our-coach-lambnet-bbc-three-sept-2021.png"
+    },
+    {
+      "name": "Crime Stories: India Detectives",
+      "production": "Netflix - Minnow Films",
+      "date": "2021-09-02",
+      "category": "true-crime",
+      "image": "/assets/crime-stories-india-detectives-minnow-netflix-sept-2021.jpg"
+    },
+    {
+      "name": "Hidden Disabilities : Whats The Truth?",
+      "production": "ITV Tonight - ITV",
+      "date": "2021-08-02",
+      "category": "documentary",
+      "image": "/assets/9316_hub_image.png"
+    },
+    {
+      "name": "Transitioning Teens",
+      "production": "BBC - Proper Content",
+      "date": "2021-08-02",
+      "category": "documentary",
+      "image": "/assets/transitioning-teens-proper-content-bbc-three-aug-2021.jpg"
+    },
+    {
+      "name": "Changing Rooms",
+      "production": "Channel 4 - Shine",
+      "date": "2021-08-02",
+      "category": "reality",
+      "image": "/assets/changing-rooms-c4-shine-aug-2021.jpeg"
+    },
+    {
+      "name": "Kinky Daters",
+      "production": "E4 - MGM",
+      "date": "2021-08-02",
+      "category": "documentary",
+      "image": "/assets/kinky-daters-mgm-e4-aug-2021.jpg"
     }
   ]
 }
