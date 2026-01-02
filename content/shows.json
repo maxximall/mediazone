@@ -1525,6 +1525,41 @@
       "date": "2021-10-02",
       "category": "reality",
       "image": "/assets/the-perfecct-pitch-c4-avanti-oct-2021.jpg"
+    },
+    {
+      "name": "Celebrity SAS 2021",
+      "production": "Channel 4 -  Minnow",
+      "date": "2021-09-02",
+      "category": "challenge-shows",
+      "image": "/assets/celebrity-sas-minnow-channel-4-sept-2021.jpg"
+    },
+    {
+      "name": "Sex Actually with Alice Levine",
+      "production": "Channel 4 - Mindhouse",
+      "date": "2021-09-02",
+      "category": "documentary",
+      "image": "/assets/sex-actually-with-alice-levine-mindhouse-productions-c4-sept-2021-2.jpg"
+    },
+    {
+      "name": "Extreme Food Phobics",
+      "production": "Channel 4 - Sothshore",
+      "date": "2021-09-02",
+      "category": "documentary",
+      "image": "/assets/extreme-food-phobics-south-shore-w-channel-sept-2021-2.jpg"
+    },
+    {
+      "name": "Grenfell: The Untold Story",
+      "production": "Channel 4 - BBC Studios",
+      "date": "2021-09-02",
+      "category": "documentary",
+      "image": "/assets/grenfell-the-untold-story-bbc-studios-c4-sept-2021.jpg"
+    },
+    {
+      "name": "Nowhere to Run: Abused by Our Coach",
+      "production": "BBC - Lambnet",
+      "date": "2021-09-02",
+      "category": "documentary",
+      "image": "/assets/nowhere-to-run-abuse-by-our-coach-lambnet-bbc-three-sept-2021.png"
     }
   ]
 }
