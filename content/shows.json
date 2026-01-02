@@ -1455,6 +1455,41 @@
       "date": "2022-02-01",
       "category": "documentary",
       "image": "/assets/p0bpcv95.jpg"
+    },
+    {
+      "name": "Woodland Workshop",
+      "production": "Quest - Ricochet",
+      "date": "2022-01-02",
+      "category": "challenge-shows",
+      "image": "/assets/woodland-workshop-ricochet-quest-jan-2022.jpg"
+    },
+    {
+      "name": "Celebrity Hunted",
+      "production": "Channel 4 - Shine",
+      "date": "2022-01-02",
+      "category": "challenge-shows",
+      "image": "/assets/celebrity-hunted-c4-shine-jan-2022.jpg"
+    },
+    {
+      "name": "The Puppet Master",
+      "production": "Netflix - Raw",
+      "date": "2022-01-02",
+      "category": "true-crime",
+      "image": "/assets/the-puppet-master-hunting-the-ultimate-conman-netflxi-raw-jan-2022.jpeg"
+    },
+    {
+      "name": "Walk The Line",
+      "production": "ITV - Lifted",
+      "date": "2021-12-08",
+      "category": "game-shows",
+      "image": "/assets/walk-the-line-itv-lifted-entertainment-dec-2021.jpeg"
+    },
+    {
+      "name": "Paddy and Christine McGuiness: Our Family and Autism",
+      "production": "BBC - Raw",
+      "date": "2021-11-02",
+      "category": "documentary",
+      "image": "/assets/paddy-and-christine-mcguinness-our-family-and-autism-bbc-one-raw-tv-nov-2021.jpeg"
     }
   ]
 }
