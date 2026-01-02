@@ -1490,6 +1490,41 @@
       "date": "2021-11-02",
       "category": "documentary",
       "image": "/assets/paddy-and-christine-mcguinness-our-family-and-autism-bbc-one-raw-tv-nov-2021.jpeg"
+    },
+    {
+      "name": "Paul Merson: Football Gambling and Me",
+      "production": "BBC - Little Gem",
+      "date": "2021-10-02",
+      "category": "documentary",
+      "image": "/assets/paul-merson-football-gambling-and-me-little-gem-bbc-one-oct-2021.jpeg"
+    },
+    {
+      "name": "Murder Island",
+      "production": "Channel 4 - STV",
+      "date": "2021-10-02",
+      "category": "challenge-shows",
+      "image": "/assets/murder-island-stv-c4-oct-2021.jpg"
+    },
+    {
+      "name": "The Love Trap",
+      "production": "Channel 4 - Great Scott Media",
+      "date": "2021-10-02",
+      "category": "dating",
+      "image": "/assets/the-love-trap-c4-great-scott-oct-2021.jpeg"
+    },
+    {
+      "name": "Celebrity Ghost Trip",
+      "production": "E4 - 12 Yard",
+      "date": "2021-10-02",
+      "category": "reality",
+      "image": "/assets/celebrity-ghost-trip-12-yard-e4-october-2021.jpg"
+    },
+    {
+      "name": "The Perfect Pitch",
+      "production": "Channel 4 - Avanti",
+      "date": "2021-10-02",
+      "category": "reality",
+      "image": "/assets/the-perfecct-pitch-c4-avanti-oct-2021.jpg"
     }
   ]
 }
