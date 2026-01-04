@@ -1595,6 +1595,41 @@
       "date": "2021-08-02",
       "category": "documentary",
       "image": "/assets/kinky-daters-mgm-e4-aug-2021.jpg"
+    },
+    {
+      "name": "Joey Essex: Grief and Me",
+      "production": "BBC - Betty TV",
+      "date": "2021-06-04",
+      "category": "documentary",
+      "image": "/assets/p09jjmwr.jpg"
+    },
+    {
+      "name": "Reclaiming Amy",
+      "production": "BBC - Curious Films",
+      "date": "2021-07-04",
+      "category": "documentary",
+      "image": "/assets/reclaiming-amy-curious-films-bbc-2-ju-2021.jpeg"
+    },
+    {
+      "name": "Born Mucky: Life On The Farm",
+      "production": "Discovery+ - Big Little Fish",
+      "date": "2021-07-04",
+      "category": "reality",
+      "image": "/assets/born-mucky-life-on-the-farm-big-little-fish-discovery-july-2021-s2-.jpg"
+    },
+    {
+      "name": "Football's Gambling Addiction",
+      "production": "Channel 4 - Firecrest Films",
+      "date": "2021-06-04",
+      "category": "documentary",
+      "image": "/assets/footballs-gambling-addiction-firecrest-c4-june-2021.jpg"
+    },
+    {
+      "name": "The Psychedelic Drug Trial",
+      "production": "BBC - Grain Media",
+      "date": "2021-06-04",
+      "category": "documentary",
+      "image": "/assets/the-psychedelic-drug-trial-grain-media-bbc-two-june-2021-2.jpeg"
     }
   ]
 }
