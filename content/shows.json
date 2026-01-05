@@ -1630,6 +1630,41 @@
       "date": "2021-06-04",
       "category": "documentary",
       "image": "/assets/the-psychedelic-drug-trial-grain-media-bbc-two-june-2021-2.jpeg"
+    },
+    {
+      "name": "SAS Celebrity Who Dare Wins (series 8)",
+      "production": "Channel 4 - Minnow Films",
+      "date": "2026-01-04",
+      "category": "challenge-shows",
+      "image": "/assets/celebrity-sas-north-africa-lineup-2026.jpg"
+    },
+    {
+      "name": "Kirstie and Phil's Love it Or List it",
+      "production": "Channel 4 - Raise The Roof Productions",
+      "date": "2026-01-07",
+      "category": "reality",
+      "image": "/assets/jan26.webp"
+    },
+    {
+      "name": "Patience S2",
+      "production": "Channel 4 - Eagle Eye Drama",
+      "date": "2026-01-07",
+      "category": "scripted",
+      "image": "/assets/patience-s2.jpg"
+    },
+    {
+      "name": "Ant and Dec's Limitless Win",
+      "production": "ITV - Hello Dolly",
+      "date": "2026-01-11",
+      "category": "game-shows",
+      "image": "/assets/16x9-copy.jpg"
+    },
+    {
+      "name": "Operation Ouch",
+      "production": "CBBC - Maverick",
+      "date": "2021-06-05",
+      "category": "game-shows",
+      "image": "/assets/operation-ouch-maverick-tv-cbbc-june-2021-.jpg"
     }
   ]
 }
