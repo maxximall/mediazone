@@ -1791,6 +1791,48 @@
       "date": "2021-01-05",
       "category": "reality",
       "image": "/assets/pooch-perfect-beyond-productions-bbc-one-jan-2021.jpg"
+    },
+    {
+      "name": "Kings Of The Woods",
+      "production": "Quest - Ricochet",
+      "date": "2021-01-05",
+      "category": "reality",
+      "image": "/assets/kings-of-the-wood-ricochet-quest-jan-2022.jpg"
+    },
+    {
+      "name": "How to Lose Weight Well",
+      "production": "Channel 4 - Little Gem",
+      "date": "2021-01-05",
+      "category": "documentary",
+      "image": "/assets/how-to-lose-weight-well-little-gem-c4-jan-2021.webp"
+    },
+    {
+      "name": "First Dates Christmas",
+      "production": "Channel 4 - Twenty Twenty",
+      "date": "2020-12-05",
+      "category": "dating",
+      "image": "/assets/first-dates-at-christmas-twenty-twenty-c4-dec-2020.jpg"
+    },
+    {
+      "name": "A Wartime Christmas",
+      "production": "Channel 5 - Viacom Studios",
+      "date": "2020-12-05",
+      "category": "reality",
+      "image": "/assets/a-wartime-christmas-viacom-studios-c5-dec-2020.jpg"
+    },
+    {
+      "name": "Becoming You",
+      "production": "Apple TV - Wall To Wall",
+      "date": "2020-11-05",
+      "category": "documentary",
+      "image": "/assets/becoming-you-wall-2-wall-appletv-nov-2020.jpg"
+    },
+    {
+      "name": "Ovie: Life After Reality TV",
+      "production": "BBC",
+      "date": "2020-11-05",
+      "category": "documentary",
+      "image": "/assets/ovie-life-after-reality-tv-bbc-three-nov-2020.jpg"
     }
   ]
 }
