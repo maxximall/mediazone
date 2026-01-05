@@ -1665,6 +1665,48 @@
       "date": "2021-06-05",
       "category": "game-shows",
       "image": "/assets/operation-ouch-maverick-tv-cbbc-june-2021-.jpg"
+    },
+    {
+      "name": "Got What it Takes? (Series 6)",
+      "production": "CBBC - Fulwell 73",
+      "date": "2021-06-05",
+      "category": "game-shows",
+      "image": "/assets/got-what-it-takes-fulwell-73-cbbc-june-2021.jpg"
+    },
+    {
+      "name": "SAS Who Dares Wins (Series 6)",
+      "production": "Channel 4 - Minnow Films",
+      "date": "2021-05-19",
+      "category": "challenge-shows",
+      "image": "/assets/sas-who-dares-wins-season-6-minnow-c4-may-2021.jpg"
+    },
+    {
+      "name": "Subnormal : A British Scandal",
+      "production": "BBC - Rogan Productions",
+      "date": "2021-05-05",
+      "category": "documentary",
+      "image": "/assets/subnormal-a-british-scandal-bbc-rogan-productions-bbc1-may-2021.jpg"
+    },
+    {
+      "name": "The Black Maternity Scandal : Dispatches",
+      "production": "Channel 4 - Proper Content",
+      "date": "2021-05-05",
+      "category": "documentary",
+      "image": "/assets/the-black-maternity-scandal-dispatches-proper-content-c4-april-2021.jpg"
+    },
+    {
+      "name": "Caroline Flack : Her Life and Death",
+      "production": "Channel 4 - Curious Films",
+      "date": "2021-03-05",
+      "category": "documentary",
+      "image": "/assets/caroline-flack-her-life-and-death-curious-films-c4-march-2021.webp"
+    },
+    {
+      "name": "To Catch a Stalker",
+      "production": "BBC - Chatterbox",
+      "date": "2025-07-05",
+      "category": "documentary",
+      "image": "/assets/p0jt7bmf.jpg"
     }
   ]
 }
