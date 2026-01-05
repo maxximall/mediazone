@@ -1833,6 +1833,13 @@
       "date": "2020-11-05",
       "category": "documentary",
       "image": "/assets/ovie-life-after-reality-tv-bbc-three-nov-2020.jpg"
+    },
+    {
+      "name": "Social Media Monsters",
+      "production": "Channel 4 - Crack it",
+      "date": "2025-12-05",
+      "category": "true-crime",
+      "image": "/assets/social-media-monsters.png"
     }
   ]
 }
