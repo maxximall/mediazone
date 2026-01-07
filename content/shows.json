@@ -1854,6 +1854,41 @@
       "date": "2025-07-31",
       "category": "documentary",
       "image": "/assets/7f9a3789ec712b7e872b6f4a1934a9710f64a99f060a25edc38634f3c90b5363.jpg"
+    },
+    {
+      "name": "Educating Greater Manchester",
+      "production": "Channel 4 - Two Four",
+      "date": "2020-11-19",
+      "category": "documentary",
+      "image": "/assets/educating-greater-manchester-twofour-c4-nov-2020.jpg"
+    },
+    {
+      "name": "Being Frank : The Frank Gardner Story",
+      "production": "BBC - Curious Films",
+      "date": "2020-11-07",
+      "category": "documentary",
+      "image": "/assets/being-frank-2.jpg"
+    },
+    {
+      "name": "Pride Of Britain Awards 2020",
+      "production": "ITV Multistory",
+      "date": "2020-11-07",
+      "category": "reality",
+      "image": "/assets/pride-of-britain-awards-2020-multistory-itv-nov-2020-2.jpg"
+    },
+    {
+      "name": "Panorama : Sports Hidden Crisis",
+      "production": "BBC - Firecrest Films",
+      "date": "2020-10-07",
+      "category": "documentary",
+      "image": "/assets/panorama-firecrest-sports-hidden-crises-oct-2020.jpg"
+    },
+    {
+      "name": "IRL with Team Charlene",
+      "production": "CITV - Ivy House Productions",
+      "date": "2020-10-07",
+      "category": "documentary",
+      "image": "/assets/irl-with-team-charlene-oct-2020-ivy-house-productions-citv.jpg"
     }
   ]
 }
