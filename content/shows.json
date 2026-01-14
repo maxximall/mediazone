@@ -2036,6 +2036,76 @@
       "date": "2020-06-14",
       "category": "documentary",
       "image": "/assets/surviving-the-mount-st-helens-disaster-nat-geo-off-the-fence-june-2020.jpg"
+    },
+    {
+      "name": "Our Lives: Soul Boy",
+      "production": "BBC",
+      "date": "2020-05-14",
+      "category": "documentary",
+      "image": "/assets/our-lives-soul-boy-bbc-one-may-2020.jpg"
+    },
+    {
+      "name": "Harry's Heros :Euro Having A Laugh",
+      "production": "ITV - Talkback",
+      "date": "2020-05-14",
+      "category": "reality",
+      "image": "/assets/harry-heroes-euro-having-a-laugh-itv-talkback-2020.jpeg"
+    },
+    {
+      "name": "Celebrity Who Dares Wins",
+      "production": "Channel 4 - Minnow",
+      "date": "2020-04-14",
+      "category": "challenge-shows",
+      "image": "/assets/celebrity-sas-who-dares-wins-2020-minnow-c4-april.jpg"
+    },
+    {
+      "name": "The Mum Who Got Tourette's",
+      "production": "Channel 4 - October Films",
+      "date": "2020-04-14",
+      "category": "documentary",
+      "image": "/assets/the-mum-who-got-tourettes-october-c4-apr-2020-2.jpg"
+    },
+    {
+      "name": "Too Hot To Handle",
+      "production": "Netflix - Talkback",
+      "date": "2020-04-14",
+      "category": "dating",
+      "image": "/assets/too-hot-to-handle-talkback-netflix-april-2020.jpg"
+    },
+    {
+      "name": "Believe Me: The Cyprus Rape Case",
+      "production": "ITV - Clover Films",
+      "date": "2020-04-14",
+      "category": "true-crime",
+      "image": "/assets/believe-me-the-cyprus-rape-case-clover-films-itv-april-2020.jpg"
+    },
+    {
+      "name": "Return to Belsen",
+      "production": "ITV - Multistory",
+      "date": "2020-04-14",
+      "category": "documentary",
+      "image": "/assets/return-to-belsen-multistory-itv-april-2020.jpg"
+    },
+    {
+      "name": "Drych: Dau Frfind, Un Aren",
+      "production": "Boom Cymru - S4C",
+      "date": "2020-04-14",
+      "category": "documentary",
+      "image": "/assets/drych-dau-ffrind-un-aren-boom-cymru-s4c-april-2020.jpg"
+    },
+    {
+      "name": "Babies",
+      "production": "Netflix - Nutopia",
+      "date": "2020-02-14",
+      "category": "documentary",
+      "image": "/assets/babies-netflix-nutopia-feb-2020.jpg"
+    },
+    {
+      "name": "Undateables S11",
+      "production": "Channel 4 - Betty TV",
+      "date": "2020-03-14",
+      "category": "dating",
+      "image": "/assets/undateables-betty-c4-march-2020.jpg"
     }
   ]
 }
