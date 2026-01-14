@@ -1966,6 +1966,41 @@
       "date": "2020-08-14",
       "category": "documentary",
       "image": "/assets/surviving-the-virs-my-brother-and-me-little-gem-bbc1-aug-2020.jpg"
+    },
+    {
+      "name": "Our School",
+      "production": "CBBC - Two Four",
+      "date": "2020-08-14",
+      "category": "reality",
+      "image": "/assets/cbbc-our-school.jpg"
+    },
+    {
+      "name": "The Voice Kids",
+      "production": "ITV - ITV Studios",
+      "date": "2020-08-14",
+      "category": "reality",
+      "image": "/assets/the-voice-kids-itv-studios-aug-2020.jpg"
+    },
+    {
+      "name": "Madeline McCann: The Hunt for the Prime Suspect",
+      "production": "ITV - Multistory",
+      "date": "2020-08-14",
+      "category": "documentary",
+      "image": "/assets/madeleine-mccann-the-hunt-for-the-prime-suspect-itv-multi-july-2020.jpg"
+    },
+    {
+      "name": "Viral: The 5G Conspiracy Theory",
+      "production": "BBC News",
+      "date": "2020-07-14",
+      "category": "documentary",
+      "image": "/assets/viral-the-5g-conspiracy-theory-bbc1-july-2020.jpg"
+    },
+    {
+      "name": "The School That Tried to End Racism",
+      "production": "Channel 4 - Proper Content",
+      "date": "2020-06-14",
+      "category": "documentary",
+      "image": "/assets/the-school-that-tried-to-end-racism-c4-proper-content-jun-2020.jpg"
     }
   ]
 }
