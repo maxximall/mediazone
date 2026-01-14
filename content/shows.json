@@ -2001,6 +2001,41 @@
       "date": "2020-06-14",
       "category": "documentary",
       "image": "/assets/the-school-that-tried-to-end-racism-c4-proper-content-jun-2020.jpg"
+    },
+    {
+      "name": "Letters in Lockdown",
+      "production": "E4 - Afro-Mic Productions",
+      "date": "2020-06-14",
+      "category": "documentary",
+      "image": "/assets/letters-in-lockdown-e4-afro-mic-productions-june-2020.jpg"
+    },
+    {
+      "name": "Britains Best Parent",
+      "production": "Channel 4 - Monkey Kingdom",
+      "date": "2020-05-14",
+      "category": "documentary",
+      "image": "/assets/britains-best-parent-monkey-kingdom-c4-may-2020.png"
+    },
+    {
+      "name": "The Big Flower Fight",
+      "production": "Netflix - Multistory",
+      "date": "2020-05-14",
+      "category": "game-shows",
+      "image": "/assets/the-big-flower-fight-2.jpg"
+    },
+    {
+      "name": "You Are What You Wear",
+      "production": "BBC - Multistory",
+      "date": "2020-05-14",
+      "category": "documentary",
+      "image": "/assets/you-are-what-you-wear-bbc-1-multistory-media-june-2020.jpg"
+    },
+    {
+      "name": "Surviving The Mount St. Helens Disaster",
+      "production": "Nat Geo - Off The Fence",
+      "date": "2020-06-14",
+      "category": "documentary",
+      "image": "/assets/surviving-the-mount-st-helens-disaster-nat-geo-off-the-fence-june-2020.jpg"
     }
   ]
 }
