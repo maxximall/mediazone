@@ -1896,6 +1896,41 @@
       "date": "2020-09-07",
       "category": "reality",
       "image": "/assets/littlemixlarge.jpg"
+    },
+    {
+      "name": "First Dates Series 9",
+      "production": "Channel 4 - Twenty Twenty",
+      "date": "2020-10-14",
+      "category": "dating",
+      "image": "/assets/first-dates-s9-twentytwenty-c4-oct-2020.jpg"
+    },
+    {
+      "name": "Married at First Sight",
+      "production": "Channel 4 - CPL",
+      "date": "2020-10-14",
+      "category": "dating",
+      "image": "/assets/married-at-first-sight-cpl-c4-s5-oct-2020.jpg"
+    },
+    {
+      "name": "The Real Des - Denis Nilsen Story",
+      "production": "ITV - Multistory",
+      "date": "2020-09-14",
+      "category": "scripted",
+      "image": "/assets/the-real-des-the-dennis-nilsen-story-multistory-itv-sept-2020.jpg"
+    },
+    {
+      "name": "Who Wants to be a Millionaire (series 35)",
+      "production": "ITV - Stelify",
+      "date": "2020-09-14",
+      "category": "game-shows",
+      "image": "/assets/wwtbam-itv-stellify-sept-2020.jpg"
+    },
+    {
+      "name": "Lodgers for Codgers",
+      "production": "Channel 4 - RDF",
+      "date": "2020-09-14",
+      "category": "reality",
+      "image": "/assets/lodgers-for-codgers-rdf-c4-aug-2020.jpg"
     }
   ]
 }
