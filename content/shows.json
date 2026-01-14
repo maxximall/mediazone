@@ -2106,6 +2106,76 @@
       "date": "2020-03-14",
       "category": "dating",
       "image": "/assets/undateables-betty-c4-march-2020.jpg"
+    },
+    {
+      "name": "Win The Wilderness: Alaska",
+      "production": "BBC - Two Four",
+      "date": "2020-03-14",
+      "category": "challenge-shows",
+      "image": "/assets/win-the-wilderness-bbc-2-march-2020.png"
+    },
+    {
+      "name": "The Unshockable Dr Ronx",
+      "production": "BBC - The Garden",
+      "date": "2020-02-14",
+      "category": "documentary",
+      "image": "/assets/the-unshockable-dr-ronx-bbc-three-the-garden-feb-2020-2.jpg"
+    },
+    {
+      "name": "Dress to Impress",
+      "production": "ITV",
+      "date": "2020-03-14",
+      "category": "reality",
+      "image": "/assets/dress-to-impress-itv-march-2020.jpg"
+    },
+    {
+      "name": "The Wedding Fixer",
+      "production": "W Channel - Little Gem",
+      "date": "2020-02-14",
+      "category": "reality",
+      "image": "/assets/the-wedding-fixer-w-channel-little-gem-feb-2020.jpg"
+    },
+    {
+      "name": "Curby Brides Boutique",
+      "production": "TLC - Angel Eye Media",
+      "date": "2020-02-14",
+      "category": "reality",
+      "image": "/assets/curvy-brides-boutique-angel-eye-tlc-march-2020.jpg"
+    },
+    {
+      "name": "Hunted",
+      "production": "Channel 4 - Shine",
+      "date": "2020-02-14",
+      "category": "challenge-shows",
+      "image": "/assets/hunted-shine-channel-4-feb-2020.jpg"
+    },
+    {
+      "name": "Very Hard Questions",
+      "production": "Channel 4  - Youngest Media",
+      "date": "2020-02-14",
+      "category": "game-shows",
+      "image": "/assets/very-hard-questions-channel-4-youngest-media-feb-2020.jpg"
+    },
+    {
+      "name": "The Chase",
+      "production": "ITV - Potato",
+      "date": "2020-02-14",
+      "category": "game-shows",
+      "image": "/assets/the-chase-potato-itv-2020.jpg"
+    },
+    {
+      "name": "Models: Street to Catwalk",
+      "production": "BBC - Multistory",
+      "date": "2020-02-14",
+      "category": "reality",
+      "image": "/assets/models-street-to-catwalk-mutlistory-bbc-three-feb-2020.jpg"
+    },
+    {
+      "name": "SAS: Who Dares Wins",
+      "production": "Channel 4 - Minnow Films",
+      "date": "2020-01-21",
+      "category": "challenge-shows",
+      "image": "/assets/sas-wdw-2020-minnow-c4-jan-2020.jpg"
     }
   ]
 }
