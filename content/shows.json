@@ -2176,6 +2176,69 @@
       "date": "2020-01-21",
       "category": "challenge-shows",
       "image": "/assets/sas-wdw-2020-minnow-c4-jan-2020.jpg"
+    },
+    {
+      "name": "Meat The Family",
+      "production": "Channel 4 - Spungold",
+      "date": "2020-01-14",
+      "category": "documentary",
+      "image": "/assets/meat-the-family-c4-spungold-jan-2020.jpg"
+    },
+    {
+      "name": "Sun, Sea and Surgery",
+      "production": "Channel 4 - The Garden",
+      "date": "2020-01-14",
+      "category": "documentary",
+      "image": "/assets/sun-sea-and-surgery-c4-the-garden-jan-2020.jpg"
+    },
+    {
+      "name": "Veganville",
+      "production": "BBC - Plimsoll",
+      "date": "2020-01-14",
+      "category": "documentary",
+      "image": "/assets/viganville-bbc-three-plimsol-jan-2020.jpg"
+    },
+    {
+      "name": "This is Our Family",
+      "production": "Sky Atlantic - Little Gem",
+      "date": "2020-01-02",
+      "category": "reality",
+      "image": "/assets/this-is-our-family-2-sky-atlantic-little-gem-jan-2020.jpeg"
+    },
+    {
+      "name": "I'm With The Band : Nast Cherry",
+      "production": "Netflix - Grain Media",
+      "date": "2019-11-14",
+      "category": "reality",
+      "image": "/assets/nasty-1-cherry-netflix-grain-media-nov-2019.jpg"
+    },
+    {
+      "name": "Treasure Island with Bear Grylls",
+      "production": "Channel 4 - Shine",
+      "date": "2019-11-14",
+      "category": "challenge-shows",
+      "image": "/assets/treasure-island-with-bear-grylls-shine-c4-sept-2019.jpg"
+    },
+    {
+      "name": "The Voice Kids",
+      "production": "ITV",
+      "date": "2019-11-14",
+      "category": "reality",
+      "image": "/assets/the-voice-kids-itv-july-19.jpg"
+    },
+    {
+      "name": "SAS: Who dares Wins",
+      "production": "Channel 4 - Minnow Films",
+      "date": "2019-10-14",
+      "category": "challenge-shows",
+      "image": "/assets/sas-4-c4-jan-19.jpg"
+    },
+    {
+      "name": "The Undateables",
+      "production": "Channel 4  - Betty",
+      "date": "2019-10-14",
+      "category": "dating",
+      "image": "/assets/the-undateables-s9-september-2018.jpg"
     }
   ]
 }
