@@ -1,6 +1,9 @@
 {
   "carouselSlides": [
     {
+      "image": "/assets/p0mws19j.jpg"
+    },
+    {
       "image": "/assets/caroline-flack-key-art-main-2025.webp"
     },
     {
@@ -26,9 +29,6 @@
     },
     {
       "image": "/assets/p_thecrowgirl_pressrelease_landscape.webp"
-    },
-    {
-      "image": "/assets/p0mws19j.jpg"
     }
   ]
 }
