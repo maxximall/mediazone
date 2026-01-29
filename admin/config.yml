@@ -8,7 +8,8 @@ public_folder: "/assets"
 site_url: "/"
 logo_url: "/assets/logo.png"
 
-publish_mode: editorial_workflow
+# Direct publish to main (no draft branches). Editorial workflow causes 422 on git/refs for file collections.
+publish_mode: simple
 
 collections:
   - name: "shows"

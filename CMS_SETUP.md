@@ -59,3 +59,8 @@
 - Media uploads are stored in `assets/` and referenced from JSON.
 - The frontend fetches JSON files at runtime and renders content dynamically.
 
+### If you get "API_ERROR: Validation Failed" when saving
+- **Editorial workflow is disabled** so that Save/Publish commits directly to `main`. This avoids draft-branch/PR creation, which often causes this error with file collections.
+- If you need draft workflow again: in `admin/config.yml` uncomment `publish_mode: editorial_workflow`, then in Netlify ensure **Identity → Services → Git Gateway** is enabled and the site’s connected repo has no branch protection that blocks the CMS.
+- Optionally set `repo: owner/repo` under `backend:` in `config.yml` (your GitHub user or org and repo name) if the error continues.
+
