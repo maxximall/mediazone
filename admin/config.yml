@@ -229,3 +229,4 @@ collections:
               - { label: "Special Type", name: "specialType", widget: "select", required: false, options: [{ label: "None", value: "" }, { label: "Production Lifespan (opens image lightbox)", value: "lifeSpan" }], hint: "Special behavior for certain services" }
               - { label: "Order", name: "order", widget: "number", default: 0, value_type: "int", hint: "Lower numbers appear first" }
 
+
