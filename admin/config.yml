@@ -30,11 +30,12 @@ collections:
             summary: "{{fields.name | default: fields.title}} — {{fields.production | default: 'Unknown'}} ({{fields.date | default: 'No date'}})"
             fields:
               - { label: "Name of show", name: "name", widget: "string", required: false }
-              - { label: "Production", name: "production", widget: "string" }
-              - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { label: "Production", name: "production", widget: "string", required: true }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", picker_utc: true, required: true }
               - label: "Category"
                 name: "category"
                 widget: "select"
+                required: true
                 options:
                   - { label: "Documentary", value: "documentary" }
                   - { label: "True crime", value: "true-crime" }
@@ -44,7 +45,7 @@ collections:
                   - { label: "Challenge Shows", value: "challenge-shows" }
                   - { label: "Scripted", value: "scripted" }
                   - { label: "Podcasts", value: "podcasts" }
-              - { label: "Image", name: "image", widget: "image", allow_multiple: false }
+              - { label: "Image", name: "image", widget: "image", allow_multiple: false, required: true }
 
   - name: "team-members"
     label: "Team Members"
