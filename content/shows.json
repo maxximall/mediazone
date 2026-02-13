@@ -2358,6 +2358,20 @@
       "date": "2026-02-04",
       "category": "true-crime",
       "image": "/assets/aaaabwp4mrgjnpl3qumepswehplcwrvtj1jeentxwkc0hgr7wzfxvmjgywwc-qro8lg_bzh2ufqvybh8yfgo2xs3vo4mzbbnhud4qdvw.jpg"
+    },
+    {
+      "name": "Hold My Hand",
+      "production": "Lumo TV - Goldwala",
+      "date": "2026-02-10",
+      "category": "dating",
+      "image": "/assets/goldwala.jpeg"
+    },
+    {
+      "name": "The Summit",
+      "production": "ITV - Shine",
+      "date": "2026-02-10",
+      "category": "reality",
+      "image": "/assets/16x9.jpeg"
     }
   ]
 }
