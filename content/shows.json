@@ -2442,6 +2442,13 @@
       "date": "2026-02-05",
       "category": "true-crime",
       "image": "/assets/5a89ad587348-killerwide.jpg"
+    },
+    {
+      "name": "Harry Clark Goes to Rome",
+      "production": "BBC - CTVC",
+      "date": "2026-04-02",
+      "category": "documentary",
+      "image": "/assets/harry-clark.jpeg"
     }
   ]
 }
