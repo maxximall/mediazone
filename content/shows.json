@@ -2449,6 +2449,13 @@
       "date": "2026-04-02",
       "category": "documentary",
       "image": "/assets/harry-clark.jpeg"
+    },
+    {
+      "name": "Gilgo Beach Serial Murders",
+      "production": "Amazon - Empress Films",
+      "date": "2026-04-22",
+      "category": "true-crime",
+      "image": "/assets/gilgo.jpeg"
     }
   ]
 }
