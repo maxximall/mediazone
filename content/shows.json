@@ -2561,6 +2561,13 @@
       "date": "2026-10-14",
       "category": "documentary",
       "image": "/assets/findom-thumbnail.jpg"
+    },
+    {
+      "name": "Agency Unfiltered Season 4",
+      "production": "BBC Scotland - IWC",
+      "date": "2026-06-15",
+      "category": "reality",
+      "image": "/assets/season-4.jpg"
     }
   ]
 }
