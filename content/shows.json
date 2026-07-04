@@ -1905,13 +1905,6 @@
       "image": "/assets/first-dates-s9-twentytwenty-c4-oct-2020.jpg"
     },
     {
-      "name": "Married at First Sight",
-      "production": "Channel 4 - CPL",
-      "date": "2020-10-14",
-      "category": "dating",
-      "image": "/assets/married-at-first-sight-cpl-c4-s5-oct-2020.jpg"
-    },
-    {
       "name": "The Real Des - Denis Nilsen Story",
       "production": "ITV - Multistory",
       "date": "2020-09-14",
@@ -2308,7 +2301,7 @@
       "production": "BBC - Ty'r Ddraig",
       "date": "2026-01-05",
       "category": "reality",
-      "image": "/assets/p0mr94cl.jpg"
+      "image": "/assets/p0mr9rm5.jpg"
     },
     {
       "name": "Beacon of Hope: Grenfell FC",
@@ -2322,7 +2315,266 @@
       "production": "BBC - STV Studios",
       "date": "2026-01-13",
       "category": "true-crime",
-      "image": "/assets/p0ms753d.jpg"
+      "image": "/assets/p0ms74vx.jpg"
+    },
+    {
+      "name": "999 What Happened Next?",
+      "production": "Channel 4 - Curve Media",
+      "date": "2026-01-14",
+      "category": "true-crime",
+      "image": "/assets/66808ba2-8e29-45d7-9bb06fbd58005c8d.jpg"
+    },
+    {
+      "name": "Dragons Den S23",
+      "production": "BBC - BBC Studios",
+      "date": "2026-01-29",
+      "category": "documentary",
+      "image": "/assets/p0mv39sm.jpg"
+    },
+    {
+      "name": "Secret Genius",
+      "production": "Channel 4 - Mothership",
+      "date": "2026-02-01",
+      "category": "documentary",
+      "image": "/assets/76879_s1_secret-genius-.jpg"
+    },
+    {
+      "name": "New Lives In The Wild",
+      "production": "Channel 5 - Ricochet",
+      "date": "2026-01-15",
+      "category": "documentary",
+      "image": "/assets/new-lives-2026.jpg"
+    },
+    {
+      "name": "The Investigate Of Lucy Letby",
+      "production": "Netflix - ITN",
+      "date": "2026-02-04",
+      "category": "true-crime",
+      "image": "/assets/aaaabwp4mrgjnpl3qumepswehplcwrvtj1jeentxwkc0hgr7wzfxvmjgywwc-qro8lg_bzh2ufqvybh8yfgo2xs3vo4mzbbnhud4qdvw.jpg"
+    },
+    {
+      "name": "Hold My Hand",
+      "production": "Lumo TV - Goldwala",
+      "date": "2026-02-10",
+      "category": "dating",
+      "image": "/assets/holdmyhand.jpeg"
+    },
+    {
+      "name": "The Summit",
+      "production": "ITV - Shine",
+      "date": "2026-02-10",
+      "category": "reality",
+      "image": "/assets/16x9.jpeg"
+    },
+    {
+      "name": "Inside the Manosphere",
+      "production": "Netflix - Mindhouse Productions",
+      "date": "2026-03-11",
+      "category": "documentary",
+      "image": "/assets/aaaabyctwsxjqy9mptfellqvjbngjvxucnzscypwsz_6uz7s3v0ppujphvpn7cszmkt5kk4lewttkp0z3vaus-tkrqekxkzvitzi-bh6.jpg"
+    },
+    {
+      "name": "Dirty Business",
+      "production": "Channel 4 - Halcyon Hearts Films",
+      "date": "2026-02-23",
+      "category": "scripted",
+      "image": "/assets/b68b101d-8107-4db1-bfed0031d0398889.jpg"
+    },
+    {
+      "name": "AI Confidential",
+      "production": "BBC - Curious Films",
+      "date": "2026-02-23",
+      "category": "documentary",
+      "image": "/assets/1472419_hannahfryai_415678.jpg"
+    },
+    {
+      "name": "Ladies of London",
+      "production": "Bravo - BBC Studios USA",
+      "date": "2026-03-06",
+      "category": "reality",
+      "image": "/assets/1d107331a9dabaf6d0df3223aa945f3f.webp"
+    },
+    {
+      "name": "Murder Case: The Hunt for Arlene Fraser's Killer",
+      "production": "BBC - Firecrest Films",
+      "date": "2026-02-24",
+      "category": "true-crime",
+      "image": "/assets/arlene.jpg"
+    },
+    {
+      "name": "Handcuffed: Last Pair Standing",
+      "production": "Channel 4 - 72 Films",
+      "date": "2026-03-02",
+      "category": "reality",
+      "image": "/assets/handcuffed-1c5184a.jpg"
+    },
+    {
+      "name": "Random With Gavin Lilley",
+      "production": "Lumo TV - Drummer TV",
+      "date": "2025-12-15",
+      "category": "game-shows",
+      "image": "/assets/random_with_gavin_lilley.jpg"
+    },
+    {
+      "name": "Platoon 24/7 Preparing for War",
+      "production": "Channel 5 - Frank Films",
+      "date": "2026-02-02",
+      "category": "documentary",
+      "image": "/assets/d56877_6284e3c923de464ca5fc9c2eb560cae0~mv2.avif"
+    },
+    {
+      "name": "Lost Boys Deadly Men",
+      "production": "Crime & Investigation - Pulse Films",
+      "date": "2026-03-02",
+      "category": "documentary",
+      "image": "/assets/lost-boys.jpeg"
+    },
+    {
+      "name": "Come Dine With Me Series 22",
+      "production": "Channel 4 - Multistory",
+      "date": "2026-02-23",
+      "category": "reality",
+      "image": "/assets/c8e4ef5f-fe9e-484c-8937f79b508d91d7.jpg"
+    },
+    {
+      "name": "Chasing A Killer: Gary Allen",
+      "production": "Amazon - Firecrest",
+      "date": "2026-02-05",
+      "category": "true-crime",
+      "image": "/assets/5a89ad587348-killerwide.jpg"
+    },
+    {
+      "name": "Harry Clark Goes to Rome",
+      "production": "BBC - CTVC",
+      "date": "2026-04-02",
+      "category": "documentary",
+      "image": "/assets/harry-clark.jpeg"
+    },
+    {
+      "name": "Gilgo Beach Serial Murders",
+      "production": "Amazon - Empress Films",
+      "date": "2026-04-22",
+      "category": "true-crime",
+      "image": "/assets/gilgo.jpeg"
+    },
+    {
+      "name": "Half Man",
+      "production": "HBO Max - Banijay",
+      "date": "2026-04-23",
+      "category": "scripted",
+      "image": "/assets/whatsapp-image-2026-04-17-at-19.06.51.jpeg"
+    },
+    {
+      "name": "One Day in My Body",
+      "production": "Amazon - Arrow Media",
+      "date": "2026-04-29",
+      "category": "documentary",
+      "image": "/assets/ztyyfz45xzhndjr5chu2fepnji.avif"
+    },
+    {
+      "name": "How To Keep Your Brain Young",
+      "production": "Channel 5 - Big Deal Films",
+      "date": "2026-01-14",
+      "category": "documentary",
+      "image": "/assets/brain-young.jpg"
+    },
+    {
+      "name": " Y Llais (The Voice Wales)",
+      "production": "S4C - Boom TV",
+      "date": "2026-03-08",
+      "category": "game-shows",
+      "image": "/assets/y_llais_2025s4c_ymgyrch_glan-1-2400x1800.jpg"
+    },
+    {
+      "name": "High Hoops Season 2",
+      "production": "CBBC - Can Can Productions",
+      "category": "scripted",
+      "image": "/assets/high_hoops_team-seaso-2.jpg",
+      "date": "2026-02-02"
+    },
+    {
+      "name": "Should I Marry a Murderer",
+      "production": "Netflix - Candle True Stories",
+      "date": "2026-04-29",
+      "category": "true-crime",
+      "image": "/assets/p32806282_b_h8_aa.jpg"
+    },
+    {
+      "name": "How to Sleep Better",
+      "production": "Channel 4 - Afromic Productions",
+      "date": "2026-02-03",
+      "category": "documentary",
+      "image": "/assets/27acd2c5-37d4-40eb-9c0938108bfc640b.jpg"
+    },
+    {
+      "name": "Interior Design Masters Season 7",
+      "production": "BBC - DSP",
+      "date": "2026-04-21",
+      "category": "game-shows",
+      "image": "/assets/d56877_0d7b592efcd54e9d8802cf1212ebb888~mv2.avif"
+    },
+    {
+      "name": "Dunblane: How Britain Banned Hand Guns",
+      "production": "BBC Scotland - IWC Media",
+      "date": "2026-03-13",
+      "category": "documentary",
+      "image": "/assets/1200x675.jpg"
+    },
+    {
+      "name": "Kidnapped By Mum",
+      "production": "BBC - Proper Content",
+      "date": "2026-05-13",
+      "category": "documentary",
+      "image": "/assets/p0njd9rd.jpg"
+    },
+    {
+      "name": "Gareth Southgate: Changing The Game for Young Men",
+      "production": "BBC - Cardiff Productions",
+      "date": "2026-06-08",
+      "category": "documentary",
+      "image": "/assets/5358c010-60ad-11f1-b682-cf91850925ea.jpg"
+    },
+    {
+      "name": "Key Witness: The Aftermath",
+      "production": "Spotify - Creatorville",
+      "date": "2026-06-01",
+      "category": "podcasts",
+      "image": "/assets/466ab108370ceaa752291abe2e73703d.jpg"
+    },
+    {
+      "name": "Froglets",
+      "production": "CBBC - Eaglet Films",
+      "date": "2026-06-01",
+      "category": "scripted",
+      "image": "/assets/p0nhl3y1.jpg"
+    },
+    {
+      "name": "Fighting Endometriosis with Emma Barnett",
+      "production": "BBC - Raw",
+      "date": "2026-06-01",
+      "category": "documentary",
+      "image": "/assets/p0nntf3m.jpg"
+    },
+    {
+      "name": "Inside UK's Secret World Of Financial Domination | Findoms",
+      "production": "Channel 4 Digital/You Tube - Tern TV",
+      "date": "2025-10-14",
+      "category": "documentary",
+      "image": "/assets/findom-thumbnail.jpg"
+    },
+    {
+      "name": "Agency Unfiltered Season 4",
+      "production": "BBC Scotland - IWC",
+      "date": "2026-06-15",
+      "category": "reality",
+      "image": "/assets/season-4.jpg"
+    },
+    {
+      "name": "Katie Price: Nothing To Hide",
+      "production": "Sky - Mindhouse Productions",
+      "date": "2026-07-08",
+      "category": "documentary",
+      "image": "/assets/katie-price.webp"
     }
   ]
 }
