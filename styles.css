@@ -87,7 +87,7 @@ section{
 .show-card img{
     width: 100%;
     aspect-ratio: 16 / 9;
-    height: auto;
+    height: 200px;
     object-fit: cover;
     object-position: center top;
     display: block;
