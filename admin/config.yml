@@ -43,6 +43,7 @@ collections:
                   - { label: "Reality", value: "reality" }
                   - { label: "Game shows", value: "game-shows" }
                   - { label: "Dating", value: "dating" }
+                  - { label: "Entertainment", value: "entertainment" }
                   - { label: "Challenge Shows", value: "challenge-shows" }
                   - { label: "Scripted", value: "scripted" }
                   - { label: "Podcasts", value: "podcasts" }
