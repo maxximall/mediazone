@@ -55,6 +55,13 @@
       "specialType": "lifeSpan",
       "order": 6,
       "image": "/assets/img_7767.jpg"
+    },
+    {
+      "order": 0,
+      "title": "On Screen Psychologists",
+      "description": "Beyond supporting productions behind the scenes, our team of Clinical Psychologists are also available as credible, engaging on-screen experts. Whether you require professional commentary, expert analysis, psychological insight or specialist contributions for documentaries, factual entertainment, podcasts or live radio of TV broadcasts, we can provide experienced Clinical Psychologist who can communicate complex topics with clarity, warmth and authority.",
+      "image": "/assets/img_0772.jpg",
+      "slug": "Expert Psychological Support – On and Off Screen"
     }
   ]
 }
