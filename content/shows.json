@@ -2575,6 +2575,13 @@
       "date": "2026-07-08",
       "category": "documentary",
       "image": "/assets/katie-price.webp"
+    },
+    {
+      "name": "Ar Led",
+      "production": "You Tube - Osprey TV",
+      "date": "2026-06-18",
+      "category": "documentary",
+      "image": "/assets/arled.jpg"
     }
   ]
 }
