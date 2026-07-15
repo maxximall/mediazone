@@ -2582,6 +2582,13 @@
       "date": "2026-06-18",
       "category": "documentary",
       "image": "/assets/arled2.jpg"
+    },
+    {
+      "name": "Hunting the Spycammed",
+      "production": "BBC Three - Rock Paper Productions",
+      "date": "2026-07-15",
+      "category": "true-crime",
+      "image": "/assets/spycam-tx_v2.jpg"
     }
   ]
 }
