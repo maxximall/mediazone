@@ -2589,6 +2589,13 @@
       "date": "2026-07-15",
       "category": "true-crime",
       "image": "/assets/spycam-tx_v2.jpg"
+    },
+    {
+      "name": "Chase Around The World",
+      "production": "ITV - Bright Entertainment",
+      "date": "2026-07-16",
+      "category": "entertainment",
+      "image": "/assets/catw.jpeg"
     }
   ]
 }
