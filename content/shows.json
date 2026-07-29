@@ -2596,6 +2596,13 @@
       "date": "2026-07-16",
       "category": "entertainment",
       "image": "/assets/catw.jpeg"
+    },
+    {
+      "name": "Ish",
+      "production": "BFI - Primal Pictures",
+      "date": "2026-07-31",
+      "category": "scripted",
+      "image": "/assets/ish.jpeg"
     }
   ]
 }
