@@ -2652,6 +2652,13 @@
       "date": "2026-09-01",
       "category": "true-crime",
       "image": "/assets/sddefault.jpg"
+    },
+    {
+      "name": "Apocalypse",
+      "production": "Channel 4 - Garden",
+      "date": "2026-09-07",
+      "category": "entertainment",
+      "image": "/assets/d56877_d37471f4310f481190e5bb4735654443~mv2.avif"
     }
   ]
 }
