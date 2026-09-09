@@ -2666,6 +2666,13 @@
       "date": "2026-08-30",
       "category": "documentary",
       "image": "/assets/3733.webp"
+    },
+    {
+      "name": "The Wargame",
+      "production": "Sky - The Garden",
+      "date": "2026-09-21",
+      "category": "documentary",
+      "image": "/assets/thewargame.jpg"
     }
   ]
 }
