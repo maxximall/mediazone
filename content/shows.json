@@ -2673,6 +2673,13 @@
       "date": "2026-09-21",
       "category": "documentary",
       "image": "/assets/thewargame.jpg"
+    },
+    {
+      "name": "Outside",
+      "production": "Netflix - Nest Productions",
+      "date": "2026-09-26",
+      "category": "reality",
+      "image": "/assets/outside.jpeg"
     }
   ]
 }
