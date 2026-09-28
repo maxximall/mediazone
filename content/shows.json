@@ -2694,6 +2694,13 @@
       "date": "2026-10-08",
       "category": "scripted",
       "image": "/assets/florid.jpeg"
+    },
+    {
+      "name": "Grooming Gangs",
+      "production": "BBC/Panorama - Hardcash Productions",
+      "date": "2026-09-21",
+      "category": "documentary",
+      "image": "/assets/groominggangs.jpeg"
     }
   ]
 }
