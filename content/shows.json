@@ -2708,6 +2708,20 @@
       "image": "/assets/p0nxh85g.jpg",
       "date": "2026-07-15",
       "category": "reality"
+    },
+    {
+      "name": "99 To Beat S2",
+      "production": "Biggerstage - Fox USA",
+      "date": "2026-09-23",
+      "category": "game-shows",
+      "image": "/assets/99tobeatnews.jpeg"
+    },
+    {
+      "name": "The Bubble",
+      "production": "BBC/YouTube - Studio Something",
+      "date": "2026-09-22",
+      "category": "documentary",
+      "image": "/assets/bubble.jpg"
     }
   ]
 }
