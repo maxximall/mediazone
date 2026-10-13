@@ -2736,6 +2736,13 @@
       "date": "2026-10-09",
       "category": "documentary",
       "image": "/assets/oasis.jpeg"
+    },
+    {
+      "name": "Heart",
+      "production": "Apple - Blanchard House",
+      "date": "2026-10-12",
+      "category": "podcasts",
+      "image": "/assets/images-heart.jpeg"
     }
   ]
 }
