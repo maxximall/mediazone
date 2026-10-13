@@ -2743,6 +2743,13 @@
       "date": "2026-10-12",
       "category": "podcasts",
       "image": "/assets/images-heart.jpeg"
+    },
+    {
+      "name": "Tommy Robinson: Where Has The Money Gone?",
+      "production": "Channel 4 - Hardcash Productions",
+      "date": "2026-09-09",
+      "category": "documentary",
+      "image": "/assets/tommy.jpeg"
     }
   ]
 }
