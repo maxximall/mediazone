@@ -2778,6 +2778,13 @@
       "date": "2026-08-16",
       "category": "podcasts",
       "image": "/assets/unreal.jpeg"
+    },
+    {
+      "name": "First Dates 2026",
+      "production": "Channel 4 - Twenty Twenty",
+      "date": "2026-10-28",
+      "category": "dating",
+      "image": "/assets/2026-series-first-date.jpg"
     }
   ]
 }
