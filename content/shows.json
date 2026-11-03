@@ -2841,6 +2841,13 @@
       "date": "2024-07-03",
       "category": "entertainment",
       "image": "/assets/imagescooking-buddies.jpeg"
+    },
+    {
+      "name": "Five Star Chef",
+      "production": "Channel 4 - Twenty Twenty",
+      "date": "2023-07-04",
+      "category": "entertainment",
+      "image": "/assets/five-star-chef-promo-pic.webp"
     }
   ]
 }
