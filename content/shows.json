@@ -2834,6 +2834,13 @@
       "date": "2017-12-03",
       "category": "entertainment",
       "image": "/assets/family-cooking.jpg"
+    },
+    {
+      "name": "Cooking Buddies",
+      "production": "BBC - Jamie Oliver Productions",
+      "date": "2024-07-03",
+      "category": "entertainment",
+      "image": "/assets/imagescooking-buddies.jpeg"
     }
   ]
 }
