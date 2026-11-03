@@ -2848,6 +2848,13 @@
       "date": "2023-07-04",
       "category": "entertainment",
       "image": "/assets/five-star-chef-promo-pic.webp"
+    },
+    {
+      "image": "/assets/truama.png",
+      "name": "Trauma My Broken Brain",
+      "production": "Channel 4 - Stream Media",
+      "date": "2026-10-29",
+      "category": "documentary"
     }
   ]
 }
