@@ -2946,6 +2946,13 @@
       "date": "2026-08-05",
       "category": "challenge-shows",
       "image": "/assets/challenge-s42-new.jpg"
+    },
+    {
+      "name": "Russell Brand - Open Secret",
+      "production": "Netflix - 72 Films",
+      "date": "2026-11-13",
+      "category": "true-crime",
+      "image": "/assets/russell-brand.jpg"
     }
   ]
 }
