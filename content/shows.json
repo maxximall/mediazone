@@ -3002,6 +3002,13 @@
       "date": "2026-10-05",
       "category": "true-crime",
       "image": "/assets/images-damilola.jpeg"
+    },
+    {
+      "name": "Tyson Fury",
+      "production": "Netflix - Optomen",
+      "date": "2026-11-27",
+      "category": "documentary",
+      "image": "/assets/tyson.jpeg"
     }
   ]
 }
